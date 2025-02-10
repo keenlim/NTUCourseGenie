@@ -1,0 +1,59 @@
+{
+    "2021_Normal": {
+        "Year1_Semester1": ["SC1003", "MH1805", "MH1812", "CC0001", "CC0002", "BDE"],
+        "Year1_Semester2": ["SC1007", "SC2002", "SC1015", "CC0003", "CC0005", "BDE"],
+        "Year2_Semester1": ["SC2001", "SC2006", "MH2500", "MH2802", "CC0006", "ML0004"],
+        "Year2_Semester2": ["SC2207", "SC3000", "MH3500", "MH3511", "HW0218", "CC0007"],
+        "Year3_Semester1": ["SC4000", "SC4020", "MH2100", "MH/SC4xxx", "BDE"],
+        "Year3_Semester2": ["SD3079"],
+        "Year4_Semester1": ["SC4079", "MH/SC4xxx", "BDE", "BDE"],
+        "Year4_Semester2": ["SC4079", "MH/SC4xxx", "BDE", "BDE"],
+        "Year1_SpecialSemester": null,
+        "Year5_Semester1": null,
+        "Year5_Semester2": null,
+        "Year3_SpecialSemester": null
+    }, 
+    "2022_Normal": {
+        "Year1_Semester1": ["SC1003", "MH1805", "MH1812", "CC0001", "CC0002", "BDE"],
+        "Year1_Semester2": ["SC1007", "SC2002", "SC1015", "CC0003", "CC0005", "BDE"],
+        "Year2_Semester1": ["SC2001", "SC2006", "MH2500", "MH2802", "CC0006", "ML0004"],
+        "Year2_Semester2": ["SC2207", "SC3000", "MH3500", "MH3511", "HW0218", "CC0007"],
+        "Year3_Semester1": ["SC4000", "SC4020", "MH2100", "MH/SC4xxx", "BDE"],
+        "Year3_Semester2": ["SD3079"],
+        "Year4_Semester1": ["SC4079", "MH/SC4xxx", "BDE", "BDE"],
+        "Year4_Semester2": ["SC4079", "MH/SC4xxx", "BDE", "BDE"],
+        "Year1_SpecialSemester": null,
+        "Year5_Semester1": null,
+        "Year5_Semester2": null,
+        "Year3_SpecialSemester": null
+    }, 
+    "2023_Normal": {
+        "Year1_Semester1": ["SC1003", "MH1805", "MH1812", "CC0001", "CC0002", "BDE"],
+        "Year1_Semester2": ["SC1007", "SC2002", "SC1015", "CC0003", "CC0005", "BDE"],
+        "Year2_Semester1": ["SC2001", "SC2006", "MH2500", "MH2802", "CC0006", "ML0004"],
+        "Year2_Semester2": ["SC2207", "SC3000", "MH3500", "MH3511", "HW0218", "CC0007"],
+        "Year3_Semester1": ["SC4000", "SC4020", "MH2100", "MH/SC4xxx", "BDE"],
+        "Year3_Semester2": ["SD3079"],
+        "Year4_Semester1": ["SC4079", "MH/SC4xxx", "BDE", "BDE"],
+        "Year4_Semester2": ["SC4079", "MH/SC4xxx", "BDE", "BDE"],
+        "Year1_SpecialSemester": null,
+        "Year5_Semester1": null,
+        "Year5_Semester2": null,
+        "Year3_SpecialSemester": null
+    },
+    "2024_Normal": {
+        "Year1_Semester1": ["SC1003", "MH1805", "MH1812", "CC0001", "CC0002", "BDE"],
+        "Year1_Semester2": ["SC1007", "SC2006", "SC2002", "CC0003", "CC0005", "BDE"],
+        "Year2_Semester1": ["SC2207", "SC2001", "MH2500", "MH2802", "CC0006", "ML0004"],
+        "Year2_Semester2": ["SC3000", "SC3021", "MH3500", "MH3511", "HW0218", "CC0007"],
+        "Year3_Semester1": ["SC4000", "SC4020", "MH2100", "MH/SCxxxx", "MH/SCxxxx", "BDE"],
+        "Year3_Semester2": ["SD3920"],
+        "Year4_Semester1": ["SC4079", "MH/SC4xxx", "MH/SCxxxx", "BDE", "BDE"],
+        "Year4_Semester2": ["SC4079", "MH/SC4xxx","MH/SCxxxx", "BDE", "BDE"],
+        "Year1_SpecialSemester": null,
+        "Year5_Semester1": null,
+        "Year5_Semester2": null,
+        "Year3_SpecialSemester": null
+    }
+    
+}

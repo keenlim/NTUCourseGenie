@@ -1,0 +1,1604 @@
+[
+    {
+        "courseCode": "SC1003",
+        "academicUnits": "3",
+        "title": "Introduction to Computational Thinking and Programming",
+        "description": "Computational thinking (CT) is the process of analyzing a problem then designing and expressing its solution in such a way that a computer can effectively carry it out. This course aims to take students with no prior experience of thinking in a computational manner to a point where they can derive simple algorithms and code programs to solve basic problems in their domain of studies. Topics also include basic program constructs, simple data structures, and an appreciation of the internal operations of a processor.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "SC1003"
+    },
+    {
+        "courseCode": "SC1004",
+        "academicUnits": "4",
+        "title": "Linear Algebra For Computing",
+        "description": "This course aims to support you to learn mathematical concepts related to linear algebra and complex numbers. You will develop set of mathematical skills for applications in computer science and engineering, e.g., machine learning, computer graphics, data science etc.",
+        "pre_requisite": "",
+        "co_requisite": "SC1003",
+        "id": "SC1004"
+    },
+    {
+        "courseCode": "SC1005",
+        "academicUnits": "3",
+        "title": "Digital Logic",
+        "description": "This course aims to develop your ability to analyse and design digital circuits. The design and behaviour of modern digital equipment (e.g. mobile phones and personal computers) are based on functions of binary variables. This course provides you the knowledge to analyse the theoretical characteristics and the skills required for practical technology driven implementations of digital circuits. This course provides an introductory perspective of digital circuits design. It is relevant for anyone pursuing a career in the ICT industry - including those in digital systems, computer architecture and microprocessor based systems design.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "SC1005"
+    },
+    {
+        "courseCode": "MH1812",
+        "academicUnits": "3",
+        "title": "Discrete Mathematics",
+        "description": "This course serves as an introduction to various topics in discrete mathematics. Familiarity with formal analysis through simple problems in some basic discrete structures is a key objective rather than knowing these structures in depth. Specifically, the main aim is to learn topics from the following broad areas of discrete mathematics: number theory, logic, combinatorics, and graph theory. This course aims to provide students with a solid mathematical foundation and is intended for first year computer science and computer engineering students.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH1812"
+    },
+    {
+        "courseCode": "CC0003",
+        "academicUnits": "2",
+        "title": "Ethics & Civics in a Multicultural World",
+        "description": "This course aims to equip students with the philosophical foundations necessary to understand theories of ethics and subsequently apply those theories to real-life scenarios and issues. It also aims to enable students to critically assess the civic institutions that structure their local and global communities. To these ends, the course will examine the nature of ethics, its understanding across different cultures, and how it is manifested in concepts, social structures, and governance institutions. Topics to be explored include human rights, democracy, freedom of speech, inequality, and sexuality. The rights and duties of citizenship shall be a unifying theme. Students will think through assumptions they hold on all of these matters. They will be provided with the tools to understand various and even contradictory perspectives on these important issues.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "CC0003"
+    },
+    {
+        "courseCode": "CC0005",
+        "academicUnits": "3",
+        "title": "Healthy Living & Wellbeing",
+        "description": "This course is part of the NTU 2025 Education - Common Foundational & Interdisciplinary Collaborative Curriculum (ICC). It aims to provide multi-disciplinary competence in a cross-disciplinary, collaborative learning environment, with student interaction and collaboration across schools as a key learning foundation. As the title connotes, the main objective of this undergraduate course is to examine what constitutes living a good, healthy and flourishing life. According to research, individuals around the world pursue this 'flourishing life' in different ways, be it through improving one's physical fitness, seeking authentic relationships with others, or making a positive change in the environment. Thus, knowing and understanding how the different components of a 'good life' contribute to one's overall functioning is critical to one's healthy wellbeing. The latter, in turn, affords many benefits such as better health (physical, mental and emotional health) and stronger relationships. By the end of this course, you would have developed an awareness of what constitutes living a healthy and flourishing life, both of which indirectly contribute to a successful undergraduate education.\n ",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "CC0005"
+    },
+    {
+        "courseCode": "HW0001",
+        "academicUnits": "0",
+        "title": "Introduction to Academic Communication",
+        "description": "The course aims to support you in your academic writing and reading skills across a wide range of disciplines. This course will provide opportunities for you to read current event articles widely and critically. As a result, you will learn to evaluate opinions and formulate well-substantiated arguments.",
+        "pre_requisite": "For student failed QET",
+        "co_requisite": "",
+        "id": "HW0001"
+    },
+    {
+        "courseCode": "SC1006",
+        "academicUnits": "3",
+        "title": "Computer Organisation & Architecture",
+        "description": "Computer Hardware Decomposition; Solid-state memory subsystems; Magnetic memory; Input/Output techniques; The central processor unit; How high level code is `executed?; Quantifying and comparing performance; Computer arithmetic; Towards higher speed.",
+        "pre_requisite": "",
+        "co_requisite": "SC1005",
+        "id": "SC1006"
+    },
+    {
+        "courseCode": "SC1007",
+        "academicUnits": "3",
+        "title": "Data Structures & Algorithm",
+        "description": "This course aims to (i) teach the concepts, implementations and applications of data structures such as arrays, linked lists, stacks, queues and trees that are important for building efficient algorithms; (ii) provide an introduction to algorithm analysis and design. These are essential for future computer science and computer engineering courses.",
+        "pre_requisite": "SC1003",
+        "co_requisite": "",
+        "id": "SC1007"
+    },
+    {
+        "courseCode": "SC1008",
+        "academicUnits": "3",
+        "title": "C and C++ Programming",
+        "description": "",
+        "pre_requisite": "SC1003",
+        "co_requisite": "",
+        "id": "SC1008"
+    },
+    {
+        "courseCode": "SC2000",
+        "academicUnits": "3",
+        "title": "Probability & Statistics for Computing",
+        "description": "This course aims to develop your foundation in engineering mathematics, particularly in probability and statistics. This course provides the basic engineering mathematics foundation that is necessary for anyone pursuing a computer science and engineering degree course.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "SC2000"
+    },
+    {
+        "courseCode": "SC2002",
+        "academicUnits": "3",
+        "title": "Object Oriented Design & Programming",
+        "description": "The object-oriented paradigm to the design of software is one major successful approach to address complexity and maintainability issues in software systems. We want students to establish an object-oriented mindset and to gain valuable insights into how software can be developed using the object-oriented approach. This course should not be interpreted to be a pure programming language course. Rather, the programming language serves to illustrate, via practical examples, the concepts learnt in the course. As a student of this course, you will learn essential object-oriented concepts such as encapsulation, the separation of design from implementation, the use of inheritance and polymorphism. Finally, you will also learn good design principles for reuse, and to realise these principles using object-oriented programming languages such as Java and/or C++.",
+        "pre_requisite": "SC1003 OR SC1007",
+        "co_requisite": "",
+        "id": "SC2002"
+    },
+    {
+        "courseCode": "CC0001",
+        "academicUnits": "2",
+        "title": "Inquiry & Communication in an Interdisciplinary World",
+        "description": "Researchers agree that writing is a tool for thinking (Menary, 2007; Klein & Boscolo, 2016; Miller and Jurecic, 2016; Reis, n.d.). As Reis explains, 'The bodily act of writing externalizes our thoughts, and the imposed structure (the written word) provides a vehicle by which those thoughts may be reorganized into new thinking, a new way of seeing the thoughts or a new way of organizing thoughts.' Miller and Jurecic similarly argue that 'writers discover what they think not before they write but in the act of writing' (2016, p. 60). One of the main aims of this course is to allow you to experience writing as a tool for thinking and to practice expressing ideas in formal writing and oral communication. While you will have the opportunity to understand and practice the genre conventions that are specific to your discipline later in your studies, this first common communication course is designed to help you form habits of mind that will serve you across the university and even in the world outside of the university. Taken by all first-year undergraduates, this foundational course will develop your written and oral communication skills, as well as your ability to read and analyze texts. It will help you to understand revision as integral to the process of composition, to convey your interpretations and ideas with confidence and clarity, and to consider audience and purpose when you communicate.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "CC0001"
+    },
+    {
+        "courseCode": "CC0002",
+        "academicUnits": "2",
+        "title": "Navigating the Digital World",
+        "description": "With digitalization now becoming the new normal in our daily life, this course seeks to equip students from different disciplines with problem?solving techniques with the aid of computers and to enable them to acquire some common but essential digital skills that are crucial in today's workforce. In this course, students will learn how to apply the concept of computational thinking and quantitative reasoning to solve problems and analyze data. They will also learn how to identify online threats and understand the principles of ethics and intellectual property rights in the digital world. They will also be exposed to current issues in the digital world, which they can better understand through the logic of computational thinking and quantitative reasoning, such as cybersecurity and the rise of fake news. In addition, students will also learn how to use some of the latest online tools for effective presentation, communication, and collaborative skills in teams during the course.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "CC0002"
+    },
+    {
+        "courseCode": "SC2001",
+        "academicUnits": "3",
+        "title": "Algorithm Design & Analysis",
+        "description": "This course aims to develop your knowledge, understanding and skills about algorithm design and analysis. Upon the successful completion of this course, students shall be able to (i) apply additional analysis techniques in complexity analysis of recursive algorithms; (ii) apply, design and analyse algorithms using a number of approaches to solve various problems like sorting, shortest-path, minimum spanning tree, optimal sequencing for matrix multiplication, the longest common subsequence, string matching. Students will also learn the concepts of complexity classes P & NP and apply greedy heuristic approach to solve NP-complete problems.",
+        "pre_requisite": "SC1007 AND MH1812",
+        "co_requisite": "",
+        "id": "SC2001"
+    },
+    {
+        "courseCode": "SC2005",
+        "academicUnits": "3",
+        "title": "Operating Systems",
+        "description": "This course aims to develop your understanding of fundamental concepts and principles of modern operating systems, and to build your knowledge on the design and implementation of main operating system components.",
+        "pre_requisite": "SC1006 AND SC1007",
+        "co_requisite": "",
+        "id": "SC2005"
+    },
+    {
+        "courseCode": "SC2203",
+        "academicUnits": "3",
+        "title": "Automata. Computability and Complexity",
+        "description": "",
+        "pre_requisite": "",
+        "co_requisite": "SC2001",
+        "id": "SC2203"
+    },
+    {
+        "courseCode": "SC2006",
+        "academicUnits": "3",
+        "title": "Software Engineering",
+        "description": "Introduction to Software Engineering; Software Engineering Process; Introduction to Requirements; Introduction to Software Specifications; Software Design and Construction; Testing and Integration; Software Maintenance; Software Project Management; Software Quality; Dependability and Security",
+        "pre_requisite": "",
+        "co_requisite": "SC2002",
+        "id": "SC2006"
+    },
+    {
+        "courseCode": "SC2008",
+        "academicUnits": "3",
+        "title": "Computer Network",
+        "description": "This course serves as a foundation for computer and communication networks. Emphasis is placed on concepts, protocols and technologies, which formulate various Local Area Networks (LANs), Wide area Networks (WANs), and their interconnections. Emphasis is also placed on the fundamentals of the Internet, and includes laboratory sessions on socket programming. Advanced materials, such as, cloud computing, will also be covered to prepare you well for your future career.",
+        "pre_requisite": "SC2000 AND SC1004",
+        "co_requisite": "",
+        "id": "SC2008"
+    },
+    {
+        "courseCode": "CC0007",
+        "academicUnits": "3",
+        "title": "Science & Technology For Humanity",
+        "description": "The course aims to inspire a long-lasting mindset of awareness, critical thinking, curiosity, and collaboration across disciplines through the lens of contemporary and near-future challenges for human communities in relation to scientific and technological innovations. Students will learn to perceive and analyze the potential benefits and costs of scientific/technological innovations and applications from different perspectives and on different scales. Students will then use these skills to identify real-life challenges and to propose solutions.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "CC0007"
+    },
+    {
+        "courseCode": "SC2207",
+        "academicUnits": "3",
+        "title": "Introduction to Databases",
+        "description": "Overview of Database Management Systems (DBMS); Entity-Relationship Data Model; Relational Data Model; Functional Dependencies (FD) and Normalization; Relational Algebra; Structured Query Language (SQL); Storage of Relational Data; Indexing Techniques; Query Processing and Optimization; Transaction Management and Concurrency Control",
+        "pre_requisite": "",
+        "co_requisite": "SC2001",
+        "id": "SC2207"
+    },
+    {
+        "courseCode": "CC0006",
+        "academicUnits": "3",
+        "title": "Sustainability: Society, Economy & Environment",
+        "description": "Sustainability stresses the importance of future development to meet the needs of the present without compromising the ability of future generations to meet their needs. This concept is a culmination of economic, environmental, and social discourse throughout the last few decades. The United Nations (UN) declared a Decade of Education for Sustainable Development (DESD) with the aim to promote 'a more sustainable world through different forms of education, training and public awareness activities'. This provides an opportunity to reconsider approaches undertaken to address global challenges. It is imperative that pedagogical directions for higher education institutions address the foundations of sustainable development across different disciplines due to its complex and multi-faceted nature that encompasses a full spectrum of socio-economic-environmental issues. As such, this course aims to stimulate critical thinking, curiosity, and the ability to structure and synthesise knowledge through the lens of sustainability. Learning will be reinforced by concrete case studies with a focus on topics such as resource management, pollution, responsible consumption, and climate change. The course will require systematic analyses of major current sustainability challenges from the perspectives of society, economy, and the environment, and look at how we can promote a more sustainable world through choices and actions, as individuals, societies, nations, and as a global community. Through this learning process, students will acquire a systems thinking approach to sustainability that enhances knowledge and skills sets relevant to various disciplines and career paths. This course hopes to inspire and equip students to be agents of change toward a more sustainable world.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "CC0006"
+    },
+    {
+        "courseCode": "ML0004",
+        "academicUnits": "2",
+        "title": "Career & Innovative Enterprise for the Future World",
+        "description": "Having a creative and enterprising mindset can assist students in successfully manoeuvring through the VUCA world. It is crucial for students to nurture certain qualities associated with an enterprising mindset, including embracing uncertainty and change, honing critical thinking skills, and exhibiting a collaborative and adaptable nature. These qualities are vital in helping students to prepare for a rapidly evolving environment. The concept of \"designing your work life\" can be a valuable tool, inspiring students to explore their career options and possibilities by considering their values, interests, personality traits, and skills (VIPS) through prototype conversations. With more local employers emphasising skills-based hiring and retention, it is essential for students to continuously enhance their proficiency in relevant and sought-after skills to be well-prepared for the future of work.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "ML0004"
+    },
+    {
+        "courseCode": "SC2079",
+        "academicUnits": "4",
+        "title": "Multidisciplinary Design Project",
+        "description": "Seminars and Workshops - Throughout the MDP, students will be required to attend relevant seminars and workshops that would help them understand the process and tools for designing, developing and marketing of real-world multidisciplinary products. These include both general and technical seminars. General seminars may cover topics such as guided innovation, multidisciplinary problem solving, working effectively in engineering teams, understanding effective marketing strategies, project management, professional, ethical and moral responsibilities etc. Technical seminars and workshops will be related to specific engineering methodology and tools that can help students implement their respective ideas. These may include systems engineering and design, large-scale web systems, embedded systems development tools, etc. In their implementation, students will have to factor in appropriate considerations for public health and safety, cultural, societal factors, environmental and other constraints as well as the needs for sustainable development. Laboratories - Laboratory during MDP will be a mixed of guided and open accessed sessions. Teams - Students will be grouped into teams of about 6-7 member. The composition of these team members will consist of a multidisciplinary mix of CS, CE and BCG students. Supervision - Each team will be assigned a faculty mentor during the MDP.",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC2079"
+    },
+    {
+        "courseCode": "HW0288",
+        "academicUnits": "2",
+        "title": "Engineering Communication",
+        "description": "HW0288 is an advanced course which aims to enhance the spoken and written abilities of engineering students when communicating in both academic and professional settings. In this course, the emphasis is on advanced skills in academic and professional communication. In the academic literacy and information literacy components of the course, you learn advanced skills for searching academic databases, evaluating sources and incorporating and citing them appropriately in your writing. In the professional communication component of the course, you learn written and oral workplace communication skills such as writing emails, participating at meetings, interacting with clients and projecting a professional image of yourself.",
+        "pre_requisite": "CC0001 AND Year 3 Standing",
+        "co_requisite": "",
+        "id": "HW0288"
+    },
+    {
+        "courseCode": "SC3079",
+        "academicUnits": "10",
+        "title": "Professional Internship",
+        "description": "",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC3079"
+    },
+    {
+        "courseCode": "SC4079",
+        "academicUnits": "8",
+        "title": "Final Year Project",
+        "description": "",
+        "pre_requisite": "Year 4 Standing",
+        "co_requisite": "",
+        "id": "SC4079"
+    },
+    {
+        "courseCode": "SC3000",
+        "academicUnits": "3",
+        "title": "Artificial Intelligence",
+        "description": "Computer / software engineers are involved in effective and efficient building of knowledge agent systems that satisfy the requirements of users; possibly software for intelligent embedded and intelligent information systems. General awareness of theory, knowledge, and practice in all phases of the knowledge based systems and representation techniques for problem solving are necessary for those of you who wants to get into the field artificial intelligence. These are advanced intelligent systems that are finding widespread applications in finance, banking, manufacturing industries.",
+        "pre_requisite": "Year 3 Standing AND SC1007 AND SC1015 AND SC2000",
+        "co_requisite": "",
+        "id": "SC3000"
+    },
+    {
+        "courseCode": "SC4000",
+        "academicUnits": "3",
+        "title": "Machine Learning",
+        "description": "This course introduces basic concepts and methodologies for machine learning as well as their applications. Clustering. Dimension Reduction. Classification. Decision Theory. Density Estimation. Classifier Evaluation.",
+        "pre_requisite": "Year 3 Standing AND SC1004 AND SC1007 ANDSC2000",
+        "co_requisite": "",
+        "id": "SC4000"
+    },
+    {
+        "courseCode": "SC4001",
+        "academicUnits": "3",
+        "title": "Neural Networks & Deep Learning",
+        "description": "This course aims to provide you with a basic but comprehensive foundation of neural networks and deep learning, including underlying principles, architectures, and learning algorithms of various types of deep neural networks that are essential for future applications of artificial intelligence and data science.",
+        "pre_requisite": "Year 3 Standing AND SC1004 AND SC1007 or MH2802 AND SC1007",
+        "co_requisite": "",
+        "id": "SC4001"
+    },
+    {
+        "courseCode": "SC4002",
+        "academicUnits": "3",
+        "title": "Natural Language Processing",
+        "description": "This course introduces natural language processing at a basic level. 1. Basic concepts of syntax, semantics, and grammar formalisms 2. Basic techniques of language modelling, part-of-speech tagging, parsing, and semantic analysis 3. Well-known applications of natural language processing, such as machine translation and information extraction, and their evaluations",
+        "pre_requisite": "Year 3 Standing AND SC2001",
+        "co_requisite": "",
+        "id": "SC4002"
+    },
+    {
+        "courseCode": "SC4003",
+        "academicUnits": "3",
+        "title": "Intelligent Agents",
+        "description": "",
+        "pre_requisite": "Year 3 Standing AND SC1007 AND SC2000 OR SC1007 AND MH2500",
+        "co_requisite": "",
+        "id": "SC4003"
+    },
+    {
+        "courseCode": "SC4061",
+        "academicUnits": "3",
+        "title": "Computer Vision",
+        "description": "Image formation and segmentation. Image acquisition. Image representations and organisations. Digital image characterisation. Image enhancement and restoration. Image coding and data compression. Geometry for 3D vision. Pattern recognition using neural networks. Image analysis and understanding. Machine vision applications.",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC4061"
+    },
+    {
+        "courseCode": "SC3010",
+        "academicUnits": "3",
+        "title": "Computer Security",
+        "description": "This course aims to equip you with foundational knowledge on many important security issues and techniques required for cyber security. You will have the knowledge of different security policies and security models, and have the ability to recognise security features and discover pitfalls in computing systems, including the operating system and software.",
+        "pre_requisite": "Year 3 Standing AND SC2005",
+        "co_requisite": "",
+        "id": "SC3010"
+    },
+    {
+        "courseCode": "SC4010",
+        "academicUnits": "3",
+        "title": "Applied Cryptography",
+        "description": "Summary: Cryptography is the foundational building block of Cybersecurity and Privacy. While the field of classical cryptography dealt with security and privacy of data in transit, the modern take on the subject has generalized the scope of its applications to ensuring security and privacy of all forms of digital communication, computation, automation, interaction, transaction and preservation. Thus, it is important to understand the technical aspects of cryptography to appreciate its applications in cybersecurity. The Aim: This cryptography course in Computer Science and Engineering aims to develop your ability to understand how cryptographic algorithms work, to identify the problems associated with the application of cryptography in real-world scenarios, and explain the operation of various cryptographic mechanisms. This course will equip you to know deeply the fundamentals of symmetric key ciphers, hash functions and public key ciphers, enabling you to understand and develop secure cryptography solutions in real life cryptography. It will also introduce you to popular cryptographic libraries and APIs for hands-on implementation of security mechanisms, and some prominent cryptographic standards, guidelines and frameworks from the industry and government bodies.",
+        "pre_requisite": "Year 3 Standing AND SC2000",
+        "co_requisite": "",
+        "id": "SC4010"
+    },
+    {
+        "courseCode": "SC4011",
+        "academicUnits": "3",
+        "title": "Security Management",
+        "description": "This course aims to develop your ability to identify the problems associated with (cyber and information) security management and understand using case studies that to effectively address them, one needs to design solutions that encompass multiple dimensions, including technology, people, processes and (internal as well as external) regulations. This course provides an introductory but broad perspective of cyber and information security, and is relevant for anyone pursuing a career in the IT/ICT industry ? including those in product design and development, security engineering, penetration testing, network/system administration, as well as, given the proliferation of IT in all walks of our lives, in executive roles across industries and government.",
+        "pre_requisite": "Year 3 Standing AND SC2006",
+        "co_requisite": "",
+        "id": "SC4011"
+    },
+    {
+        "courseCode": "SC4012",
+        "academicUnits": "3",
+        "title": "Software Security",
+        "description": "This course aims to develop skills in software security. It focuses on security attacks launched by supplying specially crafted inputs to software components that modify the intended behaviours of those components, and the secure coding techniques (defences). The modified behaviours of the software components become security critical in a connected world where application systems are constructed from a collection of software components. Software developers who are not familiar with software security are likely to omit suitable defences out of ignorance. As such, this course will equip you with the deep knowledge about software security attack and defence techniques, a skill necessary to become IT security experts or professional software developers.",
+        "pre_requisite": "Year 3 Standing AND SC2002 AND SC2005",
+        "co_requisite": "",
+        "id": "SC4012"
+    },
+    {
+        "courseCode": "SC4013",
+        "academicUnits": "3",
+        "title": "Application Security",
+        "description": "Web applications have become the cornerstone of our digital lives, yet they also represent a critical vulnerability on the ever-expanding cyber battlefield. Malicious actors relentlessly probe these applications for weaknesses, aiming to steal sensitive data, disrupt operations, or compromise user privacy. In this dynamic landscape, security professionals with expertise in web application security are the cyber sentinels - the highly skilled defenders who identify, assess, and mitigate threats before they can exploit critical vulnerabilities. This intensive course is designed to equip students with the comprehensive knowledge and practical skills necessary to thrive in this in-demand field. Students will gain a deep understanding of web application security principles, master industry-standard testing methodologies, and develop the expertise to identify and exploit vulnerabilities in simulated environments. By the end, students will be well-prepared to launch a successful career as a web application security professional, playing a vital role in protecting our digital infrastructure.",
+        "pre_requisite": "Year 3 Standing AND SC2005 AND SC2008",
+        "co_requisite": "",
+        "id": "SC4013"
+    },
+    {
+        "courseCode": "SC4014",
+        "academicUnits": "3",
+        "title": "Concepts and Techniques for Malware Analysis",
+        "description": "Malware analysis is a specialization within cyber security. Malware attacks are often detrimental to companies or organizations. When malware breaches an organization's defences, the security team needs to act quickly to cure current infections and prevent it from re-occurring. Understanding the capabilities of the malware is critical to an organization's ability to quickly create a signature to prevent the widespread of the malware across the network, to block further communications from the attacker. This understanding could also be translated to valuable knowledge in identifying existing security gaps within an organization's system and fortify defences. This course aims to build a strong foundation to perform triage on malicious software using a variety of system and network monitoring utilities, a disassembler, a debugger and many other freely available tools.",
+        "pre_requisite": "Year 3 Standing AND SC1006 AND SC2005",
+        "co_requisite": "",
+        "id": "SC4014"
+    },
+    {
+        "courseCode": "SC4015",
+        "academicUnits": "3",
+        "title": "Cyber Physical System Security",
+        "description": "Cyber physical systems are typically designed as a network of interacting elements with physical input and output, and are characterized by the interaction between the physical world (sensors, user inputs, actuators) and the cyber world (processing, decision making). Cyber physical systems are the driving force behind modern civilization, being integral part of technologies, such as additive manufacturing, smartcard-based payment, power delivery systems, drone-based operations, and smart home automation. Cyber physical systems are characterized by stringent performance requirements, such as, extremely low energy budget, small area footprint and often hard real-time constraints. Due to the pervasive nature of the cyber physical systems in our everyday lives, it also runs the risk of huge security hazards. In this course, we will learn about the basics of cyber physical systems, including the design principles and methodologies. Further, there will be a detailed treatment of the security challenges for cyber physical systems, which vary in practice due to the diverse nature of the application environment of cyber physical systems. These different forms of security breaches, observed across diverse cyber physical systems, will be put in a well-characterized taxonomy, to be systematically identified as attack surfaces. The techniques to handle these attacks will be described in a generic manner, including key management and wireless/RFID communication. The attack surfaces and protection/mitigation principles will then be elaborated with practical case studies, from the representative cyber physical systems such as automotive, smart card systems and smart grid.",
+        "pre_requisite": "Year 3 Standing AND SC1006",
+        "co_requisite": "",
+        "id": "SC4015"
+    },
+    {
+        "courseCode": "SC4016",
+        "academicUnits": "3",
+        "title": "Cyber Threat Intelligence",
+        "description": "This course aims to introduce Cyber Threat Intelligence as a concept and teach students the approach and different techniques for managing and processing Cyber Threat Intelligence ? from collections to prioritization of assets and to better leverage tactical, operational, and strategic-level threat intelligence as well as to better comprehend, synthesize, and leverage cyber threat intelligence to respond to different cyber situations.",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC4016"
+    },
+    {
+        "courseCode": "SC3020",
+        "academicUnits": "3",
+        "title": "Database System Principles",
+        "description": "Database management systems (DBMS) are designed to manage large and complex data sets. The fundamentals of the implementation of database management systems must be understood by all Computer Science students. This will help students to develop and design software systems utilizing databases, and equip students with the knowledge of managing data of large scale. Moreover, this should be understood by current and future business leaders so that they can offer strategic guidance based on an informed understanding of database business capabilities. This course provides the basis for achieving this goal.",
+        "pre_requisite": "Year 3 Standing AND SC2207",
+        "co_requisite": "",
+        "id": "SC3020"
+    },
+    {
+        "courseCode": "SC4020",
+        "academicUnits": "3",
+        "title": "Data Analytics and Mining",
+        "description": "We live in a world where we are surrounded by systems that are incredibly complex, from the society, a collection of billions individuals, to communications systems, integrating billions of devices, from computers to cell phones. In fact, the existence of living beings in this planet depends on the ability of thousands of proteins to work together in a seamless fashion. Furthermore, our ability to comprehend our surroundings is heavily influenced by the activity of billions of neurons in our brain. Such complex systems can be represented as static or dynamic networks of many interacting components. These components are typically much simpler in terms of behavior or function than the overall system, implying that the additional complexity of the latter is an emergent network property. Network science is a new discipline that investigates the topology and dynamics of such complex networks, aiming to better understand the behavior, function and properties of the underlying systems. In this course, we will study algorithmic, computational, and statistical methods of network science, as well as its applications in solving real-world problems in communications, biology, sociology, and cyber security. The specific topics include network metrics, properties, and models, network querying and analytics, network dynamics, and distributed graph engines. Another pervasive goal of this course is to guide students into the future by presenting research that reveals the ?next big thing? in network science.",
+        "pre_requisite": "Year 3 Standing AND SC2001",
+        "co_requisite": "",
+        "id": "SC4020"
+    },
+    {
+        "courseCode": "SC4021",
+        "academicUnits": "3",
+        "title": "Information Retrieval",
+        "description": "",
+        "pre_requisite": "Year 3 Standing AND SC2001",
+        "co_requisite": "",
+        "id": "SC4021"
+    },
+    {
+        "courseCode": "SC4022",
+        "academicUnits": "3",
+        "title": "Network Science",
+        "description": "We live in a world where we are surrounded by systems that are incredibly complex, from the society, a collection of billions individuals, to communications systems, integrating billions of devices, from computers to cell phones. In fact, the existence of living beings in this planet depends on the ability of thousands of proteins to work together in a seamless fashion. Furthermore, our ability to comprehend our surroundings is heavily influenced by the activity of billions of neurons in our brain. Such complex systems can be represented as static or dynamic networks of many interacting components. These components are typically much simpler in terms of behavior or function than the overall system, implying that the additional complexity of the latter is an emergent network property. Network science is a new discipline that investigates the topology and dynamics of such complex networks, aiming to better understand the behavior, function and properties of the underlying systems. In this course, we will study algorithmic, computational, and statistical methods of network science, as well as its applications in solving real-world problems in communications, biology, sociology, and cyber security. The specific topics include network metrics, properties, and models, network querying and analytics, network dynamics, and distributed graph engines. Another pervasive goal of this course is to guide students into the future by presenting research that reveals the ?next big thing? in network science.",
+        "pre_requisite": "Year 3 Standing AND SC2001",
+        "co_requisite": "",
+        "id": "SC4022"
+    },
+    {
+        "courseCode": "SC4023",
+        "academicUnits": "3",
+        "title": "Big Data Management",
+        "description": "We are in the 'Big Data' era - an extremely large amount of data is created every day. The world of data management has dramatically changed in the 'Big Data' era. This is primarily driven by multiple factors including cheaper storage costs, increasing availability of sensors, smart devices, social software, and availability of cloud computing infrastructure, and cheaper processing cost of large volumes of data due to dramatic advances in modern hardware (e.g., solid state disk, multicore CPUs, large memory). This seismic impact of big data has led to increasing demand in building scalable data infrastructures toward supporting real-world applications. This course aims to provide a broad understanding of big data and current technologies in managing and processing them. Key topics covered in this course include big data 5V's, memory hierarchy and its relation to big data systems, distributed storage and computation of big data, as well as NoSQL key-value stores. Upon completion of this course, you will learn to evaluate issues associated with big data management, learn how the data is stored in a distributed system and how queries and analytics run in parallel, and understand the design philosophy of real-world key-value stores.",
+        "pre_requisite": "Year 3 Standing AND SC2207",
+        "co_requisite": "",
+        "id": "SC4023"
+    },
+    {
+        "courseCode": "SC4024",
+        "academicUnits": "3",
+        "title": "Data Visualisation",
+        "description": "The data visualisation course aims to provide computer science-oriented students with the principles and practice to design and present effective data visualisation solutions for different datasets and visualisation objectives. The course focuses on applying design considerations which take into account the human's visual and psychological characteristics, with the goal of designing effective and ethical visuals. The course also introduces students to the large variety of techniques and tools for visualising, exploring and interacting with both abstract and scientific data.",
+        "pre_requisite": "Year 3 Standing AND SC1003 AND SC2000",
+        "co_requisite": "",
+        "id": "SC4024"
+    },
+    {
+        "courseCode": "SC3030",
+        "academicUnits": "3",
+        "title": "Advanced Computer Networks",
+        "description": "Building upon earlier courses (SC2008), this subject aims to bring students into the realm of real inter-networking. The subject consists of two complementary components. On one hand, several application layer protocols are to be explained, along with their requirements on the underlying networks. One the other hand, practical network design and management methodologies will be introduced; they aim at meeting the application requirements. Emphasis is mostly placed on the practical use and construction of networks, with a bias toward multimedia applications. Advanced materials, such as, peer-to-peer networking will also be covered to prepare the students well for the future career in advanced computer networks.",
+        "pre_requisite": "Year 3 Standing AND SC2008",
+        "co_requisite": "",
+        "id": "SC3030"
+    },
+    {
+        "courseCode": "SC3040",
+        "academicUnits": "3",
+        "title": "Advanced Software Engineering",
+        "description": "Building upon software engineering and design concepts covered in Software Engineering (SC2006), this course aims to introduce advanced software engineering management topics to you including Quality Management, Project Management, Configuration Management, and Maintenance, according to the Software Engineering Body of Knowledge.",
+        "pre_requisite": "Year 3 Standing AND SC2006",
+        "co_requisite": "",
+        "id": "SC3040"
+    },
+    {
+        "courseCode": "SC3050",
+        "academicUnits": "3",
+        "title": "Advanced Computer Architecture",
+        "description": "Processor System Design: CPU interfaces, clock, control, data & address bus; System firmware. The CPU Architecture: including ISA, compiler relationship, control, pipelining, hazards, CISC/RISC/VLIW and issues of ILP. Memory Systems: cache, virtual memory systems and the MMU, access methods, reliability, error detection/correction. Performance Enhancements: superscalar; branching issues, multithreading, scalability, co-processors and enhancement units. Interfacing and Communications: I/O fundamentals, interrupts and interfacing, buses, protocols and arbitration. Computer Arithmetic: range, precision, real numbers, floating point and conversion, multi-precision arithmetic Multiprocessing: multiprocessing architectures and interconnections, shared memory and coherence, memory solutions Future directions: low power computing; testing, JTAG, system-on-chip and multi-core implementations, embedded systems issues, comparison of computational on CPU, DSP, FPGA and GPU.",
+        "pre_requisite": "Year 3 Standing AND SC1006",
+        "co_requisite": "",
+        "id": "SC3050"
+    },
+    {
+        "courseCode": "SC3060",
+        "academicUnits": "3",
+        "title": "Computer Graphics and Visualisation",
+        "description": "Foundation mathematics for computer graphics; Visual rendering pipeline; Virtual reality Modelling Language (VRML) and Extensible 3D (X3D); Geometric shapes; Transformations and motions; Visual Appearance; Rendering",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC3060"
+    },
+    {
+        "courseCode": "SC3061",
+        "academicUnits": "3",
+        "title": "Human-Computer Interaction",
+        "description": "Introduction; Usability and application spaces; Guidelines and principles for text-based interactions; Hardware devices for interaction; Development processes and assessments; Software tools in user interface development; Interaction styles; Practical UI development concepts; Design Issues",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC3061"
+    },
+    {
+        "courseCode": "SC4030",
+        "academicUnits": "3",
+        "title": "WIreless & Mobile Networks",
+        "description": "This course builds upon the foundation network knowledge gained from core courses on Computer Networks (CE3005/CZ3006/SC2008). It aims to introduce students to the realm of mobile networks and communications made possible through wireless technologies. It provides a straightforward and broad survey of wireless voice and data network standards and technologies available today for personal communications. It is designed for those taking an entry-level wireless and mobile technology course or seeking better knowledge of wireless communications and networks. The topics include the technologies being harnessed in Bluetooth and Bluetooth Low Energy to Wifi to cellular telephony and mobile data to 5G wireless technologies to satellite internet and satellite communications. The course content thus spans wireless personal networks (WPAN), wireless local area networks (WLAN) and wireless wide area networks (WWAN).",
+        "pre_requisite": "Year 3 Standing AND SC2008",
+        "co_requisite": "",
+        "id": "SC4030"
+    },
+    {
+        "courseCode": "SC4031",
+        "academicUnits": "3",
+        "title": "Internet of Things: Communications and Networking",
+        "description": "",
+        "pre_requisite": "Year 3 Standing AND SC2008",
+        "co_requisite": "",
+        "id": "SC4031"
+    },
+    {
+        "courseCode": "SC4040",
+        "academicUnits": "3",
+        "title": "Advanced Topics in Algorithms",
+        "description": "This course aims to develop your ability to identify key structural components in algorithms, problems and domains alike, and to exploit them to create provably computationally efficient solutions. This course builds on basic skills obtained in the pre-requisite 'Algorithm Design and Analysis' course to provide you with intricate, elegant and actionable algorithmic design patterns; and develop your skill in exploiting salient problem features to facilitate computation. Algorithms and designs presented in this course were at the beginning of multiple disciplines that now dominate the IT industry, and serve as a stepping stone for your further development for such roles as an algorithms engineer/developer or an applied researcher in computer technologies.",
+        "pre_requisite": "Year 3 Standing AND SC2001",
+        "co_requisite": "",
+        "id": "SC4040"
+    },
+    {
+        "courseCode": "SC4050",
+        "academicUnits": "3",
+        "title": "Parallel Computing",
+        "description": "The course targets equipping students with foundational knowledge and practical skills in parallel computing. It is designed for students with a keen interest in understanding and harnessing the power of parallel architectures and algorithms to solve complex computational problems. It covers theoretical underpinnings, architecture, algorithm design, programming techniques, and emerging models in the domain. The curriculum unfolds across four main segments: 1. Parallel Computation Models and Parallelism: Exploration of parallelism fundamentals and diverse computation models lays the groundwork. 2. Parallel Architectures: Investigation into various architectural designs, including shared-memory, distributed-memory, and data parallel architectures, alongside interconnection networks and communication basics. 3. Parallel Algorithm Design and Programming: Focuses on crafting and implementing efficient parallel algorithms, emphasizing performance optimization and scalability. 4. Emerging Parallel Computing Models: Introduces cutting-edge paradigms such as grid, cloud, and GPGPU computing, highlighting their significance and application. This approach aims to foster a deep understanding of parallel computing's core principles, alongside the development of competencies in parallel programming on actual parallel systems. Students will navigate through the theoretical aspects, practical implementations, and the evolving landscape of parallel computing, preparing them for advanced research or professional practice in this dynamic field.",
+        "pre_requisite": "Year 3 Standing AND SC2001 AND SC3050",
+        "co_requisite": "",
+        "id": "SC4050"
+    },
+    {
+        "courseCode": "SC4051",
+        "academicUnits": "3",
+        "title": "Distributed Systems",
+        "description": "This course introduces the concepts and design of distributed systems. 1. Foundations: characteristics of distributed systems, architectural models, fundamental models, interprocess communication. 2. Middleware: remote method invocation, remote procedure call, name services, CORBA. 3. System Infrastructure: distributed file systems, peer-to-peer systems. 4. Distributed Algorithms: clock synchronization, logical and vector clocks, distributed mutual exclusion, election algorithms, consensus algorithms, replication and fault tolerance.",
+        "pre_requisite": "Year 3 Standing AND SC2005 AND SC2008",
+        "co_requisite": "",
+        "id": "SC4051"
+    },
+    {
+        "courseCode": "SC4052",
+        "academicUnits": "3",
+        "title": "Cloud Computing",
+        "description": "",
+        "pre_requisite": "Year 3 Standing AND SC1004",
+        "co_requisite": "",
+        "id": "SC4052"
+    },
+    {
+        "courseCode": "SC4053",
+        "academicUnits": "3",
+        "title": "Blockchain Technology",
+        "description": "Blockchain Technology has taken the world by storm with its proliferation in an astoundingly diverse array of applications. Cryptocurrencies and a plethora of business use-cases paved the way for inclusive decentralization through innovative incentives and smart contracts. In its modern incarnation, Blockchain offers the promise of immutability, consistency, attribution, authenticity and automation of record-keeping as well as computations within an inherently decentralized operating environment. This elective course in Computer Science and Engineering aims to introduce you to the core technical framework of Blockchain Technology and Cryptocurrencies, encompassing distributed systems, consensus protocols, incentive mechanisms and decentralized applications. You will also learn the major anonymity, security, privacy, scalability and interoperability issues in modern Blockchain, in addition to the relevant enterprise platforms, solutions, applications and regulatory aspects of the technology.",
+        "pre_requisite": "Year 3 Standing AND SC2001 AND MH1812",
+        "co_requisite": "",
+        "id": "SC4053"
+    },
+    {
+        "courseCode": "SC4054",
+        "academicUnits": "3",
+        "title": "Simulation and Modelling",
+        "description": "Basic concepts: system, model, simulation. Different types of simulation: Monte Carlo simulation, continuous system simulation, discrete event simulation. Simulation software: modelling and simulation using Arena. Generating random numbers and random variables for simulation study: LCG, inverse transform, convolution. Analysis of input and output data: MLE, Goodness-of-fit test, confidence interval. Verification and validation: concepts and techniques. Queuing models: properties, performance measures and basic formulas. Comparison of alternative designs: paired-t approach, multiple comparison problem. Variance reduction: CRN, AV.",
+        "pre_requisite": "Year 3 Standing AND SC1007 AND SC2000",
+        "co_requisite": "",
+        "id": "SC4054"
+    },
+    {
+        "courseCode": "SC4060",
+        "academicUnits": "3",
+        "title": "Virtual and Augmented Reality",
+        "description": "Definition of augmented and virtual reality; Human factors and sensory conflict; A generic VR system; 3D real-time computer graphics for VR systems; Physically-based simulation; Virtual reality hardware; Virtual reality software; Virtual reality applications; VRML and X3D; Shared virtual spaces. Each lecture module will be accompanied by typical examination problems and their model solutions which will be studied as hands-on experiences.",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC4060"
+    },
+    {
+        "courseCode": "SC4242",
+        "academicUnits": "3",
+        "title": "Compiler Techniques",
+        "description": "",
+        "pre_requisite": "Year 3 Standing AND SC2107",
+        "co_requisite": "",
+        "id": "SC4242"
+    },
+    {
+        "courseCode": "SC1013",
+        "academicUnits": "2",
+        "title": "Physics For Computing",
+        "description": "Course Content Optics, Electrics, Electronics, and Magnetism. Learning Outcome Upon completion of the course, students should be able to: a. Explain basic knowledge of all the selected topics b. Identify the contribution of physics in some computing systems c. Realize and appreciate the interdisciplinary nature of many innovative systems d. Self-reflect whether you are more aware of the importance of Physics and more sensitive to the progress of physics, and consider to propose novel physics-computing systems",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "SC1013"
+    },
+    {
+        "courseCode": "EG1001",
+        "academicUnits": "2",
+        "title": "Engineers in Society",
+        "description": "This course aims to provide a general understanding of the society we live in and the engineers' roles and responsibilities towards society's well-being. The course is part of broadening education objective in the engineering curriculum. The course covers a wide range of topics including the history of engineering, engineering ethics and practices, sustainability, and contributions by engineers towards society in the future. The students will have a holistic understanding of the role played by engineers and on their impact in society",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "EG1001"
+    },
+    {
+        "courseCode": "SC2107",
+        "academicUnits": "3",
+        "title": "Microprocessor System Design and Development",
+        "description": "This core engineering course aims to develop your understanding of the architecture of a microprocessor system and the software development process of a microprocessor based embedded system. The course will expose you to various design and application considerations involved in developing the software and hardware. This includes power management, signal chain handling, memory interfacing and finite state machine design. All of which will be applied in the laboratory sessions using a microprocessor based robotic hardware as the platform.",
+        "pre_requisite": "SC1006",
+        "co_requisite": "",
+        "id": "SC2107"
+    },
+    {
+        "courseCode": "SC2103",
+        "academicUnits": "3",
+        "title": "Digital System Design",
+        "description": "This course aims to develop skills in digital hardware design to meet basic industry expectations. Here, the principles established in CE1005/CZ1005/SC1005-Digital Logic will be extended to encompass circuits of greater complexity. These circuits are no longer implemented using multiple discrete logic elements, as presented in CE1005/CZ1005/SC1005, but rather use Application Specific Gate Array (ASIC) or Field Programmable Gate Array (FPGA) technologies. Both of these technologies can accommodate circuits of complexity equivalent to many millions of gates. This course will focus on FPGA technology as it is gaining commercial popularity (due to the cost of ASIC Implementations). The necessary logic and connectivity for both technologies is synthesised by software tools from code written in a Hardware Description Language. As such, this course presents you with circuit design techniques for more advanced systems in a methodical manner based on modern design techniques.",
+        "pre_requisite": "SC1005",
+        "co_requisite": "",
+        "id": "SC2103"
+    },
+    {
+        "courseCode": "SC2104",
+        "academicUnits": "3",
+        "title": "Sensors, Interfacing, & Digital Control",
+        "description": "The course aims to teach the students the operation principles of some common digital sensors used in today's control systems design and implementation. Students will also learn the interfacing techniques used to transfer data between the sensors and controller, and how the data can be processed by using appropriate digital signal processing algorithms. Student will then learn the basic operation principles of control systems, and how digital sensors are used in such systems to implement feedback control based on digital controller.",
+        "pre_requisite": "SC1006",
+        "co_requisite": "",
+        "id": "SC2104"
+    },
+    {
+        "courseCode": "SC3102",
+        "academicUnits": "3",
+        "title": "Signals, Systems and Transforms",
+        "description": "This course introduces the students to the basic concepts and theory behind techniques and algorithms used in signal processing systems, a topic that forms an integral part of engineering systems in many diverse areas. Emphasis is on different types of signals and systems, and their interrelation and representation using different orthogonal components. Upon completion, the student should be able to understand the fundaments of signals and linear time invariant (LTI) systems, understand and apply Fourier transforms, Laplace transforms, and Z-transform to the analysis and description of signals and LTI systems, and take advanced level courses on the systems area.",
+        "pre_requisite": "SC1004",
+        "co_requisite": "",
+        "id": "SC3102"
+    },
+    {
+        "courseCode": "SC3103",
+        "academicUnits": "3",
+        "title": "Embedded Programming",
+        "description": "This course aims to teach you how to develop programs for OS based embedded systems that are increasingly been used in many modern embedded systems, ranging from handphones to automotive applications. In this course, you will first learn about the process of developing multitasking programs for embedded systems based on RTOS, its features and its performance metric. You will then learn the programming techniques used in Linux based systems, ranging from the use of toolchain (GCC, Makefile and Linker Script), concurrent programming techniques (IPC, multitasking and multithreading), kernel modules development and its booting process.",
+        "pre_requisite": "SC2107",
+        "co_requisite": "",
+        "id": "SC3103"
+    },
+    {
+        "courseCode": "SC3920",
+        "academicUnits": "10",
+        "title": "Professional Internship (Graded)",
+        "description": "",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC3920"
+    },
+    {
+        "courseCode": "SC4172",
+        "academicUnits": "3",
+        "title": "Internet of Things: Tiny Machine Learning",
+        "description": "In this Tiny Machine Learning (TinyML) course, students will learn the techniques to implement machine learning on resource constrained devices that are to be deployed as smart IoT devices that form the crucial end components in Edge computing. TinyML enables very low power (mW range and below) IoT device (typically a microcontroller) to perform the ML inference on the device in real time, which enable on-device data analytics and improved response time as well as reduces power consumption since the data does not need to be forward to the Cloud for further processing. After attending this course, the students will know the steps required to develop deep learning based applications running TensorFlow Lite for microcontroller. Students will also learn the techniques to optimize performance parameters such as latency, energy, and code size for the implementation of smart IoT devices.",
+        "pre_requisite": "Year 3 Standing AND SC2107",
+        "co_requisite": "",
+        "id": "SC4172"
+    },
+    {
+        "courseCode": "MH1805",
+        "academicUnits": "4",
+        "title": "Calculus",
+        "description": "This course aims to equip you with the subject knowledge, logical reasoning and analytical skills so that you are able to apply the concepts and techniques of calculus of one variable to solve problems encountered in science.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH1805"
+    },
+    {
+        "courseCode": "MH2500",
+        "academicUnits": "4",
+        "title": "Probability and Introduction to Statistics",
+        "description": "This is a core mathematical course, aiming to develop your understanding of fundamental concepts in probability and statistics such as random variables, independence, basic probability distributions, and confidence intervals. The course also prepares you for further statistics courses such as MH3500 in the Statistics Track.",
+        "pre_requisite": "MH1805",
+        "co_requisite": "",
+        "id": "MH2500"
+    },
+    {
+        "courseCode": "MH2802",
+        "academicUnits": "3",
+        "title": "Linear Algebra for Scientists",
+        "description": "This course aims to support you in acquiring a wider range of mathematical concepts related to vector spaces and linear algebra, while also developing a strong set of mathematical skills for upper-level Physical and Computing Science courses. Through a mathematical approach to problem-solving, you will have the opportunity to develop thinking, reasoning, communication, and modelling skills. Additionally, the course aims to help you connect ideas within mathematics and apply mathematical principles in the context of Physical and Computing Science courses. Ultimately, this course seeks to provide an experience that fosters an appreciation for the rigour and abstraction in the discipline.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH2802"
+    },
+    {
+        "courseCode": "SC3021",
+        "academicUnits": "3",
+        "title": "Data Science Fundamentals",
+        "description": "",
+        "pre_requisite": "SC1003",
+        "co_requisite": "",
+        "id": "SC3021"
+    },
+    {
+        "courseCode": "MH3500",
+        "academicUnits": "4",
+        "title": "Statistics",
+        "description": "This course aims to develop your understanding of the statistical concepts of parameter estimation and hypothesis testing that are fundamental for real life applications of statistics as well as for numerous further courses in the curriculum of the statistics track. Further topics in statistics, including: random samples, sample mean and sample variance, distributions derived from the normal distribution, the central lmit theorem; parameter estimation and quality criteria for parameter estimators; the construction of good estimators; method of moments and maximum likelihood method; asymptotic properties of estimators, Cramer-Rao bound and efficient estimators; confidence intervals for estimators; hypothesis testing and Fisher-type tests; Neyman-Pearson tests and Neyman-Pearson Lemma.",
+        "pre_requisite": "MH2500",
+        "co_requisite": "",
+        "id": "MH3500"
+    },
+    {
+        "courseCode": "MH3511",
+        "academicUnits": "3",
+        "title": "Data Analysis with Computer",
+        "description": "In today's business, data analysis plays an important role in making decisions more scientific and helping the business achieve effective operation. By closely examining data we can find patterns to perceive information, and the information can be used to enhance knowledge. This course provides basic concepts for data analysis with the usage of the R programming language. You will learn the skills of plotting, summarising, making inferences, and presenting various types of data.",
+        "pre_requisite": "MH2500",
+        "co_requisite": "",
+        "id": "MH3511"
+    },
+    {
+        "courseCode": "HW0218",
+        "academicUnits": "2",
+        "title": "Communication Across the Sciences",
+        "description": "The aim of the course is to enhance the abilities of science students to recognize and employ effective skills and strategies for written and oral communication in both academic and public settings. On the one hand, the emphasis of this course is on basic micro skills in scientific communication such as searching academic databases, critically reading scientific texts, citing from sources, composing scientific arguments, and making effective presentations. On the other hand, it introduces you to the conventions of scientific texts such as annotated bibliographies and proposals that require a combination of informative, evaluative, and persuasive writing skills. In addition, you will have an opportunity to share your ideas with your peers through group discussions, in-class presentations on current scientific topics and poster presentations of your proposals. Using a pre-determined set of evaluation criteria, you will give feedback to your peers on the course assignments, under the supervision of your tutors. The course will culminate with a poster presentation session where you will present your proposals to the wider scientific community in your schools for an authentic communication experience. Through this course, it is hoped that you will become better communicators when conveying your scientific ideas in writing and speech to your peers and an educated audience.",
+        "pre_requisite": "CC0001",
+        "co_requisite": "",
+        "id": "HW0218"
+    },
+    {
+        "courseCode": "MH2100",
+        "academicUnits": "4",
+        "title": "Calculus III",
+        "description": "Calculus III is a core Mathematics course that extends concepts and techniques developed in Calculus I and Calculus II to the case of functions of several real variables. In other words, we try to do the same things as in Calculus I and II, but in higher dimensions. In this course, we shall discuss the notions of limits, continuity, derivatives and integrals of real-valued and vector-valued functions of many variables. Most of the time, extending these familiar notions from one to several variables requires some degree of ingenuity, and we are going to have to spice up the material from Calculus I and II with a little bit of geometry and linear algebra. Techniques learned in Calculus III are essential for financial analysts, engineers, and for further study in mathematics.",
+        "pre_requisite": "MH1805",
+        "co_requisite": "",
+        "id": "MH2100"
+    },
+    {
+        "courseCode": "SD3920",
+        "academicUnits": "10",
+        "title": "Professional Internship (Graded)",
+        "description": "",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SD3920"
+    },
+    {
+        "courseCode": "SC1015",
+        "academicUnits": "3",
+        "title": "Introduction to Data Science & Artificial Intelligence",
+        "description": "This course will start with the core principles of Data Science, and will equip you with the basic tool and techniques of data handling, exploratory data analysis, data visualization, data-based inference, and data-focussed communication. The course will also introduce you to the fundamentals of Artificial Intelligence - state space representation, uninformed search, and reinforcement learning. The course will motivate you to work closely with data and make data-driven decisions in your field of study. The course will also touch upon ethical issues in Data Science and Artificial Intelligence, and motivate you to explore the cutting-edge applications related to Big Data, Neural Networks and Deep Learning. Python will be the language of choice to introduce hands-on computational techniques.",
+        "pre_requisite": "SC1003",
+        "co_requisite": "",
+        "id": "SC1015"
+    },
+    {
+        "courseCode": "SC4025",
+        "academicUnits": "3",
+        "title": "Developing Data Products",
+        "description": "Data products are products whose principal thrust is to use data to facilitate certain end goals. These products may exhibit varied levels of complexity, spanning from being raw and derived data, intelligence and services derived from or driven by data, enabled by algorithmic and statistical tools such as machine learning. In many data products, the role of data can be subtle and the overall product may be composed of other modules, which could be more prominent in appearance. The scope of this course is confined to the exploration of the life-cycle of typical data products that deploy data-science dominantly or exclusively. We will deconstruct individual components across the full stack: ranging from data acquisition, wrangling and storage, testing, validation, and refinement - spanning exploratory analysis, issues of visualization and presentation, and application of machine learning techniques for decision support, anomaly detection and recommendation systems. We will explore this course with hands-on examples, illustrating how some data products utilize only a subset of these components, while others deploy the wider gamut. This course will also expose techniques to handle various kinds of data on their own and in conjunction, e.g., natural language data, datetime and timeseries, geoseries and graph data; the underlying systems and algorithms to support, analyze and learn using such data to build data products. Overall, in this course, we will describe several fundamental principles, and we will illustrate them in action using hands-on examples and tools. The choice of algorithms and software packages will be representative but not exhaustive. As such, the detailed description of course content uses 'e.g.,' to give possible indicative instances, but the actual delivery of the course may choose other tools, programming languages, frameworks and examples (including or excluding the indicative instances). Furthermore, the instantiation of tools and examples could vary over time, based on practical considerations, e.g., maturity and popularity of the tools among practitioners. The course will be delivered inter-mixing live lectures and hands-on exercises blended with some parts of the lectures offered in pre-recorded TEL format and curated reading materials.",
+        "pre_requisite": "Year 3 Standing AND MH2500",
+        "co_requisite": "",
+        "id": "SC4025"
+    },
+    {
+        "courseCode": "MH3510",
+        "academicUnits": "4",
+        "title": "Regression Analysis",
+        "description": "This course aims to develop your understanding/grasping of the regression models of summarizing the relationship among variables. Linear regression models are widely used today in business, administration, economics, engineering, and the social, health and biological sciences. You should learn the rigorous way to approach regression models and be able to build regression models for real data.",
+        "pre_requisite": "Year 3 Standing AND MH2500 AND MH3500",
+        "co_requisite": "",
+        "id": "MH3510"
+    },
+    {
+        "courseCode": "MH3701",
+        "academicUnits": "4",
+        "title": "Basic Optimisation",
+        "description": "This is a first course in mathematical optimization. It builds the basic knowledge and skills in the theory and techniques of analysing and solving simple optimization models. With these foundations, you will be able to deepen your understanding of more complex optimization models, and their applications to various disciplines in subsequent mathematical optimization and operations research courses.",
+        "pre_requisite": "Year 3 Standing AND MH1201 or MH2800 or MH2802",
+        "co_requisite": "",
+        "id": "MH3701"
+    },
+    {
+        "courseCode": "MH4500",
+        "academicUnits": "4",
+        "title": "Time Series Analysis",
+        "description": "This course provides an introduction to various time series models. It aims to develop your understanding of fundamental models in time series analysis and enable you to build time series models for read data.Introduction to time series models and their applications in economics, engineering and finance. Topics include: trend fitting, autoregressive and moving average models, spectral analysis; seasonality, forecasting and estimation; and the use of computer package to analyze real data sets.",
+        "pre_requisite": "Year 3 Standing AND MH2500 AND MH3500 AND MH3510",
+        "co_requisite": "",
+        "id": "MH4500"
+    },
+    {
+        "courseCode": "MH4501",
+        "academicUnits": "4",
+        "title": "Multivariate Analysis",
+        "description": "This course focuses on the standard methods of multivariate statistical analysis. Many essential data analysis techniques, such as principal component analysis and discriminant analysis, will be covered. This course equips students with the necessary skills for being data analysts.Distribution theory: multivariate normal distribution, Hotelling's T2 and Wishart distributions; inference on the mean and covariance, principal components and canonical correlation; factor analysis, discrimination and classification.",
+        "pre_requisite": "Year 3 Standing AND MH2500 AND MH3500 AND MH3510",
+        "co_requisite": "",
+        "id": "MH4501"
+    },
+    {
+        "courseCode": "MH4511",
+        "academicUnits": "4",
+        "title": "Sampling & Survey",
+        "description": "1. Probability Sampling a Types of Probability Samples b Simple Random Sampling c Estimation of Population Mean, Proportion and Total d Sample Size Estimation e Systematic Sampling 2. Stratified Sampling a Theory of Stratified Sampling b Sampling Weights c Estimation of Population Mean, Proportion and Total d Allocating Observations to Strata e Sample Size Estimation f Defining Strata g Post-stratification 3. Ratio and Regression Estimations a Ratio Estimation b Regression Estimation c Selecting the Sample Size d Relative Efficiency of Estimators 4. Cluster Sampling a One-Stage and Two-Stage Cluster Samplings b Estimation of Population Mean, Proportion and Total c Selecting the Sample Size d Cluster Sampling with Probability Proportional to Size 5. Sampling with Unequal Probabilities a One-Stage Sampling with Replacement b Two-Stage Sampling with Replacement c Unequal-Probability Sampling without Replacement 6. Nonresponse a Effects of Ignoring Nonresponse b Call backs and Two-Phase Sampling c Weighting Methods for Nonresponse d Imputation",
+        "pre_requisite": "Year 3 Standing AND MH2500 AND MH3500",
+        "co_requisite": "",
+        "id": "MH4511"
+    },
+    {
+        "courseCode": "MH4513",
+        "academicUnits": "4",
+        "title": "Survival Analysis",
+        "description": "The course will introduce statistical methods used to analysis time-to-event data. Time-to-event or failure time data, and associated covariate data can be collected under a variety of sampling schemes and very commonly involves right censoring. The distribution of a time-to-event variable is often characterized in terms of its survival or hazard function. The course will cover fundamentals in survival analysis, with emphasis on statistical principal, methods and real life applications. The course will also motivate students to work closely with data and make inference nonparametrically and/or parametrically in the fields of study.",
+        "pre_requisite": "Year 3 Standing AND MH2500 AND MH3500 AND MH3510",
+        "co_requisite": "",
+        "id": "MH4513"
+    },
+    {
+        "courseCode": "MH4515",
+        "academicUnits": "4",
+        "title": "Applied Bayesian Statistics",
+        "description": "",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "MH4515"
+    },
+    {
+        "courseCode": "MH4516",
+        "academicUnits": "4",
+        "title": "Applied Categorical Data Analysis",
+        "description": "",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "MH4516"
+    },
+    {
+        "courseCode": "MH4517",
+        "academicUnits": "4",
+        "title": "Data Applications in Natural Sciences",
+        "description": "This course aims to provide the recent progress on geometric data analysis, topological data analysis, the combination with machine learning models, and their applications in nature data analysis. In this course you will develop skills in geometric and topological modeling, and the analysis of complicated physical/chemical/biological data. Topological data analysis models, including simplicial complex, nerve theorem, homology, cohomology, filtration, persistent homology, Morse theory, Hodge-Laplacian, Reeb graph. Geometric data analysis models, including multidimensional scaling, isomap, diffusion map, spectral graph, manifold learning, differential forms. Geometry and topology based learning, including data representation, feature engineering, molecular/chemical descriptors, graph neural network.",
+        "pre_requisite": "Year 3 Standing AND MH1402 OR MH1403 OR SC2001",
+        "co_requisite": "",
+        "id": "MH4517"
+    },
+    {
+        "courseCode": "MH4518",
+        "academicUnits": "4",
+        "title": "Simulation Techniques in Finance",
+        "description": "This course aims to equip you with standard and advanced simulation techniques and cover their applications in finance, including derivatives pricing and risk management. In this course, you will develop skills in modelling and simulating time series data, and based on which you will be able to devise solutions to quantitative finance problems. Generating random numbers and random variables, generating Brownian motion and other diffusion processes, variance reduction techniques, introduction to futures, options, and other derivatives, pricing exotic options with simulations, estimating sensitivities of derivatives with simulations, and applications in risk management",
+        "pre_requisite": "Year 3 Standing AND MH2500 AND MH3511",
+        "co_requisite": "",
+        "id": "MH4518"
+    },
+    {
+        "courseCode": "CS4022",
+        "academicUnits": "4",
+        "title": "Social Media Mining",
+        "description": "This course covers how to analyse unstructured data such as social media content using text mining techniques. Students will learn various text mining techniques and tools both through lectures and hands-on exercises in labs. The course will also explore various usages of text mining techniques to real world applications.",
+        "pre_requisite": "Year 3 Standing AND SC4020",
+        "co_requisite": "",
+        "id": "CS4022"
+    },
+    {
+        "courseCode": "CS4031",
+        "academicUnits": "4",
+        "title": "Media Planning and Strategies",
+        "description": "",
+        "pre_requisite": "Year 3 Standing ",
+        "co_requisite": "",
+        "id": "CS4031"
+    },
+    {
+        "courseCode": "AB1202",
+        "academicUnits": "3",
+        "title": "Statistics & Analysis",
+        "description": "This course introduces the concepts and methods of statistical inferences: the process of inferring unknowns under uncertainty. Students of this course will also learn programming skills in the R environment for basic statistical analyses. This course consists of three main sections. Section 1 covers elements of probability models. Section 2 covers the basic theories in statistical inferences. Section 3 introduces the basic of two powerful and widely used analytic tools: regression and simulation analysis. Each weekly topic will be supplemented with relevant computer applications in the R environment.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB1202"
+    },
+    {
+        "courseCode": "AB1301",
+        "academicUnits": "3",
+        "title": "Business Law",
+        "description": "The aim of this course is to provide students with the foundational and intellectual skills to navigate the legal aspects of business. Specifically, this course provides a solid foundation on the legal methodology and the main principles of law relating to business transactions. A number of topics will be discussed in this course ranging from the formation of contracts, terms of a contract, breach and termination of a contract, law of agency, business organisations and torts. At the completion of this course, students will gain foundational competencies in how commercial law and business practices inter-relate and often influence each other in shaping modern commerce and industry. Key legal topics will be explained and illustrated from a business perspective. At the completion of this course, students will also gain a deeper understanding of the legal issues impacting on businesses\n ",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB1301"
+    },
+    {
+        "courseCode": "AD1102",
+        "academicUnits": "3",
+        "title": "Financial Accounting",
+        "description": "This course aims to provide you with the necessary introductory accounting knowledge to understand how to use financial statement information to make economic decisions from a user perspective such as investors and creditors. In the process, you will learn to prepare a basic set of financial statements in accordance with the Singapore Financial Reporting Standards. The course also examines the impact of various accounting choices on the financial statements and the incentives that contracts based on accounting numbers can create for different stakeholders. This will help you understand why managers choose certain accounting methods and avoid others. This learning forms the foundation for further studies in areas which require accounting knowledge.\n",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AD1102"
+    },
+    {
+        "courseCode": "AB1601",
+        "academicUnits": "3",
+        "title": "Organisational Behaviour and Design",
+        "description": "Business is in the midst of a revolutionary transformation. Emerging technologies that combine AI, machine learning, cutting-edge visualization techniques, and social robots are fast revolutionizing the business workplace globally. Building a motived workforce is a critical responsibility of managers. To do so, managers must know why people behave in organizations the way they do. Research in cognitive sciences, artificial intelligence and neuroscience has generated significant insights that can enrich our knowledge of people. This course is designed to focus on processes and methods that can improve the attitudes and behaviors of organizational members. You will learn to know more about yourself and others. You will also learn how to influence and predict your own behaviours as well as those of others. Within the context of a world of social media, AI, and machine learning, you will learn various organizational behaviour theories and concepts, and then apply them appropriately to real-life situations to make sense of human behaviours and human-robots interactions at work. This course adopts a flipped classroom approach, which will give you ample opportunity to share your knowledge with others and also learn with them collaboratively.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB1601"
+    },
+    {
+        "courseCode": "AB1003",
+        "academicUnits": "5",
+        "title": "Professional Attachment",
+        "description": "",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB1003"
+    },
+    {
+        "courseCode": "AB0602",
+        "academicUnits": "4",
+        "title": "Communication Management Strategies (HW0288)",
+        "description": "The purpose of this course is to prepare you for the communication challenges that you are likely to meet in rapidly evolving global business environments. It will help you to present yourself confidently, persuasively, and professionally in the way you speak, write and participate in your chosen profession. AB0602 starts with the basic - and well-rounded - premise that Communication Theory, Strategies and Skills are all needed in a highly complementary way for today's young executives preparing for workplace effectiveness. Theory provides a conceptual framework that guides strategy and skills. Strategy allows communicators to make intelligent choices about content, organisation, style, tone, delivery, and timing of messages. Skills are needed to craft effective written documents, give constructive feedback, and create as well as deliver persuasive business presentations. Throughout, the emphasis is on the art of persuasion for effectiveness in the corporate context. In addition, the course addresses other new demands in today's work culture. One such emerging demand is the need for effective Small Group Communication, a skill valued for collaborative work and team building. As such, you will be trained to go beyond prepared presentations to help you operate effectively in contexts which require spontaneous yet formal communication. Such contexts include small talk, meetings, team briefings and group discussions. Another new demand comes with the prevalence of online communication. To prepare for this trend, you will be guided to enhance your Executive Presence (EP) in both face-to-face and online settings, with special emphasis on social media and personal branding. Building on the theoretical foundation provided by EP experts, you will learn how to be an effective communicator across each medium - in-person, written or virtually - and in diverse situations. Finally, this course also offers you the opportunity to acquire an understanding of the method of Principled Negotiation developed by the Harvard Negotiation Project. You will gain hands-on experience in negotiation through engagement in negotiation simulations. To sum up, this course is planned to align with the broader vision of preparing you well for the workplace and address the increasingly complex needs of industry. As Mr. Ong Ye Kung, speaking as Acting Minister for Education (Higher Education and Skills), has noted: 'IHLs (institutes of higher learning) must help students to build up their essential soft skills, such as interpersonal skills, working in teams and across cultures, the ability to communicate well, negotiate effectively, and be resourceful and enterprising.' Approximating the real-world work environment and culture to the extent possible for a course, the teaching approach consistently keeps the final outcome in mind: 'your development as a work-ready young executive able to operate in the corporate context with presence and persuasion.'",
+        "pre_requisite": "CC0001",
+        "co_requisite": "",
+        "id": "AB0602"
+    },
+    {
+        "courseCode": "AB2008",
+        "academicUnits": "1",
+        "title": "Careers II",
+        "description": "This course will help you in your career development journey and prepares you for your future career. You will understand yourself better, realise your strengths and plan and map your career aspirations. Through this course, you will also have a broader understanding of the diverse industries, market requirements and current and future job trends. You will also learn how to stand out on LinkedIn, build your brand and be equipped with networking skills to engage employers and the business community for internships and job opportunities.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB2008"
+    },
+    {
+        "courseCode": "BC2402",
+        "academicUnits": "4",
+        "title": "Designing & Developing Database (SC2207)",
+        "description": "This course introduces participants to design, tools, techniques, and issues concerning the management of data. Data management is the foundation for organizations' business analytics; and for problem solving and decision-making. Participants will analyse a variety of business process, identify data requirements and develop an information system to support business processes and gather information for business analytics. In this course, participants will have an opportunity to apply their design and development competencies by implementing a database solution.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BC2402"
+    },
+    {
+        "courseCode": "BC2406",
+        "academicUnits": "4",
+        "title": "Analytics I: Visual and Predictive Analytics",
+        "description": "Most organizations are data rich and information poor. The large volumes of data in an organization are 'oilfields' rich in information content that are pending extraction with the right tools and models. Analytics involves the art of data exploration, visualization, communication and the science of analyzing large quantities of data in order to discover meaningful patterns and useful insights to support decision-making. The primary objective of this course is to introduce students to various techniques available to extract useful insights from the large volumes of data. At the end of the course, students will not only see the substantial opportunities that exist in real world, but also learn techniques that allow them to exploit these opportunities. This course focus on the use of open source R software, which is one of the key analytics software used in various industries and a critical skillset required in the job market for analytics and data science professionals.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BC2406"
+    },
+    {
+        "courseCode": "AB1201",
+        "academicUnits": "3",
+        "title": "Financial Management",
+        "description": "This course aims to provide business and accounting students with a broad understanding of all the important financial principles, concepts, and analytical tools. This is a first course in finance and is compulsory for all business and accounting students. For students intending to major in banking and finance, this course is an important foundation course in order to better prepare themselves for other advanced courses such as Advanced Corporate Finance, Financial Markets and Institutions, International Financial Management, Investments, Equity Securities, Fixed Income Securities, and Derivatives Securities.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB1201"
+    },
+    {
+        "courseCode": "BC2407",
+        "academicUnits": "4",
+        "title": "Analytics II: Advanced Predictive Analytics",
+        "description": "Previously, BC2406 introduced core concepts of Business Analytics and the important models in used by businesses and governments. However, there are more complex situations that require more sophisticated Analytics solutions. BC2407 is the continuation of BC2406. The main objective of BC2407 is to introduce students to advanced Analytics techniques to extract more useful and deeper insights under more complex realistic situations. At the end of the course, students will see the strengths and weaknesses of standard models, and learn advanced techniques to overcome the weaknesses in various scenarios. This course builds upon open source R software (as learnt in BC2406), and introduced a commercial software SAS, commonly used in Banks, Pharmaceuticals, MNCs and some government agencies. Students will learn the differences between R and SAS in both the model development phrase and in the standard software outputs.",
+        "pre_requisite": "AB1202 AND BC2406",
+        "co_requisite": "",
+        "id": "BC2407"
+    },
+    {
+        "courseCode": "AB1501",
+        "academicUnits": "3",
+        "title": "Marketing",
+        "description": "This course aims to provide you with the opportunity to learn and the application of the basic principles of marketing in the Singapore market. A good understanding of marketing, by itself and in relation to other disciplines, is critical for anyone interested in developing successful and sustainable business enterprises. Hence, this course is a foundational course for marketing that is suitable for all students interested in business and accountancy. At the end of this course, you will be able to develop suitable customer-driven strategies to take advantage of potential market opportunities and manage the marketing process.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "AB1501"
+    },
+    {
+        "courseCode": "AD2102",
+        "academicUnits": "3",
+        "title": "Management Accounting",
+        "description": "This course covers the strategic nature and relevance of managerial accounting for today's competitive business environment. The course adopts a unique user-perspective and emphasis is placed on the development of problem-solving and decision-making skills. Hence the course focuses on the use of essential managerial accounting tools and techniques to provide managerial accounting information for planning and control and to support effective economic decisions. The course also exposes students to real-life scenarios and gives students an opportunity to integrate theories to business practice. The course aims to equip students with analytical skills for problem solving and managerial skills for decision making. After the completion of this course, students should be equipped with a strong conceptual and technical knowledge in managerial accounting. Students should understand and appreciate how managerial accounting information support organizational planning and control, and day-to-day decision making.",
+        "pre_requisite": "AD1102",
+        "co_requisite": "",
+        "id": "AD2102"
+    },
+    {
+        "courseCode": "AB3602",
+        "academicUnits": "3",
+        "title": "Strategic Management",
+        "description": "The purpose of the Strategic Management Course is to develop students' knowledge and skills to identify and evaluate the sources of superior firm performance through applying selected conceptual frameworks. Students will learn to analyse the external and internal environments of the firm, and formulate strategies with the consideration of good corporate governance. This course is appropriate for accounting and business students who have already taken entry-level courses in accounting ratio analyses, organizational behaviour, and marketing. Upon completion of the course, students will be able to critically analyse business issues from a strategic perspective such as why and how firms can achieve sustainable competitive advantages in a highly volatile and competitive global business environment.",
+        "pre_requisite": "AB1501 AND AB1601",
+        "co_requisite": "",
+        "id": "AB3602"
+    },
+    {
+        "courseCode": "HE5091",
+        "academicUnits": "3",
+        "title": "Principles of Economics",
+        "description": "Introduction. Demand and supply. Marginal reasoning and profit maximuzation. Market structure. Externality. Introduction to Macroeconomics. Keynesian Cross Model. Money, banking and financial Institutions. Aggregate demand and aggregate supply. Open economy. International trade.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "HE5091"
+    },
+    {
+        "courseCode": "HE1001",
+        "academicUnits": "3",
+        "title": "Microeconomics I",
+        "description": "The Singaporean Government is increasingly engaging the public, and as economists we are responsible for contributing towards better public decisions. This is especially important as good public policy processes place value on social impact, seeks to understand the behavior of Singapore's diverse society, and makes sense and use of increasingly abundant behavioral data. As the Singaporean economy gets more advanced and complex, and citizens get better educated and informed, we rely on decisions strengthened by sound economic thinking. The economist must move towards more rigorous reasoning across the levels of household, corporate, and public choice. In this course we apply fundamental microeconomic principles complemented by behavioral economics to various current everyday concerns in Singapore. The course aims to deliver a progressive and rigorous introduction to basic concepts and models of microeconomics, applied to current trends local and global. Microeconomics is one of the three core pillars of an Economics major. This is an important module that will serve as a prerequisite for almost all major PE modules. The first part of the course covers the theory of individual decision-making in consumption, risk and labor. The second part of the course covers the theory of firms making production decisions when operating under various market structures, in particular price discrimination with market power and strategic interactions between firms. This course will also expose students to new developments in the field of microeconomics which have now come to assume a central role, in particular behavioral economics. Students will learn basic theories that can be abstract and simple but yet so relevant and powerful in explaining decision problems in our everyday lives. On the one hand, it will give students with either no previous economics training a chance to close the gap with those with a stronger background. On the other hand, it will give everyone a chance to appreciate microeconomics in action right from the start of their education at NTU - a feature that is surprisingly amiss in many Economics undergraduate programs worldwide.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "HE1001"
+    },
+    {
+        "courseCode": "HE1002",
+        "academicUnits": "3",
+        "title": "Macroeconomics I",
+        "description": "The course aims to provide first-year college students with a sound understanding on the structure and functioning of the economy as a whole. As you are taking an introductory course, you are not expected to have any prior knowledge in economics. Instead, the principles you learn from this course will provide a solid foundation and develop a strong interest for your further study of intermediate and advanced macroeconomics.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "HE1002"
+    },
+    {
+        "courseCode": "HE2001",
+        "academicUnits": "3",
+        "title": "Microeconomics II",
+        "description": "Principals of Microeconomics has introduced basic concepts in market and discussed how markets work in general. The aim of this course is to deepen the understanding of behaviors in the market by further examining the decision process of economic agents and the implied welfare consequences. In the first half of the course, we focus on how individuals make their decisions in the market by discussing two broad topics. The first is the analysis of price and income changes in the market. This discussion builds on what have already been covered in Principals of Microeconomics. The second topic is individual decision-making regarding time, risk, and uncertainty where we will also examine how the asset market works. In the second half of the course, we focus on analysing the welfare effects of outcomes in markets and society. To this end, students will learn different measures of welfare and criteria for efficiency, and how perfectly competitive markets help achieve socially optimal outcomes. Subsequently, we will discuss the problems related to making choices for society and how these may be reconciled.",
+        "pre_requisite": "HE1001",
+        "co_requisite": "",
+        "id": "HE2001"
+    },
+    {
+        "courseCode": "HE3001",
+        "academicUnits": "3",
+        "title": "Microeconomics III",
+        "description": "In HE1001 Microeconomics I and HE2001 Microeconomics II, we have covered the core tenets of decision making by firms and individuals, and how perfect competition translates this into efficient outcomes under specific conditions. The main aim of this course is to extend our framework to contexts with less than ?perfect? settings. We will first study the basics of game theory, analysing strategic interactions between small numbers of agents and discuss its applications. Subsequently, we will study various kinds of market frictions and how they can lead to sub-optimal outcomes in the market, covering possible solutions. This will include classical ones like asymmetric information, classical externalities and common access and also newer ones like information technology. Lastly, we will also introduce behavioural economics and how social and psychological elements can be applied to traditional topics in Economics.\n",
+        "pre_requisite": "HE2001",
+        "co_requisite": "",
+        "id": "HE3001"
+    },
+    {
+        "courseCode": "HE2002",
+        "academicUnits": "3",
+        "title": "Macroeconomics II",
+        "description": "The aim of the course is to enhance your understanding of modern developments in macroeconomic theory and offer fresh perspectives on the macroeconomic challenges of today.",
+        "pre_requisite": "HE1002",
+        "co_requisite": "",
+        "id": "HE2002"
+    },
+    {
+        "courseCode": "MH1820",
+        "academicUnits": "3",
+        "title": "Introduction to Statistical Theory and Methods",
+        "description": "This course provides a good foundation in probability and statistical inference. Basic ideas and methodologies in probability and statistics which are useful for economics students are introduced. It also aims to prepare students for higher level applied and theoretical econo-metric courses.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH1820"
+    },
+    {
+        "courseCode": "HE2003",
+        "academicUnits": "3",
+        "title": "Econometrics I",
+        "description": "Discussions of different estimations of the econometric models, their tests and their applications. Topics include the Simple Linear Regression Model, Generalized Linear Regression Models, Dummy variable models, dynamic models and introductory time series models. For each topic, illustrative examples will be employed during the lectures and tutorials.",
+        "pre_requisite": "MH1820",
+        "co_requisite": "",
+        "id": "HE2003"
+    },
+    {
+        "courseCode": "HE3002",
+        "academicUnits": "3",
+        "title": "Macroeconomics III",
+        "description": "This course aims to provide students a broad picture on the pattern of economic growth and development both over time and across countries in the world. It also plans to equip the students with the necessary theoretical tools to understand a set of seminal works and workhorse models in the literature that attempt to understand the empirical pattern.",
+        "pre_requisite": "HE2002",
+        "co_requisite": "",
+        "id": "HE3002"
+    },
+    {
+        "courseCode": "HE3003",
+        "academicUnits": "3",
+        "title": "Econometrics II",
+        "description": "Topics covered include misspecification analysis, maximum likelihood and instrumental variable estimation, univariate time series analysis and autoregressive distributed lag models.",
+        "pre_requisite": "HE2003",
+        "co_requisite": "",
+        "id": "HE3003"
+    },
+    {
+        "courseCode": "SC3026",
+        "academicUnits": "5",
+        "title": "Professional Attachment",
+        "description": "",
+        "pre_requisite": "Year 3 Standing",
+        "co_requisite": "",
+        "id": "SC3026"
+    },
+    {
+        "courseCode": "BF2219",
+        "academicUnits": "3",
+        "title": "Investment",
+        "description": "This is an introductory but demanding course in investments. This course endeavours to provide the basic understanding and tools to conduct portfolio analysis, make investment decisions, and manage portfolios. By the end of this course, students should have a broad understanding of investments and portfolio management. This course covers the analysis of various investment vehicles, allocation of assets, and modern portfolio theory. Students will learn valuation, portfolio construction and evaluation techniques, and apply investment techniques using Excel. Students are expected to review Financial Management. To maximize acquisition of new knowledge, the instructors will not cover overlapping topics with Financial Management, but these topics remain examinable.",
+        "pre_requisite": "AB1202",
+        "co_requisite": "",
+        "id": "BF2219"
+    },
+    {
+        "courseCode": "BE2602",
+        "academicUnits": "3",
+        "title": "Management in Principle, Skills & Competencies",
+        "description": "Management Principles, Skills and Competencies is a comprehensive introductory course on the management process from a manager's perspective, with particular emphasis on the skills, competencies, techniques, and knowledge needed to successfully manage an organization. This course explores the basic concepts and processes of management. You will examine the fundamental roles and processes of planning, leading, organizing, and controlling that comprise the managers' role. It focuses on the entire organization from both a short and long-term perspective for strategic vision, setting objectives, crafting a strategy, and then implementing it. This course will enable you to develop short and long-range plans to effectively accomplish organizational goals. You will develop skills related to the manager's function as required in today's competitive environment. This course examines the logic and working of organizations. It also investigates how organizations develop and maintain competitive advantage within a changing business environment influenced by political, economic, social, technological, legal and environmental [PESTLE] factors. The course content is organized around the four `pillars' of management viz. planning, organizing, leading and control [POLC] for systematic understanding of management-related challenges and applying conceptual tools and techniques in analyzing, evaluating, and addressing management issues1. This course is for undergraduate students to be equipped with fundamental management principles, its application aspects and the essential managerial skills to be a future ready business leader",
+        "pre_requisite": "AB1601",
+        "co_requisite": "",
+        "id": "BE2602"
+    },
+    {
+        "courseCode": "BM2509",
+        "academicUnits": "3",
+        "title": "Consumer Insights",
+        "description": "This course will introduce you to key consumer behavior concepts, thus equipping you - as current or future managers - with the knowledge to discover insights as well as to evaluate and design effective marketing decisions. After the completion of this course, you should be able to understand the psychology of how consumers think, feel, reason, and choose between different alternatives (e.g., brands, products), how social and cultural environments (e.g., friends, family, and culture) influence consumer behaviour, and how marketers can use consumer insights to develop marketing campaigns/strategies to reach their target segments. You will also learn to appreciate the relevance of consumer behaviour for marketers and policymakers.\n ",
+        "pre_requisite": "AB1501",
+        "co_requisite": "",
+        "id": "BM2509"
+    },
+    {
+        "courseCode": "BE1402",
+        "academicUnits": "3",
+        "title": "Business Operations & Process",
+        "description": "This course seeks to provide business and accountancy undergraduates with a rigorous appreciation of the issues and methodologies necessary for ensuring the competitiveness of the operations function in a firm. The course will be taken by first year business and accountancy undergraduates. The course takes an analytics-based 'process management' viewpoint while addressing a range of strategic and tactical issues. After completing this course, you will be able to understand the key tradeoffs required for designing, managing, and improving operations and processes in both manufacturing and service industries. This will give you a sound analytical background for further courses in Business Analytics Specialization, which in turn will prepare you for a future business career where you will be responsible for either managing operations or its interface with other business functions such as marketing, finance, accounting, human resources, and information technology.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BE1402"
+    },
+    {
+        "courseCode": "BF2226",
+        "academicUnits": "3",
+        "title": "Trade Incoterms & Ship Chartering",
+        "description": "The aim of this course is to provide students with the foundational skills needed to negotiate for ocean freight transportation. Specifically, this course provides a solid foundation on how ocean freight transportation works and identify how the intricacies behind ocean freight contract negotiations will affect the profits and losses in international commodity trading.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BF2226"
+    },
+    {
+        "courseCode": "BF2227",
+        "academicUnits": "3",
+        "title": "Commodity Markets",
+        "description": "The course aims to give students a solid understanding of commodities markets with primary focus on agriculture, metals and minerals and energy and chemicals. It focuses on fundamental concepts and terminology necessary for understanding commodity production, transportation, economics and marketing. It also educates students in trading technology trends and innovation and look into sustainability challenges and legal aspects.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BF2227"
+    },
+    {
+        "courseCode": "BF3214",
+        "academicUnits": "2",
+        "title": "Commodities Trading",
+        "description": "This course aims to prepare you for a career in the global commodities markets by introducing you to global commodity market conventions, supply chains, risk management and investment techniques. It will also give you an understanding of the key industry participants and their role across the commodity supply chain. You will also gain valuable insight into market conventions, terminology and best practices in risk management.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BF3214"
+    },
+    {
+        "courseCode": "BF2302",
+        "academicUnits": "2",
+        "title": "International Tax & Trading Law",
+        "description": "BF2302 International Tax and Trading Law introduces students to key income tax and legal concepts and principles of international taxation and trade law. Particular emphasis will be placed on the international tax and legal implications of the international trading of commodities. Relevant case law, the interpretation and application of tax treaties and recent international tax developments, including the OECD's Base Erosion and Profit Shifting (BEPS) Action Plan, will also be covered in the course. The Law segment will cover legal issues of international commercial transactions.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BF2302"
+    },
+    {
+        "courseCode": "BF3226",
+        "academicUnits": "2",
+        "title": "Strategic Management in Commodity Markets",
+        "description": "The aim of this course is to provide students with a good understanding of the important blocks of leadership, crisis management, and sustainability to be successful in commodity trading and commodity markets.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BF3226"
+    },
+    {
+        "courseCode": "BF3212",
+        "academicUnits": "2",
+        "title": "Trade, Structured & Supply Chain Finance",
+        "description": "This course aims to complements other learning obtained in respect of commodity trading, maritime arrangements and legal aspects. Together with the afore-mentioned topics, this course fills essential learning needs for aspirants seeking entry into careers in international trading and commercial banking. You will also learn about products, concepts & practices routinely applicable to the financing of international trade transactions",
+        "pre_requisite": "BF2226",
+        "co_requisite": "",
+        "id": "BF3212"
+    },
+    {
+        "courseCode": "BF3213",
+        "academicUnits": "2",
+        "title": "Enterprise Risk Management in Commodity Markets",
+        "description": "All organizations (especially commodities / energy trading organizations) face a wide range of enterprise risks. This course provides: i) an overview on the range of key risks that continue to challenge these firms ii) how to assess and identify existing and emerging risks facing these firms iii) how to maintain an effective risk management framework to monitor and manage such risks iv) Overview and analysis of basic risk management techniques Managing risk has never been so complex and regulated in a commodities / energy trading organization. Everyone in an organization (trading or non-trading, client facing traders/marketers or finance/IT teams) is expected to understand and manage risk across an organization. Anyone aspiring to have a career in trading, risk management or a job in a trading organization would find value in this course.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "BF3213"
+    },
+    {
+        "courseCode": "ET5211",
+        "academicUnits": "3",
+        "title": "Entrepreneurial Mindset & Technology Innovation",
+        "description": "This course will provide the fundamental knowledge in entrepreneurship and innovation, with the special focus in training the students to develop the entrepreneurial mindset and exposing them to various technology innovation. Specific technology expertise will be brought to the classes to share their knowledge, real life experience, and industry insights. Students will be trained to ask: what are the applications of the new technology, how to use it, who will find it useful, where are the main users, who will pay for it, how to commercialize it?",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "ET5211"
+    },
+    {
+        "courseCode": "ET5213",
+        "academicUnits": "3",
+        "title": "Managing New Ventures",
+        "description": "This course aims to help the students relate theoretical concepts of strategy and organization design with practical and execution issues of manging new ventures in today's economy. Strategies for new venture development and key elements that propel scaling up as well as impede growth will be explored. You will understand the process from starting a new venture to the growth and development of the venture, as well as concepts such as entrepreneurial motivation, new venture types, competitive analysis, go-to market strategies, raising funds for start-ups, harnessing human capital, and execute operations for sustainable growth.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "ET5213"
+    },
+    {
+        "courseCode": "ET5212",
+        "academicUnits": "3",
+        "title": "Entrepreneurial Ecosystems",
+        "description": "Upon completion of this course, you will know how to recognize and evaluate new venture opportunities; will understand the issues faced by entrepreneurs when starting a venture; and will have the fundamental skills and tools required for starting and growing a new business. In addition, you will know and understand the difference between an opportunity and an idea; the value proposition and how it applies to a new venture; the need for sustainable competitive advantage; and the methods to estimate profitability of a new venture. Finally, you will be able to better assess your potential and interest in becoming an entrepreneur.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "ET5212"
+    },
+    {
+        "courseCode": "ET5214",
+        "academicUnits": "3",
+        "title": "Financing Entrepreneurial Ventures",
+        "description": "This course focuses on the special and unique considerations when planning the funding needs of new and young ventures. Many typical avenues of raising funds (such as bank borrowing, issuance of bonds or liquid equities) for established or public-listed companies are usually not available to new and young ventures due to the latter?s lack of business track records. Hence, alternative fund raising avenues for new and young ventures need to be addressed. The analyses and requirements of professional investors in new and young ventures, in particular the venture capital funds, are very different from that of the public-equity investors or fund managers. This course will enable you to learn the approach to raising funds from the professional investors, and to understand the unique requirements of the venture capital funds, so as to enhance the probability of securing funding for your venture. This course is not only relevant for would-be entrepreneurs, but will also benefit students who intend to pursue a career in the venture capital industry or in corporate venture investments.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "ET5214"
+    },
+    {
+        "courseCode": "MH1100",
+        "academicUnits": "4",
+        "title": "Calculus I ",
+        "description": "This core mathematical course aims to provide an introduction to the fundamental mathematical concepts (functions, limits, continuity, derivatives and integrals). Computation of derivatives (sum, product, and quotient formulas, chain rule, and implicit differentiation), and application of derivatives to optimization problems and related rates of change problems will also be discussed. This course lays the foundation for more advanced studies in mathematics, physics, engineering, and other related subjects. List of key topics taught 1. Functions 2. Limit and limit laws 3. Continuity 4. Derivatives and derivative function 5. Differentiation formulas 6. Trigonometric derivatives and chain rules 7. Implicit differentiation 8. Linear approximation and extreme values 9. Mean value theorem 10. Limit and infinity 11. Curve sketching 12. Optimization and Newton?s method 13. Antiderivatives\n ",
+        "pre_requisite": "A or H2 level Mathematics or equivalent.",
+        "co_requisite": "",
+        "id": "MH1100"
+    },
+    {
+        "courseCode": "MH1200",
+        "academicUnits": "4",
+        "title": "Linear Algebra I ",
+        "description": "This is a core course for mathematics students and a suitable elective for engineering students. This course provides a grounding on vectors, matrices, and solving systems of linear equations that is fundamental for future mathematics courses and also many practical applications. The course begins by introducing vectors and matrices, and basic operations on them. We then move into the fundamental topic of solving system of linear equations and learn the Gaussian elimination algorithm, an idea that pervades the entire course. In the second half of the course we revisit these ideas in a more abstract way, learning about general vector spaces, linear independence, and the fundamental subspaces associated with a matrix. These ideas are then applied to finding the least squares solution to an inconsistent system of linear equations.",
+        "pre_requisite": "A or H2 level Mathematics or equivalent.",
+        "co_requisite": "",
+        "id": "MH1200"
+    },
+    {
+        "courseCode": "MH1300",
+        "academicUnits": "4",
+        "title": "Foundation of Mathematics",
+        "description": "Introductory course on core mathematical concepts, including logic and the theory of sets. Topics include: elementary logic, mathematical statements, and quantified statements; sets, operations on sets, Cartesian products, and properties of sets; natural numbers, integers, rational numbers, real numbers, and complex numbers; relations, equivalence relations, and equivalence classes; functions, injective and surjective functions, inverse functions, and composition of functions; division algorithm, greatest common divisor, Euclidean algorithm, fundamental theorem of arithmetic, modulo arithmetic.",
+        "pre_requisite": "A or H2 level Mathematics or equivalent.",
+        "co_requisite": "",
+        "id": "MH1300"
+    },
+    {
+        "courseCode": "MH1101",
+        "academicUnits": "4",
+        "title": "Calculus III",
+        "description": "Further topics in calculus. Topics include: definite integrals; the Fundamental Theorems of Calculus; area of plane regions, volumes of solids, length of arcs; the Mean Value Theorem for integrals; techniques of integration, numerical integration, and improper integrals; monotonic and bounded sequences, Newton's method, infinite series, tests for convergence and divergence, alternating series, and absolute/conditional convergence criteria; differentiation and integration of power series, Taylor series, binomial series, and Fourier series.",
+        "pre_requisite": "MH1100",
+        "co_requisite": "",
+        "id": "MH1101"
+    },
+    {
+        "courseCode": "MH1201",
+        "academicUnits": "4",
+        "title": "Linear Algebra II",
+        "description": "Further topics in linear algebra. Topics include: linear transformations, kernels and images; inner products, inner product spaces, orthonormal sets, and the Gram-Schmidt process; eigenvectors and eigenvalues; matrix diagonalization and its applications; symmetric and Hermitian matrices; quandratic forms and bilinear forms; Jordan normal form and other canonical forms.",
+        "pre_requisite": "MH1200",
+        "co_requisite": "",
+        "id": "MH1201"
+    },
+    {
+        "courseCode": "MH1301",
+        "academicUnits": "4",
+        "title": "Discrete Mathematics",
+        "description": "Introduction to discrete mathematics, including: basics of counting; the inclusion-exclusion principle; the pigeonhole principle; permutations and combinations; the binomial theorem; recurrence relations and linear recurrence relations; graph concepts such as Shortest-, Euler-, Hamilton-Paths and Cycles, coloring, planarity, weighted graphs, and directed graphs.",
+        "pre_requisite": "A or H2 level Mathematics or equivalent.",
+        "co_requisite": "",
+        "id": "MH1301"
+    },
+    {
+        "courseCode": "PS0002",
+        "academicUnits": "3",
+        "title": "Introduction to Data Science and Artificial Intelligence",
+        "description": "This course aims to provide students with an understanding of basic techniques for data analysis, machine learning and dimension reduction for big data and expose them to hands-on computational tools that are fundamental for data science. Besides supervised and unsupervised learning, another fundamental technology of Artificial Intelligence - reinforcement learning will also be introduced, including Markov decision process and Q-learning. It will also show students how they could apply various methods to data examples and case studies from both research and industrial sources in the Singapore context.",
+        "pre_requisite": "PS0001 OR SC1003",
+        "co_requisite": "",
+        "id": "PS0002"
+    },
+    {
+        "courseCode": "MH4900",
+        "academicUnits": "8",
+        "title": "Final Year Project",
+        "description": "Semester-long research course on an advanced topic, under the supervision of a faculty member, leading to a research thesis. Must be taken over two consecutive semesters.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH4900"
+    },
+    {
+        "courseCode": "MH2220",
+        "academicUnits": "3",
+        "title": "Algebra I",
+        "description": "This MAS course aims to introduce group theory that is essential for more advanced algebra courses and applications. The axiomatic concepts serve as a language to study concrete examples in broader sense and helps in developing logical thinking.",
+        "pre_requisite": "(MH1200 OR CY1602) AND MH1300",
+        "co_requisite": "",
+        "id": "MH2220"
+    },
+    {
+        "courseCode": "MH3100",
+        "academicUnits": "4",
+        "title": "Real Analysis",
+        "description": "Basic properties of real numbers, supremum and infimum, completeness axiom, open and closed sets, compact sets, countable sets. Limits and convergence of sequences, subsequences, Bolzano-Weierstrass theorem, Cauchy sequences, infinite series, double summations, products of infinite series. Limits of functions, continuity, uniform continuity, intermediate value theorem, extreme-value theorem. Differentiability, derivatives, intermediate value property, Cauchy mean value theorem, Taylor's theorem, Lagrange's form of the remainder. Sequence and series of functions, uniform convergence and differentiation. Power series, radius of convergence, local uniform convergence of power series.",
+        "pre_requisite": "MH1100 AND MH1101 OR\nCY1601 OR\nMH1802",
+        "co_requisite": "",
+        "id": "MH3100"
+    },
+    {
+        "courseCode": "MH3101",
+        "academicUnits": "4",
+        "title": "Complex Analysis",
+        "description": "Introduction to complex analysis. Topics include: analytic functions of one complex variable, the Cauchy-Riemann equations; contour integrals, Cauchy's theorem and Cauchy's integral formula, maximum modulus theorem, Liouville's theorem, fundamental theorem of algrebra, Morera's theorem; Taylor series, Laurent series, and singularities of analytic functions; the residue theorem and the calculus of residues; Fourier transforms, inversion formula, convolution, and Parseval's formula.",
+        "pre_requisite": "MH2100",
+        "co_requisite": "",
+        "id": "MH3101"
+    },
+    {
+        "courseCode": "MH3220",
+        "academicUnits": "4",
+        "title": "Algebra II",
+        "description": "This MAS course aims to introduce ring theory that is essential for more advanced algebra courses and applications. The axiomatic concepts serve as a language to study concrete examples in broader sense and helps in developing logical thinking.",
+        "pre_requisite": "MH1201 AND MH2220",
+        "co_requisite": "",
+        "id": "MH3220"
+    },
+    {
+        "courseCode": "MH3210",
+        "academicUnits": "4",
+        "title": "Number Theory",
+        "description": "Introduction to basic number theory, including modern applications. Topics include: modular arithmetic; the Chinese remainder theorem, Fermat's little theorem, and Wilson's theorem; number-theoretic functions such as the τ, σ, Euler's φ-function; the Möbius inversion formula; applications to cryptography; primitive roots and indices; Legendre's symbols; the quadratic reciprocity law; continued fractions and Pell's equations; primality tests, factorization of integers, and the RSA cryptosystem.",
+        "pre_requisite": "MH1300",
+        "co_requisite": "",
+        "id": "MH3210"
+    },
+    {
+        "courseCode": "MH3300",
+        "academicUnits": "4",
+        "title": "Graph Theory",
+        "description": "Topics in graph theory, including: connectivity and matchings, Hall's theorem, Menger's theorem, network flows; paths and cycles, complete subgraphs and Turán's theorem, and the Erdös-Stone theorem; graph colouring and the four-colour theorem; Ramsey theory; probabilistic methods in graph theory; and the use of software to solve graph-theoretic problems.",
+        "pre_requisite": "MH1201 AND MH1301 OR MH2802",
+        "co_requisite": "",
+        "id": "MH3300"
+    },
+    {
+        "courseCode": "MH3320",
+        "academicUnits": "4",
+        "title": "Dynamical System Theory with Chaos and Fractals",
+        "description": "Basic concepts of determinism and randomness in the physical world. Topics include dynamical system theory, and the computational and analytical methods for studying chaotic and nonlinear systems.",
+        "pre_requisite": "MH1201 AND MH2100",
+        "co_requisite": "",
+        "id": "MH3320"
+    },
+    {
+        "courseCode": "MH3400",
+        "academicUnits": "4",
+        "title": "Algorithms for the Real World",
+        "description": "Applications of algorithms. Topics include: mathematical concepts for analysis of algorithms; fundamental algorithm design techniques, with applications to various problems: network algorithms, matrix algorithms, optimization algorithms, and algorithms for data analysis and machine learning; and applications to problems in combinatorial optimization, networks, operations research, data analysis and machine learning.",
+        "pre_requisite": "(MH1201 AND MH1301 AND MH1402 AND MH2500) OR (MH1201 AND MH1301 AND MH1403 AND MH2500)",
+        "co_requisite": "",
+        "id": "MH3400"
+    },
+    {
+        "courseCode": "MH3401",
+        "academicUnits": "3",
+        "title": "Signal and Noise in Biology",
+        "description": "Introduction of quantitative biology using a diverse range of phenomena related to signal and noise in biological systems as examples. Students will learn some basic yet essential mathematical techniques and discover how these tools further our understanding of biology and biophysics. ",
+        "pre_requisite": "MH1100 AND MH1101 ",
+        "co_requisite": "",
+        "id": "MH3401"
+    },
+    {
+        "courseCode": "MH3512",
+        "academicUnits": "4",
+        "title": "Stochastic Processes",
+        "description": "Introduction to the theory of stochastic processes, including: gambling problems; random walks; discrete-time Markov chains; first step analysis (hitting probabilities and mean hitting times); classification of states; branching processes; and continuous-time Markov chains.",
+        "pre_requisite": "MH2500",
+        "co_requisite": "",
+        "id": "MH3512"
+    },
+    {
+        "courseCode": "MH3520",
+        "academicUnits": "4",
+        "title": "Mathematics of Deep Learning",
+        "description": "This course investigates deep learning from the perspectives of several mathematical theories: numerical optimisation, statistical learning, function approximation, and coding theory. The aim is to shed some light on why and under what circumstances deep learning can be expected to work well - or not.",
+        "pre_requisite": " MH2100 AND MH3500 AND MH3600 AND PS0001",
+        "co_requisite": "",
+        "id": "MH3520"
+    },
+    {
+        "courseCode": "MH3600",
+        "academicUnits": "4",
+        "title": "Topology and Manifolds",
+        "description": "Introduction to topology and calculus on manifolds. The tools introduced in this course are the natural framework for the generalization of the ideas learnt in Calculus I, II, and III to infinite-dimensional and non-Euclidean spaces. These methods open the door to other fields in mathematics like algebraic topology, functional analysis, differential/Riemannian/symplectic/Poisson geometry, and Lie theory. They also have applications in the physical sciences and engineering, including dynamical systems, mechanics, symmetry analysis, and control theory.\n\nThe aim of this course is to enable you to formulate and solve mathematical problems using the ideas and the formalism coming from topology and global analysis.",
+        "pre_requisite": "MH1803 OR MH2100",
+        "co_requisite": "",
+        "id": "MH3600"
+    },
+    {
+        "courseCode": "MH3700",
+        "academicUnits": "3",
+        "title": "Numerical Analysis I ",
+        "description": "Introduction to the theory and applications of numerical approximation techniques. Topics include: commonly used numerical algorithms; computational errors; numerical methods for solving systems of linear equations; iterative methods for systems of linear equations; polynomial interpolation; numerical integration; and numerical solutions of nonlinear equations.",
+        "pre_requisite": "(MH1200 AND MH1201) OR (MH1800 AND MH2800) OR CY1602 OR MH2802",
+        "co_requisite": "",
+        "id": "MH3700"
+    },
+    {
+        "courseCode": "MH4100",
+        "academicUnits": "4",
+        "title": "Real Analysis II",
+        "description": "Basic topology on the real line and extended real line; measurable sets and measurable functions; Lebesgue integration; differentiation, bounded variation, absolute continuity, and convex functions; classical Banach spaces.",
+        "pre_requisite": "(MH2100 AND MH3100) OR (CY1602 AND MH3100) OR (MH1803 and MH3100)",
+        "co_requisite": "",
+        "id": "MH4100"
+    },
+    {
+        "courseCode": "MH4110",
+        "academicUnits": "4",
+        "title": "Partial Differential Equations",
+        "description": "Advanced course on partial differential equations. Topics include: first-order equations, quasi-linear equations, general first-order equation for a function of two variables, Cauchy problem; wave equation, wave equation in two independent variables, Cauchy problem for hyperbolic equations in two independent variables; the heat equation, the weak maximum principle for parabolic equations, Cauchy problem for heat equation, regularity of solutions to heat equation; the Laplace equation, Green's formulas, harmonic functions, maximum principle for Laplace equation, Dirichlet problem, Green's function and Poisson's formula.",
+        "pre_requisite": "(MH3100 AND MH3110) OR (MH1803 AND MH3100)",
+        "co_requisite": "",
+        "id": "MH4110"
+    },
+    {
+        "courseCode": "MH4200",
+        "academicUnits": "4",
+        "title": "Abstract Algebra II",
+        "description": "Unique factorization domains, Euclidean domains, principal ideal domains; modules, submodules, homomorphisms, quotient modules, modules over principal ideal domains; field extensions, automorphisms of fields, spilitting fields, normal and separable extensions; Galois extensions, Galois groups, Galois correspondence, and finite fields.",
+        "pre_requisite": "MH1201 AND MH3200",
+        "co_requisite": "",
+        "id": "MH4200"
+    },
+    {
+        "courseCode": "MH4300",
+        "academicUnits": "4",
+        "title": "Combinatorics",
+        "description": "Recursions and generating functions; partitions and tableaux; designs, Latin squares, combinatorial designs and projective geometries; extremal combinatorics, asymptotic analysis.",
+        "pre_requisite": "(MH1101 AND MH1201 AND MH1301) OR (MH1802 AND MH1201 AND MH1301)",
+        "co_requisite": "",
+        "id": "MH4300"
+    },
+    {
+        "courseCode": "MH4301",
+        "academicUnits": "4",
+        "title": "Set Theory and Logic",
+        "description": "Partially-ordered sets, well-orderings and order-types, induction and recursion on ordinals, ordinal arithmetic, cardinals, cardinal arithmetic; the axiom of choice and its equivalences; axiom of determinacy; propositional calculus, truth tables, validity and contradictions; predicate calculus with equality, completeness and compactness theorems; the Löwenheim-Skolem theorem.",
+        "pre_requisite": "MH1300 AND MH1301",
+        "co_requisite": "",
+        "id": "MH4301"
+    },
+    {
+        "courseCode": "MH4302",
+        "academicUnits": "4",
+        "title": "Theory of Computing",
+        "description": "Models of computation and finitary representations. Topics include: formal languages and Chomsky's grammars; finite automata, regular expressions, regular grammars, and their equivalence; properties of regular languages: pumping lemma for regular languages and its applications; pushdown automata, context free languages and context free grammars; properties of context free languages: pumping lemma for context free languages; Turing machines: definition and construction for simple problems; the Church-Turing thesis and computability; uncountable numbers and the diagonalization argument; computably enumerable sets and Post’s problem; nondeterministic Turing machines and the classes P and NP; polynomial-time reductions and Cook’s Theorem; sSatisfiability and other NP-complete problems;and Co-NP space.",
+        "pre_requisite": "MH1300 AND MH1301 AND (MH1402 OR MH1403 OR CZ001).",
+        "co_requisite": "",
+        "id": "MH4302"
+    },
+    {
+        "courseCode": "MH4310",
+        "academicUnits": "4",
+        "title": "Coding Theory",
+        "description": "The definition of a linear code, its dimension and its length; generator matrix, parity check matrix and dual code; Hamming distance/weight; Hamming codes; perfect codes; Golay codes; maximum distance separable (MDS) codes; Reed-Mueller codes; BCH codes; Reed-Solomon codes; and bounds on code parameters.",
+        "pre_requisite": "MH2200 AND MH1301",
+        "co_requisite": "",
+        "id": "MH4310"
+    },
+    {
+        "courseCode": "MH4311",
+        "academicUnits": "4",
+        "title": "Cryptography",
+        "description": "Classical ciphers, cryptanalysis, linear complexity; the Data Encryption Standard (DES); the RSA cryptosystem, primality testing and factorization of integers; discrete logarithms; signatures; the Digital Signature Standard.",
+        "pre_requisite": "MH1301",
+        "co_requisite": "",
+        "id": "MH4311"
+    },
+    {
+        "courseCode": "MH4312",
+        "academicUnits": "4",
+        "title": "Topics in Mathematics of Information and Communication",
+        "description": "Introduction to specialized advanced topics related to information theory, coding theory and cryptography. The choice of the topic depends on the instructor.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH4312"
+    },
+    {
+        "courseCode": "MH4320",
+        "academicUnits": "4",
+        "title": "Computational Economics",
+        "description": "Topics included: strategic-form games and domination, Nash Equilibria and mixed strategies, evolutionary game theory, maxmin strategies, zero-sum games, extensive-form games, Zermelo's theorem, subgame-perfect equilibrium, games of incomplete information, single-item auctions, single-parameter environment, Myerson's lemma, VCG mechanisms and combinatorial auctions and revenue equivalence.",
+        "pre_requisite": "(MH1200 AND MH2500) OR (MH2500 AND MH2802)",
+        "co_requisite": "",
+        "id": "MH4320"
+    },
+    {
+        "courseCode": "MH4510",
+        "academicUnits": "4",
+        "title": "Statistical Learning and Data Mining",
+        "description": "Introduction to data analytics; optimal decision rules; K-nearest neighbors methods; linear models for regression; generalized linear models for classification; cross-validation and bootstrap methods; subset selection, ridge regression and lasso; artificial neural networks; classification and regression trees; ensemble methods; support vector machines; association analysis.",
+        "pre_requisite": "MH2500 AND MH3500 AND MH3510 AND MH3511",
+        "co_requisite": "",
+        "id": "MH4510"
+    },
+    {
+        "courseCode": "MH4512",
+        "academicUnits": "4",
+        "title": "Clinical Trials",
+        "description": "Introduction to the design and analysis of clinical trials, with emphasis on the statistical aspects. Topics include: phases of clinical trials; objectives and endpoints, the study cohort, controls, randomization and blinding, sample size determination, treatment allocation; monitoring trial progress: compliance effects, ethical issues, quality of life assessment; data analysis involving multiple treatment groups and endpoints, stratification and subgroup analysis, intent to treat analysis, analysis of compliance data, surrogate endpoints, multi-centre trials; good practice versus misconduct.",
+        "pre_requisite": "MH3500 AND MH3510",
+        "co_requisite": "",
+        "id": "MH4512"
+    },
+    {
+        "courseCode": "MH4514",
+        "academicUnits": "4",
+        "title": "Financial Mathematics",
+        "description": "Discrete-Time martingales; assets, portfolios, and arbitrage; discrete-time models; pricing in discrete time; hedging in discrete time; Brownian motion; stochastic calculus; the Black-Scholes equation; Martingale approach to pricing and hedging; estimation of volatility; basic numerical methods.",
+        "pre_requisite": "MH2500 AND MH3512",
+        "co_requisite": "",
+        "id": "MH4514"
+    },
+    {
+        "courseCode": "MH4519",
+        "academicUnits": "4",
+        "title": "Financial Econometrics",
+        "description": "Introduction to financial econometrics, which refers to the application of statistical tools in finance. Students will learn various econometric methods used in analysing and modelling financial data.",
+        "pre_requisite": "MH2500 OR MH1820",
+        "co_requisite": "",
+        "id": "MH4519"
+    },
+    {
+        "courseCode": "MH4521",
+        "academicUnits": "4",
+        "title": "Reinforcement Learning",
+        "description": "Multi-armed bandits: theory and practice; Markov decision processes (MDPs); Fundamental Theorem of MDPs; Temporal-Difference methods; Policy gradient methods; Model-based reinforcement learning.",
+        "pre_requisite": "MH2500 AND MH3512",
+        "co_requisite": "",
+        "id": "MH4521"
+    },
+    {
+        "courseCode": "MH4522",
+        "academicUnits": "4",
+        "title": "Spatial Data Science",
+        "description": "This course addresses current needs for the statistical modelling of random patterns and structures in spatial contexts, which arise in multiple fields ranging from geophysical, life and earth sciences, to communication engineering and social network analysis. The course approach relies on computational and statistical tools from stochastic geometry, which is the study of random sets and structures in one or higher dimensions.",
+        "pre_requisite": "MH2500",
+        "co_requisite": "",
+        "id": "MH4522"
+    },
+    {
+        "courseCode": "MH4600",
+        "academicUnits": "4",
+        "title": "Algebraic Topology",
+        "description": "Advanced course in algebraic topology. Topics covered include: point-set topology; homotopy; CW- or simplicial complexes; fundamental group; and homology groups.",
+        "pre_requisite": "MH3200 and MH3600",
+        "co_requisite": "",
+        "id": "MH4600"
+    },
+    {
+        "courseCode": "MH4601",
+        "academicUnits": "4",
+        "title": "Differential Geometry",
+        "description": "Advanced course in differential geometry. Topics include: curves; surfaces and curvature; manifolds; differential forms.",
+        "pre_requisite": "MH3100 AND MH3600",
+        "co_requisite": "",
+        "id": "MH4601"
+    },
+    {
+        "courseCode": "MH4700",
+        "academicUnits": "4",
+        "title": "Numerical Analysis II",
+        "description": "Finite difference formulae, consistency of difference schemes, finite difference methods for ordinary differential equations; classification of second-order partial differential equations, first and second order characteristics; matrix method and von Neumann method for stability analysis, Lax's equivalence theorem for convergence, method of characteristics; application to heat equation, wave equation and Poisson's equation.",
+        "pre_requisite": "MH3700 and MH3110",
+        "co_requisite": "",
+        "id": "MH4700"
+    },
+    {
+        "courseCode": "MH4701",
+        "academicUnits": "4",
+        "title": "Mathematical Programming",
+        "description": "One-dimensional optimization: sectioning methods, Newton’s method; unconstrained optimization: optimality conditions, steepest descent method, Newton descent method; set-constrained optimization: optimality conditions, conditional gradient method; constrained optimization: Lagrange multiplier theory, Karush-Kuhn-Tucker theory, augmented Lagrangian method, and barrier method.",
+        "pre_requisite": "(MH2100 AND MH3701) OR (MH1803 AND MH3701)",
+        "co_requisite": "",
+        "id": "MH4701"
+    },
+    {
+        "courseCode": "MH4702",
+        "academicUnits": "4",
+        "title": "Probabilistic Methods in OR",
+        "description": "Introduction to probabilistic methods used in operations research and statistics. Topics include: basic models of queueing, performance analysis, simulation of queueing systems; stochastic programming, modeling and algorithms for stochastic optimization, Markov decision process, and stochastic approximation.",
+        "pre_requisite": "(MH2500 AND MH3701 AND MH3512)",
+        "co_requisite": "",
+        "id": "MH4702"
+    },
+    {
+        "courseCode": "MH4710",
+        "academicUnits": "4",
+        "title": "Topics in Scientific Computing",
+        "description": "Specialized advanced topics in scientific computation and continuous applied mathematics. The choice of the topic depends on the instructor.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "MH4710"
+    },
+    {
+        "courseCode": "PS0001",
+        "academicUnits": "3",
+        "title": "Introduction to Computational Thinking  ",
+        "description": "This course aims to take students from having no prior experience of thinking in a computational manner to a point where they can derive simple algorithms and code the programs to solve some basic problems in mathematics and science in general. It will include topics to appreciate the internal operations of a processor and raise awareness of the socio-ethical issues arising from the pervasiveness of computing technology.",
+        "pre_requisite": "",
+        "co_requisite": "",
+        "id": "PS0001"
+    }
+]

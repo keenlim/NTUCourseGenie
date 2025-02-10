@@ -1,0 +1,18 @@
+{
+    "AI_Engineer": ["SC4001", "SC4002", "SC4003", "SC4061"],
+    "Backend_Engineer": ["SC3020", "SC3030", "SC3040", "SC3050", "SC4012", "SC4013", "SC4040", "SC4052"],
+    "Blockchain_Engineer": ["SC4010", "SC4012", "SC4013", "SC4014", "SC4015", "SC4051", "SC4053"],
+    "Business_Analyst": ["SC3020", "SC3040", "SC4011", "SC4021", "SC4022"],
+    "Cloud_Engineer": ["SC4010", "SC4011", "SC4016", "SC4030", "SC4031", "SC4050", "SC4052", "SC4053"],
+    "Cyber_Security": ["SC3010", "SC4010", "SC4011", "SC4012", "SC4013", "SC4014", "SC4015", "SC4016"],
+    "Data_Analyst": ["SC3020", "SC4001", "SC4020", "SC4021", "SC4022", "SC4040", "SC4052"],
+    "Data_Engineer": ["SC3020", "SC3030", "SC3050", "SC4001", "SC4021", "SC4022", "SC4040", "SC4052"],
+    "Data_Scientist": ["SC4001", "SC4002", "SC4003", "SC4061"],
+    "Devops_Engineer": ["SC3020", "SC3040", "SC4010", "SC4012", "SC4013", "SC4050", "SC4051", "SC4052", "SC4053"],
+    "Frontend_Engineer": ["SC3020", "SC3030", "SC3040", "SC3050", "SC4012", "SC4013", "SC4040", "SC4052"],
+    "Fullstack_Developer": ["SC3020", "SC3030", "SC3040", "SC3050", "SC4012", "SC4013", "SC4040", "SC4052"],
+    "MachineLearning_Engineer": ["SC4000", "SC4001", "SC4002", "SC4003", "SC4061"],
+    "VirtualReality_Developer": ["SC3040", "SC3050", "SC4003", "SC4015", "SC4053", "SC4054", "SC4060"],
+    "Product_Manager": ["SC3020", "SC3040", "SC4000", "SC4003", "SC4011", "SC4012", "SC4016", "SC4031", "SC4052", "SC4172"],
+    "Software_Engineer": ["SC3020", "SC3030", "SC3040", "SC3050", "SC3060", "SC3061", "SC4012", "SC4013", "SC4040", "SC4050", "SC4051", "SC4052", "SC4242"]
+}

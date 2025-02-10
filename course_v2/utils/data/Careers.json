@@ -1,0 +1,456 @@
+[
+    {
+      "career": "Blockchain Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4010",
+        "SC4012",
+        "SC4013",
+        "SC4051",
+        "SC4053",
+        "SC4014",
+        "SC4015"
+      ]
+    },
+    {
+      "career": "DevOps Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC3020",
+        "SC3040",
+        "SC4051",
+        "SC4052",
+        "SC4053",
+        "SC4010",
+        "SC4012",
+        "SC4013",
+        "SC4050"
+      ]
+    },
+    {
+      "career": "Cloud Engineer/Architect",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4052",
+        "SC4053",
+        "SC4030",
+        "SC4031",
+        "SC4010",
+        "SC4011",
+        "SC4016",
+        "SC4050"
+      ]
+    },
+    {
+      "career": "Mixed/Virtual Reality Developer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4060",
+        "SC4053",
+        "SC4003",
+        "SC4015",
+        "SC3050",
+        "SC3040",
+        "SC4054"
+      ]
+    },
+    {
+      "career": "Cyber Security",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC3010",
+        "SC4010",
+        "SC4011",
+        "SC4012",
+        "SC4013",
+        "SC4014",
+        "SC4015",
+        "SC4016"
+      ]
+    },
+    {
+      "career": "Software Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4012",
+        "SC4013",
+        "SC3020",
+        "SC3030",
+        "SC3040",
+        "SC3050",
+        "SC3060",
+        "SC3061",
+        "SC4040",
+        "SC4050",
+        "SC4051",
+        "SC4052",
+        "SC4242"
+      ]
+    },
+    {
+      "career": "Full-stack Developer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4012",
+        "SC4013",
+        "SC3030",
+        "SC3020",
+        "SC3040",
+        "SC3050",
+        "SC4040",
+        "SC4052"
+      ]
+    },
+    {
+      "career": "Front-End Engineer / Web Developer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4012",
+        "SC4013",
+        "SC3030",
+        "SC3020",
+        "SC3040",
+        "SC3050",
+        "SC4040",
+        "SC4052"
+      ]
+    },
+    {
+      "career": "Backend Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4012",
+        "SC4013",
+        "SC3030",
+        "SC3020",
+        "SC3040",
+        "SC3050",
+        "SC4040",
+        "SC4052"
+      ]
+    },
+    {
+      "career": "Data Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4020",
+        "SC4021",
+        "SC4022",
+        "SC3030",
+        "SC4052",
+        "SC4040",
+        "SC3050",
+        "SC3020",
+        "SC4000",
+        "SC4001"
+      ]
+    },
+    {
+      "career": "Business Analyst",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4020",
+        "SC4021",
+        "SC4022",
+        "SC3000",
+        "SC4000",
+        "SC3040",
+        "SC3020",
+        "SC4011"
+      ]
+    },
+    {
+      "career": "Firmware Engineer",
+      "degrees": [
+        "Computer Engineering",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": ["SC4031", "SC4061", "SC4015", "SC4016", "SC4010"]
+    },
+    {
+      "career": "Computer Hardware Engineer",
+      "degrees": [
+        "Computer Engineering",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": ["SC3050", "SC4040", "SC4001", "SC4003", "SC3010"]
+    },
+    {
+      "career": "Embedded System Developer",
+      "degrees": [
+        "Computer Engineering",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC4031",
+        "SC4061",
+        "SC1004",
+        "SC4015",
+        "SC4016",
+        "SC4050",
+        "SC3050"
+      ]
+    },
+    {
+      "career": "AI Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": ["SC3000", "SC4000", "SC4001", "SC4002", "SC4003", "SC4061"]
+    },
+    {
+      "career": "Machine Learning Engineer",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": ["SC3000", "SC4000", "SC4001", "SC4002", "SC4003", "SC4061"]
+    },
+    {
+      "career": "Data Scientist",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": ["SC3000", "SC4000", "SC4001", "SC4002", "SC4003", "SC4061"]
+    },
+    {
+      "career": "Data Analyst",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC3000",
+        "SC4000",
+        "SC4001",
+        "SC4002",
+        "SC4020",
+        "SC4021",
+        "SC4022",
+        "SC3020",
+        "SC4040",
+        "SC4052"
+      ]
+    },
+    {
+      "career": "AI Scientist",
+      "degrees": ["Data Science and Artificial Intelligence"],
+      "electives": [
+        "SC3000",
+        "SC4000",
+        "SC4001",
+        "SC4002",
+        "SC4003",
+        "SC4061",
+        "SC4172",
+        "SC4010",
+        "SC4014",
+        "SC4016",
+        "SC4050",
+        "SC4051",
+        "SC4060"
+      ]
+    },
+    {
+      "career": "System Architect",
+      "degrees": [
+        "Computer Engineering",
+        "Double Degree in Computer Engineering and Business"
+      ],
+      "electives": [
+        "SC3030",
+        "SC4030",
+        "SC4031",
+        "SC4051",
+        "SC4052",
+        "SC4010",
+        "SC4012",
+        "SC4013",
+        "SC4015",
+        "SC4053",
+        "SC3050"
+      ]
+    },
+    {
+      "career": "Cybersecurity Consultant/Analyst",
+      "degrees": ["Double Degree in Computer Science and Business"],
+      "electives": [
+        "SC3010",
+        "SC4010",
+        "SC4011",
+        "SC4012",
+        "SC4013",
+        "SC4014",
+        "SC4015",
+        "SC4016"
+      ]
+    },
+    {
+      "career": "Product Manager",
+      "degrees": [
+        "Computer Science",
+        "Computer Engineering",
+        "Data Science and Artificial Intelligence",
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business",
+        "Double Degree in Computer Science and Economics",
+        "Double Degree in Computer Engineering and Economics"
+      ],
+      "electives": [
+        "SC3000",
+        "SC4000",
+        "SC4003",
+        "SC4011",
+        "SC4012",
+        "SC3020",
+        "SC3040",
+        "SC4052",
+        "SC4031",
+        "SC4172",
+        "SC4016"
+      ]
+    },
+    {
+      "career": "Entrepreneur",
+      "degrees": [
+        "Double Degree in Computer Science and Business",
+        "Double Degree in Computer Engineering and Business"
+      ],
+      "electives": [
+        "SC3000",
+        "SC4000",
+        "SC4020",
+        "SC3040",
+        "SC3020",
+        "SC4053",
+        "SC4011",
+        "SC4012"
+      ]
+    },
+    {
+      "career": "Quantitative Analyst/Developer",
+      "degrees": ["Double Degree in Computer Science and Economics"],
+      "electives": [
+        "SC4000",
+        "SC4001",
+        "SC4020",
+        "SC4021",
+        "SC4040",
+        "SC4050",
+        "SC4052"
+      ]
+    }
+  ]

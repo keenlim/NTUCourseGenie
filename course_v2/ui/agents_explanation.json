@@ -1,0 +1,12 @@
+{
+   "history": "Incorporate the passed messages",
+   "guardrails": "Validate whether the questions is related to Course Planning.",
+   "generate_final_answer": "Combining the initial question with the database output to produce a relevant response.",
+   "entity_identifier":"Retrieve relevant entities from the query.",
+   "ai_search_retriever": "Search the relevant entities to check if these entities exist using AI Search, VectorRAG",
+   "rewrite_query": "Rewrite the query to ensure that queries are coherent",
+   "generate_cypher": "Generate cypher based on few-shot prompting.",
+   "validate_cypher": "Check and validate the Cypher generated.",
+   "execute_cypher": "Execute cypher query to retrieve relevant information.",
+   "correct_cypher": "Correct the cyphe query to eliminate errors."
+}
