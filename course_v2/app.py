@@ -3,7 +3,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from msal import ConfidentialClientApplication
 from streamlit_msal import Msal
-from login_ui import login_ui
+from login_utils.login_ui import login_ui
 
 load_dotenv(override=True)
 
