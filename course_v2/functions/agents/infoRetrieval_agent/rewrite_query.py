@@ -45,7 +45,9 @@ def rewrite_query(query: str, retrieverResults, entities: SearchList, user_profi
                     Examples of closest match questions are also provided. Hence, you should structure the query to match the examples. 
                     NOTE: If the original query does not contain any wording 'next semester', you SHOULD NOT need to provide information about the semesters. 
 
-                    You are to ensure that the semantics of the questions does not change. 
+                    If the original query contains information about a specific year and semester, you should refer to the year and semester information provided from the query. Do NOT Change the year and semeseter information from the original query.
+
+                    The user information should not overwrite the original query. You should also not exclue any 'type' information of courses such as 'ICC', 'MPE', 'BDE' from the query
 
                     Original Query: 
                     {query}

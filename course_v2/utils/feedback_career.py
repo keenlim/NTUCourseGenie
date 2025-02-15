@@ -15,7 +15,7 @@ Output:
 - Weakness (:str)
 """
 
-model = AzureChatOpenAI(model="gpt-4o-mini-lke")
+model = AzureChatOpenAI(model="gpt-4o-mini-lke",temperature=0)
 
 class CareerFeedback(BaseModel):
     career: Literal["Blockchain Engineer", "DevOps Engineer", "Cloud Engineer/Architect", "Mixed/Virtual Reality Developer", "Cyber Security", "Software Engineer", "Full-stack Developer", "Front-End Engineer / Web Developer", "Backend Engineer", "Data Engineer", "Business Analyst", "Firmware Engineer", "Computer Hardware Engineer", "Embedded System Developer","AI Engineer", "Machine Learning Engineer", "Data Scientist", "Data Analyst", "AI Scientist", "System Architect", "Cybersecurity Consultant/Analyst", "Product Manager", "Entrepreneur", "Quantitative Analyst/Developer"] = Field(

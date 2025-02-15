@@ -15,6 +15,10 @@ def graph_few_shot_examples():
         "query": "MATCH (c:Course {{courseCode: 'SC1003'}}) OPTIONAL MATCH (preYear:yearStanding)-[:PRE_REQUISITE_FOR]->(c) WITH c, COLLECT(preYear.year) AS yearReqs OPTIONAL MATCH (g:PrerequisiteGroup)-[:PRE_REQUISITE_FOR]->(c) OPTIONAL MATCH (g)-[:REQUIRES]->(preGroupCourse:Course) WITH c, yearReqs, g, COLLECT(DISTINCT preGroupCourse.courseCode) AS groupReqs OPTIONAL MATCH (preDirect:Course)-[:PRE_REQUISITE_FOR]->(c) WITH yearReqs, groupReqs, g, COLLECT(DISTINCT preDirect.courseCode) AS directReqs RETURN yearReqs, g.logicType AS groupLogic, g.groupId AS groupId, groupReqs, directReqs"
     },
     {
+        "question": "Does SC1003 have any prerequisites?",
+        "query": "MATCH (c:Course {{courseCode: 'SC1003'}}) OPTIONAL MATCH (preYear:yearStanding)-[:PRE_REQUISITE_FOR]->(c) WITH c, COLLECT(preYear.year) AS yearReqs OPTIONAL MATCH (g:PrerequisiteGroup)-[:PRE_REQUISITE_FOR]->(c) OPTIONAL MATCH (g)-[:REQUIRES]->(preGroupCourse:Course) WITH c, yearReqs, g, COLLECT(DISTINCT preGroupCourse.courseCode) AS groupReqs OPTIONAL MATCH (preDirect:Course)-[:PRE_REQUISITE_FOR]->(c) WITH yearReqs, groupReqs, g, COLLECT(DISTINCT preDirect.courseCode) AS directReqs RETURN yearReqs, g.logicType AS groupLogic, g.groupId AS groupId, groupReqs, directReqs"
+    },
+    {
         "question": "Prerequisite of SC3000",
         "query": "MATCH (c:Course {{courseCode: 'SC3000'}}) OPTIONAL MATCH (preYear:yearStanding)-[:PRE_REQUISITE_FOR]->(c) WITH c, COLLECT(preYear.year) AS yearReqs OPTIONAL MATCH (g:PrerequisiteGroup)-[:PRE_REQUISITE_FOR]->(c) OPTIONAL MATCH (g)-[:REQUIRES]->(preGroupCourse:Course) WITH c, yearReqs, g, COLLECT(DISTINCT preGroupCourse.courseCode) AS groupReqs OPTIONAL MATCH (preDirect:Course)-[:PRE_REQUISITE_FOR]->(c) WITH yearReqs, groupReqs, g, COLLECT(DISTINCT preDirect.courseCode) AS directReqs RETURN yearReqs, g.logicType AS groupLogic, g.groupId AS groupId, groupReqs, directReqs",
     },
@@ -31,8 +35,16 @@ def graph_few_shot_examples():
         "query": "MATCH (d:Degree {{degreeCode: 'CSC'}})-[:HAS_SPECIALISATION_TRACK]->(st:SpecialisationTrack) RETURN st"
     },
     {
+        "question": "What are the specialisation track for Computer Engineering (CE) degree programme.",
+        "query": "MATCH (d:Degree {{degreeCode: 'CE'}})-[:HAS_SPECIALISATION_TRACK]->(st:SpecialisationTrack) RETURN st"
+    },
+    {
         "question": "Find all courses in the AI Specialisation Track for Computer Science (CSC) degree programme",
         "query": "MATCH (d:Degree {{degreeCode: 'CSC'}})-[:HAS_SPECIALISATION_TRACK]->(st:SpecialisationTrack {{specialisation_id:'CSC_Artificial_Intelligence'}})-[:CONTAINS]->(c) RETURN c"
+    },
+    {
+        "question": "List down the core courses available in DSAI degree programme?",
+        "query": "MATCH (d: Degree {{degreeCode: 'DSAI'}})<-[:OFFERED_BY]-(c:Course)-[:HAS_TYPE]->(t:Type {{typeName: 'Core'}}) RETURN c.courseCode, c.title"
     },
     {
         "question": "Find all courses that are of type 'Core'",
@@ -43,7 +55,15 @@ def graph_few_shot_examples():
         "query": "MATCH (ys:yearStanding {{year: 'Year 3'}})-[:PRE_REQUISITE_FOR]->(c:Course) RETURN c.courseCode, c.title"
     },
     {
-        "question": "Find the co-requisite for a particular course.",
+        "question": "List down all courses that requires a year standing of 3",
+        "query": "MATCH (ys:yearStanding {{year: 'Year 3'}})-[:PRE_REQUISITE_FOR]->(c:Course) RETURN c.courseCode, c.title"
+    },
+    {
+        "question": "Find all courses requiring a year Standing of 3 in the Computer Engineering Programme",
+        "query": "MATCH (ys:yearStanding {{year: 'Year 3'}})-[:PRE_REQUISITE_FOR]->(c:Course)-[:OFFERED_BY]->(d:Degree {{degreeCode: 'CE'}}) RETURN c.courseCode, c.title"
+    },
+    {
+        "question": "Find the co-requisite for course SC1004.",
         "query": "MATCH (coreq:Course)-[:CO_REQUISITE_FOR]->(c:Course {{courseCode: 'SC1004'}}) RETURN coreq.courseCode, coreq.title"
     },
     {
@@ -52,11 +72,11 @@ def graph_few_shot_examples():
     },
     {
         "question": "I want to know more about SC1007 courses offered by Computer Science Programme.",
-        "query": "MATCH (d:Degree {{degreeCode:'CSC'}})<-[:OFFERED_BY]-(c:Course {{courseCode: 'SC1007'}}) RETURN c"
+        "query": "MATCH (d:Degree {{degreeCode:'CSC'}})<-[:OFFERED_BY]-(c:Course {{courseCode: 'SC1007'}}) OPTIONAL MATCH (preYear:yearStanding)-[:PRE_REQUISITE_FOR]->(c) WITH c, COLLECT(preYear.year) AS yearReqs OPTIONAL MATCH (g:PrerequisiteGroup)-[:PRE_REQUISITE_FOR]->(c) OPTIONAL MATCH (g)-[:REQUIRES]->(preGroupCourse:Course) WITH c, yearReqs, g, COLLECT(DISTINCT preGroupCourse.courseCode) AS groupReqs OPTIONAL MATCH (preDirect:Course)-[:PRE_REQUISITE_FOR]->(c) WITH c, yearReqs, groupReqs, g, COLLECT(DISTINCT preDirect.courseCode) AS directReqs RETURN c, yearReqs, g.logicType AS groupLogic, g.groupId AS groupId, groupReqs, directReqs"
     },
     {
         "question": "Tell me more about SC1007",
-        "query": "MATCH (c:Course {{courseCode: 'SC1007'}}) RETURN c"
+        "query": "MATCH (c:Course {{courseCode: 'SC1007'}}) OPTIONAL MATCH (preYear:yearStanding)-[:PRE_REQUISITE_FOR]->(c) WITH c, COLLECT(preYear.year) AS yearReqs OPTIONAL MATCH (g:PrerequisiteGroup)-[:PRE_REQUISITE_FOR]->(c) OPTIONAL MATCH (g)-[:REQUIRES]->(preGroupCourse:Course) WITH c, yearReqs, g, COLLECT(DISTINCT preGroupCourse.courseCode) AS groupReqs OPTIONAL MATCH (preDirect:Course)-[:PRE_REQUISITE_FOR]->(c) WITH c, yearReqs, groupReqs, g, COLLECT(DISTINCT preDirect.courseCode) AS directReqs RETURN c, yearReqs, g.logicType AS groupLogic, g.groupId AS groupId, groupReqs, directReqs"
     },
     {
         "question": "Can you provide details about the course SC1003, including its prerequisites and content?",
@@ -64,6 +84,10 @@ def graph_few_shot_examples():
     },
     {
         "question": "What are the courses I am supposed to take in Year 2 as a Computer Science student?",
+        "query": "MATCH (n:ScheduledOffering {{offeringId: 'CSC_Y2S1'}})-[:INCLUDES]->(c:Course) RETURN c as course UNION MATCH (n2:ScheduledOffering {{offeringId: 'CSC_Y2S2'}})-[:INCLUDES]->(c:Course)  RETURN c as course"
+    },
+    {
+        "question": "What courses are recommended for a Computer Science student to take in Year 2?",
         "query": "MATCH (n:ScheduledOffering {{offeringId: 'CSC_Y2S1'}})-[:INCLUDES]->(c:Course) RETURN c as course UNION MATCH (n2:ScheduledOffering {{offeringId: 'CSC_Y2S2'}})-[:INCLUDES]->(c:Course)  RETURN c as course"
     },
     {
@@ -75,6 +99,10 @@ def graph_few_shot_examples():
         "query": "MATCH (n:ScheduledOffering {{offeringId: 'CE_Y1S1'}})-[:INCLUDES]->(c:Course) RETURN c as course"
     },
     {
+        "question": "Which modules should a DSAI student take in Year 2 Semester 1.",
+        "query": "MATCH (n:ScheduledOffering {{offeringId: 'DSAI_Y2S1'}})-[:INCLUDES]->(c:Course) RETURN c.courseCode as courseCode, c.title as title"
+    },
+    {
         "question": "I am a Computer Science student, what are the courses I am supposed to take in Year 3 Semester 1.",
         "query": "MATCH (n:ScheduledOffering {{offeringId: 'CSC_Y3S1'}})-[:INCLUDES]->(c:Course) RETURN c as course"
     },
@@ -84,23 +112,23 @@ def graph_few_shot_examples():
     },
     {
         "question": "Can you list all 3k Computer Science Courses without description?",
-        "query": "MATCH(d:Degree {degreeCode:'CSC'})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC3' OR c.courseCode STARTS WITH 'MH3' OR c.courseCode STARTS WITH 'AB3' RETURN c.courseCode, c.title"
+        "query": "MATCH(d:Degree {{degreeCode:'CSC'}})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC3' OR c.courseCode STARTS WITH 'MH3' OR c.courseCode STARTS WITH 'AB3' RETURN c.courseCode, c.title"
     },
     {
         "question": "What are the 4k modules available in DSAI degree?",
-        "query": "MATCH(d:Degree {degreeCode:'DSAI'})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC4' OR c.courseCode STARTS WITH 'MH4' OR c.courseCode STARTS WITH 'AB4' RETURN c.courseCode, c.title"
+        "query": "MATCH(d:Degree {{degreeCode:'DSAI'}})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC4' OR c.courseCode STARTS WITH 'MH4' OR c.courseCode STARTS WITH 'AB4' RETURN c.courseCode, c.title"
     },
     {
         "question": "List down all the 4k modules offered by the Computer Engineering Programmer (CE)",
-        "query": "MATCH(d:Degree {degreeCode:'CE'})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC4' OR c.courseCode STARTS WITH 'MH4' OR c.courseCode STARTS WITH 'AB4' RETURN c.courseCode, c.title"
+        "query": "MATCH(d:Degree {{degreeCode:'CE'}})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC4' OR c.courseCode STARTS WITH 'MH4' OR c.courseCode STARTS WITH 'AB4' RETURN c.courseCode, c.title"
     },
     {
         "question": "Can you tell me all the 4k courses offered by Business and Computer Science Double Degree (BCG) degree programme?",
-        "query": "MATCH(d:Degree {degreeCode:'BCG'})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC4' OR c.courseCode STARTS WITH 'MH4' OR c.courseCode STARTS WITH 'AB4' RETURN c.courseCode, c.title"
+        "query": "MATCH(d:Degree {{degreeCode:'BCG'}})<-[:OFFERED_BY]-(c) WHERE c.courseCode STARTS WITH 'SC4' OR c.courseCode STARTS WITH 'MH4' OR c.courseCode STARTS WITH 'AB4' RETURN c.courseCode, c.title"
     },
     {
         "question": "As a Computer Science student, how many academic units do I have to complete before graduation?",
-        "query": "MATCH (n:Degree {degreeCode: 'CSC'})-[:HAS_AU_REQUIREMENTS]->(a:AURequirement {AUCode: 'CSC_TOTAL'}) RETURN a.Total as TotalAcademicUnits"
+        "query": "MATCH (n:Degree {{degreeCode: 'CSC'}})-[:HAS_AU_REQUIREMENTS]->(a:AURequirement {{AUCode: 'CSC_TOTAL'}}) RETURN a.Total as TotalAcademicUnits"
     },
     {
         "question": "Can you recommend me some Artificial intelligence courses offered by the Computer Science Programme?", 
@@ -121,6 +149,26 @@ def graph_few_shot_examples():
     {
         "question": "I am a Computer Science student, can you recommend some courses in the Artificial Intelligence Specialisation Track.",
         "query": "MATCH (d: Degree {{degreeCode: 'CSC'}})-[:HAS_SPECIALISATION_TRACK]->(s: SpecialisationTrack {{specialisation_id: 'CSC_Artificial_Intelligence'}})-[:CONTAINS]->(c) RETURN c.courseCode, c.title"
+    },
+    {
+        "question": "Show me the complete details of course SC4000, including its prerequisites and academic units.",
+        "query": "MATCH (c:Course {{courseCode: 'SC4000'}}) OPTIONAL MATCH (preYear:yearStanding)-[:PRE_REQUISITE_FOR]->(c) WITH c, COLLECT(preYear.year) AS yearReqs OPTIONAL MATCH (g:PrerequisiteGroup)-[:PRE_REQUISITE_FOR]->(c) OPTIONAL MATCH (g)-[:REQUIRES]->(preGroupCourse:Course) WITH c, yearReqs, g, COLLECT(DISTINCT preGroupCourse.courseCode) AS groupReqs OPTIONAL MATCH (preDirect:Course)-[:PRE_REQUISITE_FOR]->(c) WITH c, yearReqs, groupReqs, g, COLLECT(DISTINCT preDirect.courseCode) AS directReqs RETURN c, yearReqs, g.logicType AS groupLogic, g.groupId AS groupId, groupReqs, directReqs"
+    },
+    {
+        "question": "As a computer engineering student, when do I have to take CC0006 course?",
+        "query": "MATCH (d:Degree {{degreeCode: 'CE'}})-[:HAS_SCHEDULED_OFFERING]->(so:ScheduledOffering)-[:INCLUDES]-(c:Course {{courseCode: 'CC0006'}}) RETURN so"
+    },
+    {
+        "question": "What ICC courses I have to complete as a DSAI student.",
+        "query": "MATCH (c:Course)-[:HAS_TYPE]->(t: Type {{typeName: 'Common-Core'}}) MATCH (c)-[:OFFERED_BY]->(d: Degree {{degreeCode: 'DSAI'}}) c.courseCode, c.title",
+    },
+    {
+        "question": "Is course SC2008 offered in Computer Science degree?",
+        "query": "MATCH (d:Degree {{degreeCode:'CSC'}})<-[:OFFERED_BY]-(c:Course {{courseCode:'SC2008'}}) RETURN c",
+    },
+    {
+        "question": "As a CE student, is SC3000 offered in Computer Engineering Degree?",
+        "query": "MATCH (d:Degree {{degreeCode:'CE'}})<-[:OFFERED_BY]-(c:Course {{courseCode:'SC3000'}}) RETURN c",
     }
     ]
     return examples

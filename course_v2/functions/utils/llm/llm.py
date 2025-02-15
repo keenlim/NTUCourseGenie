@@ -18,10 +18,10 @@ def gpt_4o_openai():
 
 # Azure OpenAI Models
 def gpt_4o_mini_azure():
-    return AzureChatOpenAI(model="gpt-4o-mini-lke")
+    return AzureChatOpenAI(model="gpt-4o-mini-lke", temperature=0)
 
 def gpt_4o_azure():
-    return AzureChatOpenAI(model="ANV2Exp-AzureOpenAI-NorthCtrlUS-TWY-GPT4o")
+    return AzureChatOpenAI(model="ANV2Exp-AzureOpenAI-NorthCtrlUS-TWY-GPT4o", temperature=0)
 
 def azure_text_embedding():
     return AzureOpenAIEmbeddings(

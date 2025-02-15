@@ -25,8 +25,8 @@ class GraphRetrieval:
         self.enhanced_graph = Neo4jGraph(enhanced_schema=True)
         self.enhanced_graph.refresh_schema()
         # print(self.enhanced_graph.schema)
-        self.llm = AzureChatOpenAI(model="gpt-4o-mini-lke")
-        self.llm_4o = AzureChatOpenAI(model="ANV2Exp-AzureOpenAI-NorthCtrlUS-TWY-GPT4o")
+        self.llm = AzureChatOpenAI(model="gpt-4o-mini-lke", temperature=0)
+        self.llm_4o = AzureChatOpenAI(model="ANV2Exp-AzureOpenAI-NorthCtrlUS-TWY-GPT4o", temperature=0)
         self.azure_embeddings = AzureOpenAIEmbeddings(
                 azure_deployment=os.environ.get('TEXT_EMBEDDING_MODEL_DEPLOYMENT'),
                 api_key = os.environ.get('AZURE_OPENAI_APIKEY'),
@@ -208,14 +208,28 @@ class GraphRetrieval:
             [
                 (
                     "system",
-                    "You are a helpful assistant",
+                    """You are a helpful course assistant with the knowledge of courses. You need to provide a definitive answer to the user's question. No pre-amble. Respond as if you are answering the question directly.
+                    """,
                 ),
                 (
                     "human",
                     (
                         """Use the following results retrieved from a database to provide succint, definitive answer to the user's question.
                         
-                        Respond as if you are answering the question directly. 
+                        Respond as if you are answering the question directly. You should only provide answers that are relevant to the question asked. 
+
+                        When encountering questions that requires the interpretation of course prerequisites, you should look at the database_records correctly. 
+                        - yearReqs: An array of year standing requirements. If "Year 3" is listed, it means the student must be in Year 3.
+                        - groupLogic: Indicates how the group of prerequisites should be interpreted (e.g. "OR" means any one of the courses is sufficient, while "AND" means all are required).
+                        - groupId: A unique identifier for the group of courses that satisfy a certain prerequisite condition. 
+                        - groupReqs: A list of course codes that fulfill the group prerequisites. For example, if it contains ["MH2802", "MH1201", "MH2800"] under an "OR" logic, it means the student must have completed at least one of these. 
+                        - directReqs: A list of direct prerequisite course. If empty, it means there are no specific course prerequisites besides any year or group requirements. 
+
+                        If user asked questions such as "Are there any prerequisites for this course?" or "Does the course have any prerequisites?", you should provide the relevant information from the database_records. If the course does not have any prerequisite, then you should respond with "There are no prerequisites for this course." to provide users with a definitive answer.
+
+                        If the query requireies a listing of all courses that satisfy a certain condition, you should provide all the relevant information from the database_records.
+
+                        Based on the database record, you should provide a definitive answer to the question.
 
                         Results: {results}
                         Question: {question}
@@ -388,5 +402,6 @@ class GraphRetrieval:
         return {
             "message": [final_answer],
             "answer": final_answer, 
-            "steps": ["generate_final_answer"]
+            "steps": ["generate_final_answer"],
+            "database_records": state.get("database_records")
             }

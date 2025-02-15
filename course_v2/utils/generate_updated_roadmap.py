@@ -17,8 +17,8 @@ class CourseData(BaseModel):
     Year5_Semester2: Optional[List[str]]
     Year3_SpecialSemester: Optional[List[str]]
 
-model = AzureChatOpenAI(model="gpt-4o-mini-lke")
-# model = AzureChatOpenAI(model="ANV2Exp-AzureOpenAI-NorthCtrlUS-TWY-GPT4o")
+model = AzureChatOpenAI(model="gpt-4o-mini-lke", temperature=0)
+# model = AzureChatOpenAI(model="ANV2Exp-AzureOpenAI-NorthCtrlUS-TWY-GPT4o", temperature=0)
 
 def generate_updated_roadmap(original_course_plan, completed_courses):
     system_template = """

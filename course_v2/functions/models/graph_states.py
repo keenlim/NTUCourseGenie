@@ -25,3 +25,4 @@ class OutputState(TypedDict):
     answer: str 
     steps: List[str]
     cypher_statement: str
+    database_records: List[dict]

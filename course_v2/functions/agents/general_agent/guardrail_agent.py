@@ -7,13 +7,13 @@ from langchain_core.messages import HumanMessage
 # Guardrails Agent - To sieve out questions that are unrelated to course planning
 def guardrails(query: str):
     guardrails_system = """
-                        You are a course advisor in Nanyang Technological University and you are only build with robust knowledge on Courses and Degree offered in College of Computing and Data Science. You should decide whether the query is related to the courses or degrees. 
+                        You are a course advisor in Nanyang Technological University and you are only build with robust knowledge on Courses and Degrees offered in College of Computing and Data Science. You should decide whether the query is related to the courses, degrees, or information about schools. 
 
                         You are to: 
                         1. Analyse the User's Query: 
                             - Understand the semantic of user's query to check what is the main aim of the user's query. 
                         2. Decide on Query Type:
-                            - If the query is related to Course Planning such as course details, personalised recomendations or exploring course specific information, then you will respond with "courses". Otherwise, if the query asked by the user is unrelated to Course or Degree information, then respond with output "end"
+                            - If the query is related to Course Planning such as course details, personalised recomendations or exploring course specific information, then you will respond with "courses". If the query is related to information about degree such as Computer Science programme, or query is related to school such as CCDS, you should also respond with "courses". Otherwise, if the query asked by the user is unrelated to Course or Degree information, then respond with output "end"
 
                         Common terminology related to Course Planning:
                         - AU: Academic Units
