@@ -1,11 +1,23 @@
 from ragas import SingleTurnSample
 from ragas.metrics import BleuScore
+from functions.workflow.retrieval_workflow import Retrieval_Workflow
 
-test_data = {
-    "user_input": "summarise given text\nThe company reported an 8% rise in Q3 2024, driven by strong performance in the Asian market. Sales in this region have significantly contributed to the overall growth. Analysts attribute this success to strategic marketing and product localization. The positive trend in the Asian market is expected to continue into the next quarter.",
-    "response": "The company experienced an 8% increase in Q3 2024, largely due to effective marketing strategies and product adaptation, with expectations of continued growth in the coming quarter.",
-    "reference": "The company reported an 8% growth in Q3 2024, primarily driven by strong sales in the Asian market, attributed to strategic marketing and localized products, with continued growth anticipated in the next quarter."
-}
-metric = BleuScore()
-test_data = SingleTurnSample(**test_data)
-print(metric.single_turn_score(test_data))
+class Ragas_app:
+    def __init__(self):
+        pass
+
+    def evaluate(self):
+        # Testing with empty history messages, and empty user profile 
+        cached_messages = []
+        user_profile = {}
+
+        # Load dataset from CSV file
+        
+
+        # Initialise the workflow
+        workflow = Retrieval_Workflow().workflow_function()
+
+
+
+if __name__ == "__main__":
+    evaluation = Ragas_app().evaluate()

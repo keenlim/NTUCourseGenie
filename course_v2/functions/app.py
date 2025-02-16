@@ -4,11 +4,19 @@ import math
 import streamlit as st
 from .workflow.retrieval_workflow import Retrieval_Workflow
 from pathlib import Path
+from langfuse.callback import CallbackHandler
+from dotenv import load_dotenv
+from uuid import uuid4
 
-def app_response(query: str, chat_id: str, cached_messages, user_profile: dict):
+load_dotenv(override=True)
+
+def app_response(query: str, chat_id: str, cached_messages, user_profile: dict, user_id: str):
+    # Define run_id
+    run_id: str = str(uuid4())
+    # Initialise Langfuse CallbackHandler for Langchain (tracing)
+    langfuse_handler = CallbackHandler(session_id=chat_id, user_id=user_id)
     current_dir = Path(__file__).parent
     sub_dir = current_dir.parent/"ui"
-    print(sub_dir)
     # Load Agent Explanation Json file 
     with open(f'{sub_dir}/agents_explanation.json', 'r') as file:
         agent_explanation = json.load(file)
@@ -25,7 +33,12 @@ def app_response(query: str, chat_id: str, cached_messages, user_profile: dict):
                 "query": [query],
                 "cached_messages": cached_messages,
                 "user_profile": user_profile
-            },
+            }, config={"run_id": run_id,
+                       "callbacks": [langfuse_handler], 
+                       "metadata": {
+                           "langfuse_session_id": chat_id,
+                           "predefined_run_id": run_id
+                       }}
         ):
             if "__end__" not in s:
                 print(s)
@@ -46,4 +59,4 @@ def app_response(query: str, chat_id: str, cached_messages, user_profile: dict):
             label=f"Thought for {elapsed_time} seconds", state="complete", expanded=False
         )
     
-    return results[-1]
+    return results[-1], run_id

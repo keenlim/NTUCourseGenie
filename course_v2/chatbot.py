@@ -8,6 +8,8 @@ from streamlit_mermaid import st_mermaid
 from utils.create_mermaid import generate_mermaid_timeline, CourseData
 from functions.app import app_response
 from utils.generate_updated_roadmap import generate_updated_roadmap
+from streamlit_feedback import streamlit_feedback
+from langfuse_utils.langfuse_app import LangfuseApp
 
 # Initialisation
 degree = None
@@ -90,15 +92,62 @@ with st.spinner(text="Preparing Chatbot"):
       else:
          mermaid_code = generate_mermaid_timeline(get_course_data()[f"{cohort}_{degree_type}"], career[0])
 
+# Utils: Submit Feedback Utils
+def _submit_feedback(user_response, run_id):
+    print("Feedback submitted")
+    st.toast(f"Feedback submitted")
+    print(user_response)
+   #  print(emoji)
+    print(run_id)
+
+    score_to_dict = {
+       '😞': 0.2,
+       '🙁': 0.4,
+       '😐': 0.6,
+       '🙂': 0.8,
+       '😀': 1.0,
+       '👎': 0.0, 
+       '👍': 1.0,
+    }
+
+    # Add score to Langfuse
+    log_langfuse = LangfuseApp().add_langfuse_score(run_id, score_to_dict[user_response['score']], user_response['text'])
+
+    return user_response.update({"Langfuse Status": log_langfuse})
+
+feedback_kwargs = {
+        "feedback_type": "faces",
+        "optional_text_label": "Please provide extra information",
+        "on_submit": _submit_feedback,
+    }
+
 # Utils: Display Chat Messages
 def display_chat_messages() -> None:
    """
    Print message history
    @returns None
    """
-   for message in st.session_state.messages:
+   for n, message in enumerate(st.session_state.messages):
       with st.chat_message(message["role"]):
          st.markdown(message["content"], unsafe_allow_html=True)
+      
+      if message["role"] == "assistant" and n > 0:
+         feedback_key = f"feedback_{message["run_id"]}"
+
+         if feedback_key not in st.session_state:
+            st.session_state[feedback_key] = None
+         
+         disable_with_score = (
+                st.session_state[feedback_key].get("score")
+                if st.session_state[feedback_key]
+                else None
+            )
+         streamlit_feedback(
+               **feedback_kwargs,
+               key=feedback_key,
+               disable_with_score=disable_with_score,
+               kwargs={"run_id": message["run_id"]}
+         )
 
 # Utils: Streamed response emulator
 def response_generator(response):
@@ -191,7 +240,6 @@ def replace_course():
       
       st.rerun()
 
-
 # Streamlit FE Code 
 # App Title
 gradient_text_html = """
@@ -277,8 +325,13 @@ if prompt:= st.chat_input("Ask Anything"):
    # Display + Add Assistant response to chat history
    with st.chat_message("assistant"):
       # print(st.session_state.messages)
-      response = app_response(prompt, st.session_state.chat_id, st.session_state.messages, st.session_state.last_updated)
+      response, run_id= app_response(prompt, st.session_state.chat_id, st.session_state.messages, st.session_state.last_updated, st.session_state.oid)
       st.markdown(stream_response(response))
-      st.session_state.messages.append({"role": "assistant", "content": response})
+      st.session_state.messages.append({"role": "assistant", "content": response, "run_id": run_id, "feedback":False})
+
+      streamlit_feedback(
+            **feedback_kwargs, key=f"feedback_{run_id}", kwargs={"run_id": run_id}
+        )
+
 
    
