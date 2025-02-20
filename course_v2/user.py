@@ -2,7 +2,7 @@ import os
 import json
 import streamlit as st
 from utils.get_courses import get_courses
-from utils.analyse_image import analyse_image, analyse_course_image
+from utils.analyse_image import analyse_course_image
 from utils.feedback_career import career_feedback
 import base64
 from io import BytesIO
@@ -11,10 +11,10 @@ from pydantic import TypeAdapter
 from utils.create_mermaid import CourseData
 from pathlib import Path
 from utils.convert_pdf_to_image import convert_pdf_to_image
+from utils.academic_profiling.analyse_image import analyse_image
 current_dir = Path(__file__).parent
 
 # st.write(st.session_state)
-
 
 def auto_fill_btn():
     st.session_state.autoFill = True
@@ -51,8 +51,13 @@ def auto_fill_btn():
                     im_bytes = im_file.getvalue()
                     encoded = base64.b64encode(im_bytes).decode("utf-8")
                     image_uploaded.append(encoded)
-                    response = analyse_image(encoded).dict(by_alias=True)
-                    all_course.extend(response['Course'])
+                    response = analyse_image(encoded)
+                    response_status = response.get('status', None)
+                    if response_status == "error":
+                        st.toast(response.get('message', "Unexpected error"), icon="🚨")
+                        break
+                    course_response = response.get('result', None).dict(by_alias=True)
+                    all_course.extend(course_response['Course'])
                 except Exception as e:
                     print(f"Error: {e}")
                     st.toast("Unable to analyse transcript", icon="🚨")
@@ -63,8 +68,13 @@ def auto_fill_btn():
                 bytes_data = uploaded_file.getvalue()
                 encoded = base64.b64encode(bytes_data).decode("utf-8")
                 image_uploaded.append(encoded)
-                response = analyse_image(encoded).dict(by_alias=True)
-                all_course.extend(response['Course'])
+                response = analyse_image(encoded)
+                response_status = response.get('status', None)
+                if response_status == "error":
+                    st.toast(response.get('message', "Unexpected error"), icon="🚨")
+                    break
+                course_response = response.get('result', None).dict(by_alias=True)
+                all_course.extend(course_response['Course'])
             except Exception as e:
                 print(f"Error: {e}")
                 st.toast("Unable to analyse transcript", icon="🚨")

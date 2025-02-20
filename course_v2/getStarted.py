@@ -35,6 +35,7 @@ def auto_fill_btn():
             bytes_data = uploaded_file.getvalue()
             images = convert_pdf_to_image(bytes_data)
             if images['status'] == "error":
+                print("Error")
                 st.toast("Error analysing PDF", icon="🚨")
                 break
 
