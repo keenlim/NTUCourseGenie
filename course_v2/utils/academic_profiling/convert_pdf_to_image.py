@@ -8,10 +8,26 @@ from pdf2image.exceptions import (
 
 # Convert pdf_to_iamge using pdf2image python library
 def convert_pdf_to_image(pdf_file):
+    """
+    Convert a PDF file to an image using pdf2image library
+
+    Attributes:
+        pdf_file (bytes): PDF file content as bytes
+    
+    Returns:
+        images (list[PIL]): List of images extracted from the PDF file
+        status (str): Status of the conversion process
+    
+    Raises:
+        NotImplementedError: If pdf2image is not supported on the system
+        PDFPopplerTimeoutError: If pdf2image failed to convert the PDF file
+        PDFPageCountError: If pdf2image failed to convert the PDF file
+        PDFSyntaxError: If pdf2image failed to convert the PDF file
+        PDFInfoNotInstalledError: If pdf2image failed to convert the PDF file
+        Exception: If there is any other errors
+    """
     try:
         images = convert_from_bytes(pdf_file)
-        # for i, img in enumerate(images):
-        #     img.save(f"/Users/keenlim/Final-Year-Project/Development/Course_v2/course_v2/utils/images/output_{i}.jpg", 'JPEG')
         return {"image": images, "status": "success"}
     except NotImplementedError:
         print("NotImplementedError: pdf2image is not supported on this system")

@@ -10,8 +10,9 @@ from utils.generate_updated_roadmap import generate_updated_roadmap
 from pydantic import TypeAdapter
 from utils.create_mermaid import CourseData
 from pathlib import Path
-from utils.convert_pdf_to_image import convert_pdf_to_image
+from utils.academic_profiling.convert_pdf_to_image import convert_pdf_to_image
 from utils.academic_profiling.analyse_image import analyse_image
+from utils.academic_profiling.process_files import process_files
 current_dir = Path(__file__).parent
 
 # st.write(st.session_state)
@@ -28,61 +29,16 @@ def auto_fill_btn():
         "semester": semester
         }
     # print(st.session_state.last_updated)
-    all_course = []
-    image_uploaded = []
-    for uploaded_file in uploaded_files:
-        # 1. Check the uploaded file type via the file extension
-        filename = uploaded_file.name
-        file_extension = os.path.splitext(filename)[1]
-        # 2. If is PDF --> Convert to Image
-        if file_extension == ".pdf":
-            # Convert to Image
-            bytes_data = uploaded_file.getvalue()
-            images = convert_pdf_to_image(bytes_data)
-            if images['status'] == "error":
-                st.toast("Error analysing PDF", icon="🚨")
-                break
-
-            for img in images['image']:
-                try:
-                    # 3. Once converted to image, convert to base64 and analyse the image
-                    im_file = BytesIO()
-                    img.save(im_file, format="JPEG")
-                    im_bytes = im_file.getvalue()
-                    encoded = base64.b64encode(im_bytes).decode("utf-8")
-                    image_uploaded.append(encoded)
-                    response = analyse_image(encoded)
-                    response_status = response.get('status', None)
-                    if response_status == "error":
-                        st.toast(response.get('message', "Unexpected error"), icon="🚨")
-                        break
-                    course_response = response.get('result', None).dict(by_alias=True)
-                    all_course.extend(course_response['Course'])
-                except Exception as e:
-                    print(f"Error: {e}")
-                    st.toast("Unable to analyse transcript", icon="🚨")
-
-        else:
-            try:
-                # Upload image then just convert to base64 and analyase the image
-                bytes_data = uploaded_file.getvalue()
-                encoded = base64.b64encode(bytes_data).decode("utf-8")
-                image_uploaded.append(encoded)
-                response = analyse_image(encoded)
-                response_status = response.get('status', None)
-                if response_status == "error":
-                    st.toast(response.get('message', "Unexpected error"), icon="🚨")
-                    break
-                course_response = response.get('result', None).dict(by_alias=True)
-                all_course.extend(course_response['Course'])
-            except Exception as e:
-                print(f"Error: {e}")
-                st.toast("Unable to analyse transcript", icon="🚨")
-
+    
+    upload_results = process_files(uploaded_files)
+    
+    if upload_results['status'] == "error":
+        st.toast(upload_results['message'], icon="🚨")
+    elif upload_results['status'] == "success": 
         st.toast("Succesfully uploaded degree audit", icon="🎉")
     
-    st.session_state.imageData = image_uploaded
-    st.session_state.courseData = all_course
+    st.session_state.imageData = upload_results["imageData"]
+    st.session_state.courseData = upload_results["courseData"]
 
 def get_course_data(degree_key):
    # Utils: Generate Mermaid Diagram
