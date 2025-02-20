@@ -4,7 +4,7 @@ from langchain_openai import AzureChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from ..models.course import Courses
 from dotenv import load_dotenv 
-from utils.Logger import setup_logger
+from ..Logger import setup_logger
 
 load_dotenv(override=True)
 model = AzureChatOpenAI(model=os.getenv('AZURE_OPENAI_DEPLOYMENT_4o_NAME'), temperature=0)
@@ -56,7 +56,7 @@ def analyse_image(base64Image:str):
         logging.exception("ValueError while analysing image")
         return {
             "status": "error",
-            "message": "Invalie or corrupted image"
+            "message": "Invalid or corrupted image"
         }
     except ConnectionError as ce:
         logging.exception("ConnectionError while analysing image")
