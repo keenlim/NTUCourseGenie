@@ -1,19 +1,21 @@
+import os 
 import json
 import streamlit as st
 from utils.get_courses import get_courses
 from utils.analyse_image import analyse_image, analyse_course_image
 from utils.feedback_career import career_feedback
 import base64
+from io import BytesIO
 from utils.generate_updated_roadmap import generate_updated_roadmap
 from pydantic import TypeAdapter
 from utils.create_mermaid import CourseData
 from pathlib import Path
+from utils.convert_pdf_to_image import convert_pdf_to_image
 current_dir = Path(__file__).parent
 
 # st.write(st.session_state)
 
 
-# Buttons Utils
 def auto_fill_btn():
     st.session_state.autoFill = True
     st.session_state.last_updated = {
@@ -28,17 +30,49 @@ def auto_fill_btn():
     # print(st.session_state.last_updated)
     all_course = []
     image_uploaded = []
-    print("Analysing Image")
     for uploaded_file in uploaded_files:
-        bytes_data = uploaded_file.getvalue()
-        encoded = base64.b64encode(bytes_data).decode("utf-8")
-        image_uploaded.append(encoded)
-        response = analyse_image(encoded).dict(by_alias=True)
-        all_course.extend(response['Course'])
+        # 1. Check the uploaded file type via the file extension
+        filename = uploaded_file.name
+        file_extension = os.path.splitext(filename)[1]
+        # 2. If is PDF --> Convert to Image
+        if file_extension == ".pdf":
+            # Convert to Image
+            bytes_data = uploaded_file.getvalue()
+            images = convert_pdf_to_image(bytes_data)
+            if images['status'] == "error":
+                st.toast("Error analysing PDF", icon="🚨")
+                break
+
+            for img in images['image']:
+                try:
+                    # 3. Once converted to image, convert to base64 and analyse the image
+                    im_file = BytesIO()
+                    img.save(im_file, format="JPEG")
+                    im_bytes = im_file.getvalue()
+                    encoded = base64.b64encode(im_bytes).decode("utf-8")
+                    image_uploaded.append(encoded)
+                    response = analyse_image(encoded).dict(by_alias=True)
+                    all_course.extend(response['Course'])
+                except Exception as e:
+                    print(f"Error: {e}")
+                    st.toast("Unable to analyse transcript", icon="🚨")
+
+        else:
+            try:
+                # Upload image then just convert to base64 and analyase the image
+                bytes_data = uploaded_file.getvalue()
+                encoded = base64.b64encode(bytes_data).decode("utf-8")
+                image_uploaded.append(encoded)
+                response = analyse_image(encoded).dict(by_alias=True)
+                all_course.extend(response['Course'])
+            except Exception as e:
+                print(f"Error: {e}")
+                st.toast("Unable to analyse transcript", icon="🚨")
+
+        st.toast("Succesfully uploaded degree audit", icon="🎉")
     
     st.session_state.imageData = image_uploaded
     st.session_state.courseData = all_course
-    # print(st.session_state.courseData)
 
 def get_course_data(degree_key):
    # Utils: Generate Mermaid Diagram
@@ -138,10 +172,8 @@ career = st.multiselect("Career Interest", options=CAREER_OPTIONS, default=st.se
 
 if year_standing in ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5"]:
     st.subheader("For Current Students: ")
-    st.write("You can choose to upload a screenshot of your degree audit that provides the courses information and grades OR choose to manually provide the course information in the table below.")
-    uploaded_files = st.file_uploader("Choose a file", accept_multiple_files=True)
-    for uploaded_file in uploaded_files:
-        bytes_data = uploaded_file.read()
+    st.write("You may upload your degree audit in PDF or image format containing your course information and grades. Alternatively, you can manually enter the course details in the table below.")
+    uploaded_files = st.file_uploader("Choose a file", accept_multiple_files=True, type=['png', 'jpg', 'jpeg', 'pdf'])
 
     if uploaded_files:
         st.button("Auto Fill Courses", use_container_width=True, on_click=auto_fill_btn, icon=":material/edit:")

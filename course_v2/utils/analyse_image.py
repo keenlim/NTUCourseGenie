@@ -89,3 +89,5 @@ def analyse_course_image(base64Image):
 
 
 
+
+
