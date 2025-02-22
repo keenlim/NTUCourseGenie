@@ -56,12 +56,15 @@ def process_files(uploaded_files):
                 bytes_data = uploaded_file.getvalue()
                 encoded = base64.b64encode(bytes_data).decode("utf-8")
                 image_uploaded.append(encoded)
-                response = analyse_image(encoded).dict(by_alias=True)
-                all_course.extend(response['Course'])
+                response = analyse_image(encoded)
+                response_status = response.get('status', None)
+                if response_status == "error":
+                    return {"courseData": [], "imageData": [], "status": "error", "message": "Unexpected Error"}
+                course_response = response.get('result', None).dict(by_alias=True)
+                all_course.extend(course_response['Course'])
             except Exception as e:
                 print(f"Error: {e}")
                 return {"courseData": [], "imageData": [], "status": "error", "message": "Unable to analyse transcript"}
-
         return {
             "courseData": all_course,
             "imageData": image_uploaded,

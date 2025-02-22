@@ -27,3 +27,11 @@ class CourseData(BaseModel):
     Year5_Semester1: Optional[List[CourseInfo]]
     Year5_Semester2: Optional[List[CourseInfo]]
     Year3_SpecialSemester: Optional[List[CourseInfo]]
+
+class CareerFeedback(BaseModel):
+    career: Literal["Blockchain Engineer", "DevOps Engineer", "Cloud Engineer/Architect", "Mixed/Virtual Reality Developer", "Cyber Security", "Software Engineer", "Full-stack Developer", "Front-End Engineer / Web Developer", "Backend Engineer", "Data Engineer", "Business Analyst", "Firmware Engineer", "Computer Hardware Engineer", "Embedded System Developer","AI Engineer", "Machine Learning Engineer", "Data Scientist", "Data Analyst", "AI Scientist", "System Architect", "Cybersecurity Consultant/Analyst", "Product Manager", "Entrepreneur", "Quantitative Analyst/Developer"] = Field(
+        description="Career recommendation based on the courses and grades."
+    )
+    explanation: str = Field(description="Provide a detailed explanation of why you recommend the career")
+    strength: str = Field(description = "Short description of the strength of the student")
+    weakness: str = Field(description="Short description of the weakness of the student")

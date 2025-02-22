@@ -36,7 +36,7 @@ def mock_model():
 
 def test_analyse_image_success(mock_logger, mock_prompt, mock_model):
     """
-    Test that analyse_image runs successfully when everything works.
+    Test that analyse_image runs succesfully when everything works as expected.
     """
     # Arrange
     #   - The mock_model fixture returns a mock `model`

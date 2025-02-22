@@ -124,14 +124,19 @@ def test_process_files_non_pdf_success(mock_uploaded_image):
     # and calls analyse_image(encoded).dict(by_alias=True)
     # We'll mock 'analyse_image' to return a pydantic-like dict
     mock_analyze_return = MagicMock()
-    mock_analyze_return.dict.return_value = {"Course": ["BIO101"]}
+    mock_analyze_return.dict.return_value = {"Course": ["CSC101", "MTH202"]}
 
-    with patch("course_v2.utils.academic_profiling.process_files.analyse_image", return_value=mock_analyze_return):
+    mock_analysis_result = {
+        "status": "success",
+        "result": mock_analyze_return
+    }
+
+    with patch("course_v2.utils.academic_profiling.process_files.analyse_image", return_value=mock_analysis_result):
         result = process_files([mock_uploaded_image])
 
     assert result["status"] == "success"
     assert "Successfully analysed the uploaded files" in result["message"]
-    assert "BIO101" in result["courseData"]
+    assert "CSC101" in result["courseData"]
     assert len(result["imageData"]) == 1
 
 def test_process_files_non_pdf_exception(mock_uploaded_image):
