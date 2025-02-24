@@ -5,7 +5,10 @@ class CourseImage(BaseModel):
     Code: str = Field(description="Specific Course Code of each course, for example 'SC1005'")
     Title: str = Field(description="Specific Course Title of each course, for example 'Digital Logic'")
     Grades: str = Field(description="Grades extracted from each course, for example 'A'")
+    CourseType: Literal['C', 'P', 'BDE'] = Field(description="Course Type, C suggests Core, P suggests MPE, BDE suggests BDE courses")
+    Year: Literal['Year1_Semester1', 'Year1_Semester2', 'Year1_SpecialSemester', 'Year2_Semester1', 'Year2_Semester2', 'Year3_Semester1', 'Year3_Semester2', 'Year4_Semester1', 'Year4_Semester2', 'Year5_Semester1', 'Year5_Semester2', 'Year3_SpecialSemester'] = Field(description="Year and Semester of the course")
     is_Completed: bool = Field(description="By default will be True")
+
 
 class Courses(BaseModel):
     Course: List[CourseImage]

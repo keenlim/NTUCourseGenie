@@ -3,6 +3,7 @@ import base64
 from io import BytesIO
 from .convert_pdf_to_image import convert_pdf_to_image
 from .analyse_image import analyse_image
+from ..Logger import setup_logger
 
 def process_files(uploaded_files):
     """
@@ -17,6 +18,8 @@ def process_files(uploaded_files):
         status (str): Status of the process
         message (str): Message for the process status
     """
+    logging = setup_logger()
+    logging.info("----------- Processing files ----------")
     all_course = []
     image_uploaded = []
     for uploaded_file in uploaded_files:
@@ -65,9 +68,11 @@ def process_files(uploaded_files):
             except Exception as e:
                 print(f"Error: {e}")
                 return {"courseData": [], "imageData": [], "status": "error", "message": "Unable to analyse transcript"}
-        return {
-            "courseData": all_course,
-            "imageData": image_uploaded,
-            "status": "success",
-            "message": "Successfully analysed the uploaded files"
-        }
+    
+    logging.info("---- Successfully analysed image ----")
+    return {
+        "courseData": all_course,
+        "imageData": image_uploaded,
+        "status": "success",
+        "message": "Successfully analysed the uploaded files"
+    }

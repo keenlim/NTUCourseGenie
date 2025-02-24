@@ -1,13 +1,19 @@
 import streamlit as st
 from utils.get_courses import get_courses
-from utils.academic_profiling.analyse_course_image import analyse_course_image
 from utils.academic_profiling.feedback_career import career_feedback
 from pathlib import Path
 from utils.academic_profiling.process_files import process_files
 from utils.user_configuration.options_utils import Options
 from utils.models.user import LastUpdatedModel
+from utils.academic_profiling.convert_courses_to_courseinfo import convert_courses_to_courseinfo
+from utils.course_roadmap_utils.generate_updated_roadmap import generate_updated_roadmap
+from user import get_course_data
+from utils.Logger import setup_logger
 
 current_dir = Path(__file__).parent
+
+# Logging utils
+logging = setup_logger()
 
 # Buttons Utils
 def auto_fill_btn():
@@ -169,30 +175,31 @@ if submitted:
         career_feedback_output = career_feedback(st.session_state.last_updated.get('degree', None), st.session_state.last_updated.get('career', None), edited_df)
 
         st.session_state.career_output = career_feedback_output.dict()
-
-        if st.session_state.imageData:
-            for image in st.session_state.imageData:
-                analyse_course_image_result = analyse_course_image(image)
-                if analyse_course_image_result['status'] == "error":
-                    break
-                else:
-                    course_response = analyse_course_image_result['result'].dict(by_alias=True)
-                    course_details.append(course_response)
-            st.session_state.courseDetail = course_details
-        # print(st.session_state.courseDetail)
-        
-    # Just take the first career interest that the user select
-    # For the recommended roadmap
-    # With User SSO Login, these results should be saved to the DB --> Only when users click on submit then saved it in DB
+        st.session_state.courseDetail = convert_courses_to_courseinfo(st.session_state.courseData)
+        generated_response = generate_updated_roadmap(get_course_data(degree_key)[f"{cohort}_{degree_type}"], st.session_state.courseDetail)
+        if generated_response.get("status", None) == "success": 
+            generated_course = generated_response.get("result", None).dict()
+            logging.info("Succesfully generate updated course roadmap")
+        else:
+            generated_course = None
+            logging.error(f"Error generating updated course roadmap, {generated_response.get("message", None)}")
+        user_data = {
+            "generated_course": generated_course
+        }
+    else:
+        st.session_state.courseDetail = []
+        user_data = {
+            "generated_course": None
+        }
     user = {
         "userId": st.session_state.oid,
         "name": st.session_state.user,
         "email": st.session_state.email,
         "last_updated": st.session_state.last_updated,
         "coursedata": st.session_state.courseDetail,
-        "career_path": st.session_state.career_output
+        "career_path": st.session_state.career_output,
+        "generated_course": generated_course if generated_course is not None else None
     }
-    print(user)
 
     db = st.session_state.mongodb
     collection = db["users"]
@@ -203,13 +210,13 @@ if submitted:
         result = collection.update_one(
             {"_id": user["userId"]}, {"$set": user}, upsert=True
         )
-        print("Upserted document with _id {}\n".format(result.upserted_id))
+        logging.info("Upserted document with _id {}\n".format(result.upserted_id))
     
     else:
         result = collection.update_one(
             {"_id": user["userId"]}, {"$set": user}, upsert=True
         )
-        print("Upserted document with _id {}\n".format(user["userId"]))
+        logging.info("Upserted document with _id {}\n".format(result.upserted_id))
 
         
     st.rerun()

@@ -5,11 +5,16 @@ import streamlit as st
 from pydantic import TypeAdapter
 from pathlib import Path
 from streamlit_mermaid import st_mermaid
-from utils.create_mermaid import generate_mermaid_timeline, CourseData
+from utils.course_roadmap_utils.create_mermaid import generate_mermaid_timeline
+from utils.models.roadmap import MermaidCourseData, CourseData
 from functions.app import app_response
-from utils.generate_updated_roadmap import generate_updated_roadmap
+from utils.course_roadmap_utils.generate_updated_roadmap import generate_updated_roadmap
 from streamlit_feedback import streamlit_feedback
 from langfuse_utils.langfuse_app import LangfuseApp
+from utils.Logger import setup_logger
+
+# Logging utils
+logging = setup_logger()
 
 # Initialisation
 degree = None
@@ -65,32 +70,50 @@ with st.spinner(text="Preparing Chatbot"):
    if user.get('generated_course', None) is not None:
       converted_generated_course = user.get('generated_course', None)
       # print(converted_generated_course)
-      mermaid_code = generate_mermaid_timeline(TypeAdapter(CourseData).validate_python(converted_generated_course), career[0])
+      mermaid_result = generate_mermaid_timeline(TypeAdapter(MermaidCourseData).validate_python(converted_generated_course), career[0])
+      if mermaid_result.get("status", None) == "success":
+         mermaid_code = mermaid_result.get("result", None)
+      else:
+         mermaid_code = None 
+
       # print(mermaid_code)
    else:
-      if st.session_state.courseDetail is not None:
+      if len(st.session_state.courseDetail) != 0:
          # generated_course should just retrieve from DB
          # Generate based on courses users already taken (Applicable if users are not Prospective Students)
          
-         # TODO: Simple try and except to catch the error in case LLM does not structure it well
-         try:
-            generated_course = generate_updated_roadmap(get_course_data()[f"{cohort}_{degree_type}"], st.session_state.courseDetail)
-            user_data = {
-               "generated_course": generated_course.dict()
-            }
-         except:
-            user_data = {"generated_course": None}
+         generated_response = generate_updated_roadmap(get_course_data()[f"{cohort}_{degree_type}"], st.session_state.courseDetail)
+         if generated_response.get("status", None) == "success": 
+            generated_course = generated_response.get("result", None).dict()
+            logging.info("Succesfully generate updated course roadmap")
+         else:
+            generated_course = None
+            logging.error(f"Error generating updated course roadmap, {generated_response.get("message", None)}")
+         user_data = {
+            "generated_course": generated_course
+         }
+
          # Get user
          if user is not None:
             result = collection.update_one(
                {"_id": st.session_state.oid}, {"$set": user_data}, upsert=True
             )
             print("Updated generated course into DB")
-         mermaid_code = generate_mermaid_timeline(generated_course, career[0])
+         mermaid_result = generate_mermaid_timeline(generated_course, career[0])
+         if mermaid_result.get("status", None) == "success":
+            mermaid_code = mermaid_result.get("result", None)
+         else:
+            mermaid_code = None 
+         
          # print(mermaid_code)
       # Get the pre-defined roadmap based on Career and course details
       else:
-         mermaid_code = generate_mermaid_timeline(get_course_data()[f"{cohort}_{degree_type}"], career[0])
+         print("Default Roadmap")
+         mermaid_result = generate_mermaid_timeline(get_course_data()[f"{cohort}_{degree_type}"], career[0])
+         if mermaid_result.get("status", None) == "success":
+            mermaid_code = mermaid_result.get("result", None)
+         else:
+            mermaid_code = None 
 
 # Utils: Submit Feedback Utils
 def _submit_feedback(user_response, run_id):
@@ -325,7 +348,13 @@ if prompt:= st.chat_input("Ask Anything"):
    # Display + Add Assistant response to chat history
    with st.chat_message("assistant"):
       # print(st.session_state.messages)
-      response, run_id= app_response(prompt, st.session_state.chat_id, st.session_state.messages, st.session_state.last_updated, st.session_state.oid)
+      result = app_response(prompt, st.session_state.chat_id, st.session_state.messages, st.session_state.last_updated, st.session_state.oid)
+      if result.get("status", None) == "success":
+         response = result.get("response", None)
+         run_id = result.get("run_id", None)
+      else:
+         response = "Unexpected error while generating response, please try again later"
+         run_id = result.get("run_id", None)
       st.markdown(stream_response(response))
       st.session_state.messages.append({"role": "assistant", "content": response, "run_id": run_id, "feedback":False})
 

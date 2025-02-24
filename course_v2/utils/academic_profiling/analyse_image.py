@@ -22,7 +22,7 @@ def analyse_image(base64Image:str):
     
     Raises:
         ValueError: If there is problem decoding base64 or converting data 
-        Connection Error: If there is network or connection-related errors 
+        ConnectionError: If there is network or connection-related errors 
         Exception: If there is any other errors
         
     """
@@ -32,7 +32,18 @@ def analyse_image(base64Image:str):
     try:
         prompt = ChatPromptTemplate.from_messages(
             [
-                ("system", "Extract the relevant course information from the Image below."),
+                ("system", 
+                 """
+                 Extract the relevant course information from the Image below. 
+                 You are to extract the following information: 
+                 - Specific Code of the Course 
+                 - Specific Title of the Course 
+                 - Grade of each course
+                 - Whethr the course is completed or not, by default it is True 
+                 - Course Type, Core (C), MPE (P), BDE (BDE)
+                 - Year and Semester of the course, e.g. Year1_Semester1
+                 """
+                ),
                 (
                     "user",
                     [
@@ -50,7 +61,7 @@ def analyse_image(base64Image:str):
         image_chain = prompt | structured_llm
 
         response = {"result": image_chain.invoke({"image_data": base64Image}), "status": "success"}
-
+        logging.info("---- Successfully analysed image ----")
         return response
     except ValueError as e:
         logging.exception("ValueError while analysing image")
@@ -58,7 +69,7 @@ def analyse_image(base64Image:str):
             "status": "error",
             "message": "Invalid or corrupted image"
         }
-    except ConnectionError as ce:
+    except ConnectionError as e:
         logging.exception("ConnectionError while analysing image")
         return {
             "status": "error",
