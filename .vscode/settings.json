@@ -39,5 +39,7 @@
       "course_test"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "appService.defaultWebAppToDeploy": "/subscriptions/4c4b32c9-587d-419b-be8b-7f3ae72afcb3/resourceGroups/final_year_project/providers/Microsoft.Web/sites/NTUCourseGenieV2",
+    "appService.deploySubpath": "."
   }
