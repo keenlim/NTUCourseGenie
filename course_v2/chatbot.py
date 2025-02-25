@@ -65,7 +65,7 @@ def get_course_data():
    
    return course_dict
 
-# TODO: Should Generate Roadmap in getStarted page and saved it in DB
+# Should Generate Roadmap in getStarted page and saved it in DB
 with st.spinner(text="Preparing Chatbot"):
    if user.get('generated_course', None) is not None:
       converted_generated_course = user.get('generated_course', None)
@@ -98,7 +98,7 @@ with st.spinner(text="Preparing Chatbot"):
             result = collection.update_one(
                {"_id": st.session_state.oid}, {"$set": user_data}, upsert=True
             )
-            print("Updated generated course into DB")
+            logging.info("Updated generated course into DB")
          mermaid_result = generate_mermaid_timeline(generated_course, career[0])
          if mermaid_result.get("status", None) == "success":
             mermaid_code = mermaid_result.get("result", None)
@@ -109,6 +109,15 @@ with st.spinner(text="Preparing Chatbot"):
       # Get the pre-defined roadmap based on Career and course details
       else:
          print("Default Roadmap")
+         generated_course = get_course_data()[f"{cohort}_{degree_type}"]
+         user_data = {
+            "generated_course": generated_course.dict()
+         }
+         if user is not None:
+            result = collection.update_one(
+               {"_id": st.session_state.oid}, {"$set": user_data}, upsert=True
+            )
+            logging.info("Updated generated course into DB")
          mermaid_result = generate_mermaid_timeline(get_course_data()[f"{cohort}_{degree_type}"], career[0])
          if mermaid_result.get("status", None) == "success":
             mermaid_code = mermaid_result.get("result", None)
@@ -199,7 +208,10 @@ def add_course():
       print(courseCode, year)
       # Add it into generated_code and update DB
       generated_code = user.get('generated_course', None)
-      generated_code[year].append(courseCode)
+      if generated_code[year] is None:
+         generated_code[year] = [courseCode]
+      else:
+         generated_code[year].append(courseCode)
       print(generated_code)
       # Update DB
       user_data = {
@@ -222,6 +234,8 @@ def delete_course():
       generated_code = user.get('generated_course', None)
       if courseCode in generated_code[year]:
          generated_code[year].remove(courseCode)
+         if generated_code[year] == []:
+            generated_code[year] = None
          # Update DB
          user_data = {
             "generated_course": generated_code
@@ -232,9 +246,11 @@ def delete_course():
                {"_id": st.session_state.oid}, {"$set": user_data}, upsert=True
             )
             print("Updated generated course into DB", result)
+
+         st.rerun()
       else:
-         st.warning("Course Code is not found", icon="⚠️")
-      st.rerun()
+         st.warning("Course Code is not found in the current year and semester", icon="⚠️")
+      
       
 
 @st.dialog("Replace Course Code")
@@ -258,10 +274,12 @@ def replace_course():
                {"_id": st.session_state.oid}, {"$set": user_data}, upsert=True
             )
             print("Updated generated course into DB", result)
+
+         st.rerun()
       else:
-         st.warning("Course Code is not found", icon="⚠️")
+         st.warning("Course Code is not found in the current year and semester", icon="⚠️")
       
-      st.rerun()
+      
 
 # Streamlit FE Code 
 # App Title
