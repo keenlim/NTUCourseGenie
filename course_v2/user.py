@@ -1,6 +1,6 @@
 import json
 import streamlit as st
-from utils.get_courses import get_courses
+from utils.academic_profiling.get_courses import get_courses
 from utils.academic_profiling.feedback_career import career_feedback
 from utils.course_roadmap_utils.generate_updated_roadmap import generate_updated_roadmap
 from pydantic import TypeAdapter
@@ -146,7 +146,11 @@ if year_standing in ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5"]:
     if st.session_state.courseData:
         DATA = st.session_state.courseData
     else: 
-        DATA = get_courses(degree_key, cohort, degree_type, year)
+        try:
+            DATA = get_courses(degree_key, cohort, degree_type, year)
+        except:
+            DATA = None 
+            st.error("Unable to retrieve course information, please report the error")
     
     # Table format that provides all Mods
     edited_df = st.data_editor(DATA, num_rows="dynamic", use_container_width=True)
