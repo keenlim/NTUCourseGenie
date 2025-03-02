@@ -1,13 +1,14 @@
 # Extract Course Information from Images using GPT4o Accurately
 import os
-from langchain_openai import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from ..models.course import Courses
 from dotenv import load_dotenv 
 from ..Logger import setup_logger
 
 load_dotenv(override=True)
-model = AzureChatOpenAI(model=os.getenv('AZURE_OPENAI_DEPLOYMENT_4o_NAME'), temperature=0)
+# model = AzureChatOpenAI(model=os.getenv('AZURE_OPENAI_DEPLOYMENT_NAME'), temperature=0)
+model = ChatOpenAI(model="gpt-4o", temperature=0)
 
 def analyse_image(base64Image:str):
     """
@@ -39,7 +40,7 @@ def analyse_image(base64Image:str):
                  - Specific Code of the Course 
                  - Specific Title of the Course 
                  - Grade of each course
-                 - Whethr the course is completed or not, by default it is True 
+                 - Whether the course is completed or not, by default it is True 
                  - Course Type, Core (C), MPE (P), BDE (BDE)
                  - Year and Semester of the course, e.g. Year1_Semester1
                  """

@@ -85,7 +85,9 @@ def get_courses(DegreeKey: str, Cohort: str, Degree_Type: str, Year: int):
                     "Code": code, 
                     "Title": course_title, 
                     "Grades" : None, 
-                    "is_completed": True
+                    "CourseType": 'C', 
+                    "Year": f'Year{year}_Semester1',
+                    "is_completed": True,
                 }
                 courses_info.append(record)
         if semester2_courses:
@@ -96,6 +98,8 @@ def get_courses(DegreeKey: str, Cohort: str, Degree_Type: str, Year: int):
                     "Code": code, 
                     "Title": course_title, 
                     "Grades" : None, 
+                    "CourseType": 'C', 
+                    "Year": f'Year{year}_Semester2',
                     "is_completed": True
                 }
                 courses_info.append(record)
@@ -107,13 +111,15 @@ def get_courses(DegreeKey: str, Cohort: str, Degree_Type: str, Year: int):
                 record = {
                     "Code": code, 
                     "Title": course_title, 
-                    "Grades" : None, 
+                    "Grades" : None,
+                    "CourseType": 'C', 
+                    "Year": f'Year{year}_SpecialSemester',
                     "is_completed": True
                 }
                 courses_info.append(record)
     
-    DATA = pd.DataFrame(courses_info)
+    # DATA = pd.DataFrame(courses_info)
 
-    return DATA
+    return courses_info
 
 

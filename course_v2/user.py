@@ -148,6 +148,7 @@ if year_standing in ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5"]:
     else: 
         try:
             DATA = get_courses(degree_key, cohort, degree_type, year)
+            st.session_state.courseData = DATA
         except:
             DATA = None 
             st.error("Unable to retrieve course information, please report the error")

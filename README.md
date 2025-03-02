@@ -5,7 +5,7 @@
 
 <hr>
 
-NTU CourseGenie is an intelligent web-based chatbot specifically designed to bridge the gap between students' academic motivations and the education offerings at NTU's College of Computing & Data Science (CCDS). By leveraging on sophisticated Retrieval-Augmented Generation (RAG) techniques, CourseGenie provides precise, context-aware course recommendations that help students efficiently navigate the complex CCDS curriculum. The chatbot aims to streamlines course research by offering personalised guidance based on user input, ensuring students receive tailored academic pathways aligned with their interest and goals. 
+**NTU CourseGenie** is an intelligent web-based chatbot specifically designed to bridge the gap between students' academic motivations and the education offerings at NTU's College of Computing & Data Science (CCDS). By leveraging on sophisticated Retrieval-Augmented Generation (RAG) techniques, CourseGenie provides precise, context-aware course recommendations that help students efficiently navigate the complex CCDS curriculum. The chatbot aims to streamlines course research by offering personalised guidance based on user input, ensuring students receive tailored academic pathways aligned with their interest and goals. 
 
 <hr>
 
@@ -69,4 +69,3 @@ Course planning roadmap can be redesigned with a more dynamic and interactive UI
 Expanding the number of courses supported is one of the key priority. Currently, CourseGenie only covers courses offered by CCDS, hence, future iterations will broaden support to include more faculties and interdisciplinary programs. This will ensure a more comprehensive platform that caters to diverse academic pathways. 
 
 <hr>
-
