@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 from ..Logger import setup_logger
 
 load_dotenv(override=True)
-# model = AzureChatOpenAI(model=os.getenv('AZURE_OPENAI_DEPLOYMENT_NAME'), temperature=0)
-model = ChatOpenAI(model="gpt-4o", temperature=0)
+model = AzureChatOpenAI(model=os.getenv('AZURE_OPENAI_DEPLOYMENT_NAME'), temperature=0)
+# model = ChatOpenAI(model="gpt-4o", temperature=0)
 
 def analyse_image(base64Image:str):
     """
