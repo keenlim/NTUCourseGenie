@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import MagicMock
-from course_v2.utils.academic_profiling.feedback_career import career_feedback, CareerFeedback, AzureChatOpenAI  # Replace "your_module" with your actual module path.
+from course_v2.utils.academic_profiling.feedback_career import career_feedback, CareerFeedback, AzureChatOpenAI 
 
 # Dummy output matching CareerFeedback fields
 dummy_output = {

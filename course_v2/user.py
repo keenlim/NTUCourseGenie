@@ -206,6 +206,7 @@ if submitted:
     
     else:
         st.session_state.courseDetail = []
+        generated_course = None
         user_data = {
             "generated_course": None
         }        

@@ -84,8 +84,9 @@ def app_response(query: str, chat_id: str, cached_messages, user_profile: dict, 
         return {"status": "success", "response": results[-1], "run_id": run_id}
     except Exception as e:
         logging.error("Unexpected Error while generating chatbot response")
+        print(f"Error: {e}")
         return {
             "status": "error",
-            "message": "Unexpected Error while generating chatbot response",
+            "message": "f{e}: Unexpected Error while generating chatbot response",
             "run_id": run_id
         }

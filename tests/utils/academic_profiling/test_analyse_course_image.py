@@ -1,6 +1,4 @@
-import pytest
-from unittest.mock import MagicMock
-from course_v2.utils.academic_profiling.analyse_course_image import analyse_course_image, CourseData, AzureChatOpenAI
+from course_v2.utils.academic_profiling.analyse_course_image import analyse_course_image, AzureChatOpenAI
 
 # Dummy output that matches the expected structure of CourseData.
 dummy_course_output = {
