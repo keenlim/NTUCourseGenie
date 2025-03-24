@@ -8,7 +8,7 @@ from login_utils.login_ui import login_ui
 load_dotenv(override=True)
 
 # Streamlit layout
-st.set_page_config(page_title="NTUCourse", page_icon=":material/bookmarks:", layout="wide")
+st.set_page_config(page_title="NTU CourseGenie", page_icon=":material/bookmarks:", layout="wide")
 
 # Initialise App Registration
 CLIENT_ID = os.environ['APP_REG_CLIENT_ID']
@@ -17,7 +17,7 @@ CLIENT_SECRET = os.environ['APP_REG_CLIENT_SECRET']
 
 # Utils Functions: User authentication pages
 def login():
-    st.title(":woman-raising-hand: Welcome to NTUCourses")
+    st.title(":woman-raising-hand: Welcome to NTU CourseGenie")
     # Add a header
     st.header("Log in")
     login_ui()
