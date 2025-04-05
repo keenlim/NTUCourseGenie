@@ -8,5 +8,6 @@
    "generate_cypher": "Generate cypher based on few-shot prompting.",
    "validate_cypher": "Check and validate the Cypher generated.",
    "execute_cypher": "Execute cypher query to retrieve relevant information.",
-   "correct_cypher": "Correct the cyphe query to eliminate errors."
+   "correct_cypher": "Correct the cyphe query to eliminate errors.",
+   "feedback": "Invoke human input to retrieve relevant information."
 }

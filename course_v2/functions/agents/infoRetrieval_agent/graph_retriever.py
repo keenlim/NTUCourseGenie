@@ -9,7 +9,7 @@ from langchain_core.example_selectors import SemanticSimilarityExampleSelector
 from langchain_community.vectorstores import Neo4jVector
 from langchain_core.prompts import ChatPromptTemplate
 from functions.utils.neo4j.graph_examples import graph_few_shot_examples
-from functions.models.agent_types import ValidateCypherOutput
+from functions.models.agent_types import ValidateCypherOutput, ValidateOutput
 from functions.models.graph_states import OverallState, OutputState
 
 load_dotenv(override=True)
@@ -242,6 +242,39 @@ class GraphRetrieval:
         generate_final_chain = generate_final_prompt | self.llm_4o | StrOutputParser()
 
         return generate_final_chain
+    
+    # Validate retrieved results
+    def validate_retrieve_results(self, query, database_records):
+        """
+        Validate the retrieved results from the database
+        """
+        validate_final_prompt = ChatPromptTemplate.from_messages(
+            [
+                (
+                    "system",
+                    """
+                    You are a helpful assistant that is able to help to check if the data retrieved from the database is relevant to the user's query.
+                    You need to check if the data retrieved from the database provide relevant information to answer the user's query.
+
+                    If the database records does not help in answering the user's query, you should respond with "irrelevant", else respond with "relevant"
+                    """
+                ),
+                (
+                    "human",
+                    """
+                    Query: {query}
+                    Database records: {database_records}
+                    """
+                )
+            ]
+        )
+
+        validate_chain = validate_final_prompt | self.llm_4o.with_structured_output(ValidateOutput)
+        validate_output = validate_chain.invoke({"query": query, "database_records": database_records})
+
+        return validate_output
+
+
 
     # Node functions
     def generate_cypher_node(self, state: OverallState) -> OverallState: 
@@ -378,15 +411,26 @@ class GraphRetrieval:
         no_results = "I couldn't find any relevant information in the database."
 
         try:
+            # Execute the cypher statement
             records = self.enhanced_graph.query(state.get("cypher_statement"))
-        except CypherSyntaxError as e:
-            records = "I couldn't find any relevant information in the database."
 
-        # print(records)
-        
+            # Based on the cypher statement, determine if the results will help in answering the query
+            validate_output = self.validate_retrieve_results(state.get("query")[-1], records)
+            if validate_output.results == "irrelevant":
+                no_results = "I couldn't find any relevant information in the database."
+            else:
+                return {
+                    "database_records": records if records else no_results,
+                    "next_action": "end",
+                    "steps": ["execute_cypher"]
+                }
+
+        except CypherSyntaxError as e:
+            no_results = "I couldn't find any relevant information in the database."
+
+        # No results retrieved --> return feedback (Trigger human-in-a-loop pipeline)
         return {
-            "database_records": records if records else no_results,
-            "next_action": "end",
+            "next_action": "feedback",
             "steps": ["execute_cypher"]
         }
     

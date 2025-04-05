@@ -51,3 +51,8 @@ class GuardrailsOutput(BaseModel):
 class History_Query(BaseModel):
     """Rewritten query to better align with the user's chat history"""
     rewritten_query: str
+
+class ValidateOutput(BaseModel):
+    results: Literal["relevant", "irrelevant"] = Field(
+        description="Decision on whether the database records is relevant or irrelevant to the query."
+    )

@@ -18,3 +18,11 @@ def validate_cypher_condition(
         return "correct_cypher"
     elif state.get("next_action") == "execute_cypher":
         return "execute_cypher"
+
+def execute_cypher_condition(
+    state: OverallState
+) -> Literal["generate_final_answer", "feedback"]:
+    if state.get("next_action") == "end":
+        return "generate_final_answer"
+    elif state.get("next_action") == "feedback":
+        return "feedback" 

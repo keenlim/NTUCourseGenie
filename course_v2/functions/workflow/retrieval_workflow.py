@@ -4,10 +4,11 @@ from ..agents.infoRetrieval_agent.entity_retriever import entity_retriever_node
 from ..agents.infoRetrieval_agent.rewrite_query import rewrite_query_node
 from ..models.graph_states import OverallState
 from ..agents.infoRetrieval_agent.graph_retriever import GraphRetrieval
-from .conditional_edges import validate_cypher_condition, guardrails_condition
+from .conditional_edges import validate_cypher_condition, guardrails_condition, execute_cypher_condition
 from ..models.graph_states import InputState, OutputState
 from ..agents.general_agent.guardrail_agent import guardrails_node
 from ..agents.general_agent.history_agent import history_retriever_node
+from ..agents.human_loop.feedback import FeedbackRetrieval
 from langgraph.checkpoint.memory import MemorySaver
 
 class Retrieval_Workflow():
@@ -19,6 +20,7 @@ class Retrieval_Workflow():
         # Define Graph
         workflow = StateGraph(OverallState, input=InputState, output=OutputState)
         graph = GraphRetrieval()
+        feedback = FeedbackRetrieval()
         
         # Define Nodes (Agents)
         workflow.add_node("history", history_retriever_node)
@@ -30,8 +32,8 @@ class Retrieval_Workflow():
         workflow.add_node("validate_cypher", graph.validate_cypher_node)
         workflow.add_node("correct_cypher", graph.correct_cypher_node)
         workflow.add_node("execute_cypher", graph.execute_cypher_node)
+        workflow.add_node("feedback", feedback.feedback_node)
         workflow.add_node("generate_final_answer", graph.generate_final_answer_node)
-
 
         # Define Edges
         workflow.add_edge(START, "history")
@@ -48,8 +50,11 @@ class Retrieval_Workflow():
             "validate_cypher",
             validate_cypher_condition
         )
-        workflow.add_edge("execute_cypher", "generate_final_answer")
+        workflow.add_conditional_edges(
+            "execute_cypher",
+            execute_cypher_condition)
         workflow.add_edge("correct_cypher", "validate_cypher")
+        workflow.add_edge("feedback", "generate_final_answer")
         workflow.add_edge("generate_final_answer", END)
 
         # Add Memory
