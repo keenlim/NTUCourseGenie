@@ -13,7 +13,8 @@ def guardrails(query: str):
                         1. Analyse the User's Query: 
                             - Understand the semantic of user's query to check what is the main aim of the user's query. 
                         2. Decide on Query Type:
-                            - If the query is related to Course Planning such as course details, personalised recomendations or exploring course specific information, then you will respond with "courses". If the query is related to information about degree such as Computer Science programme, or query is related to school such as CCDS, you should also respond with "courses". Otherwise, if the query asked by the user is unrelated to Course or Degree information, then respond with output "end"
+                            - If the query is related to Course Planning such as but not limited to course details, personalised course recomendations or any course specific information (e.g. Instructor of course, Course details, Examination schedules, Tutorial schedules), then you will respond with "courses". If the query is related to information about degree such as Computer Science programme, or query is related to school such as CCDS, you should also respond with "courses". 
+                            - Only if the query asked by the user is unrelated to Course or Degree information, then respond with output "end"
 
                         Common terminology related to Course Planning:
                         - AU: Academic Units

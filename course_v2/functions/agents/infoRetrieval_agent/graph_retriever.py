@@ -413,9 +413,11 @@ class GraphRetrieval:
         try:
             # Execute the cypher statement
             records = self.enhanced_graph.query(state.get("cypher_statement"))
+            print(records)
 
             # Based on the cypher statement, determine if the results will help in answering the query
             validate_output = self.validate_retrieve_results(state.get("query")[-1], records)
+            print(validate_output)
             if validate_output.results == "irrelevant":
                 no_results = "I couldn't find any relevant information in the database."
             else:
