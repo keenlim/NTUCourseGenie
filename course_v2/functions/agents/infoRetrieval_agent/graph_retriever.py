@@ -227,12 +227,12 @@ class GraphRetrieval:
 
                         If user asked questions such as "Are there any prerequisites for this course?" or "Does the course have any prerequisites?", you should provide the relevant information from the database_records. If the course does not have any prerequisite, then you should respond with "There are no prerequisites for this course." to provide users with a definitive answer.
 
-                        If the query requireies a listing of all courses that satisfy a certain condition, you should provide all the relevant information from the database_records.
+                        If the query requires a listing of all courses that satisfy a certain condition, you should provide all the relevant information from the database_records.
 
-                        Based on the database record, you should provide a definitive answer to the question.
+                        Based on the database record, you should provide a definitive answer to the question. You can also use your own intelligence to deduce the results, to best respond to users. You are to answer back to the original query based on the database records, the refined query is there to allow you to better understand the context of original query. 
 
-                        Results: {results}
-                        Question: {question}
+                        Retrieved Results: {results}
+                        Query: {question}
                         """
                     ),
                 ),

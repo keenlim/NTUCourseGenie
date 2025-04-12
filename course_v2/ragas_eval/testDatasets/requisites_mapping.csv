@@ -1,0 +1,104 @@
+query,reference,retrieved_context,response
+List all the prerequisites for the course MH3701.,"Students are required to be Year 3 standing, and must complete at least one of the following courses: MH2802, MH1201 or MH2800","[{'yearReqs': ['Year 3'], 'groupLogic': 'OR', 'groupId': 'MH3701_OR_Group', 'groupReqs': ['MH2802', 'MH1201', 'MH2800'], 'directReqs': []}]","To enroll in the course 'MH3701', you must be in Year 3 and have completed at least one of the following courses: MH2802, MH1201, or MH2800."
+Does SC1003 have any prerequisites?,"No, SC1003 have no prerequisites","[{'c': {'courseCode': 'SC1003', 'academicUnits': 3, 'description': 'Computational thinking (CT) is the process of analyzing a problem then designing and expressing its solution in such a way that a computer can effectively carry it out. This course aims to take students with no prior experience of thinking in a computational manner to a point where they can derive simple algorithms and code programs to solve basic problems in their domain of studies. Topics also include basic program constructs, simple data structures, and an appreciation of the internal operations of a processor.', 'title': 'Introduction to Computational Thinking and Programming'}, 'yearReqs': [], 'groupLogic': None, 'groupId': None, 'groupReqs': [], 'directReqs': []}]","The course SC1003, titled ""Introduction to Computational Thinking and Programming,"" carries 3 academic units. The course description is as follows: ""Computational thinking (CT) is the process of analyzing a problem then designing and expressing its solution in such a way that a computer can effectively carry it out. This course aims to take students with no prior experience of thinking in a computational manner to a point where they can derive simple algorithms and code programs to solve basic problems in their domain of studies. Topics also include basic program constructs, simple data structures, and an appreciation of the internal operations of a processor.""
+
+There are no prerequisites for this course."
+Show me the prerequisite details for SC3000.,"Students are required to be Year 3 standing, and must complete all the following courses: SC1007, SC1005 and SC2000","[{'yearReqs': ['Year 3'], 'groupLogic': None, 'groupId': None, 'groupReqs': [], 'directReqs': ['SC1007', 'SC2000', 'SC1015']}]","The prerequisites for course SC3000 are:
+- Year 3 standing
+- Completion of the following courses: SC1007, SC2000, and SC1015"
+"What courses should I take in Year 1, Semester 1 of the Computer Science programme?","The courses that should be taken in Year 1 Semester 1 for the Computer Science (CSC) degree programme are:
+
+SC1003: Introduction to Computational Thinking and Programming
+SC1004: Linear Algebra For Computing
+SC1005: Digital Logic
+MH1812: Discrete Mathematics
+CC0003: Ethics & Civics in a Multicultural World
+CC0005: Healthy Living & Wellbeing
+HW0001: Introduction to Academic Communication","[{'c.courseCode': 'SC1003', 'c.title': 'Introduction to Computational Thinking and Programming'}, {'c.courseCode': 'SC1004', 'c.title': 'Linear Algebra For Computing'}, {'c.courseCode': 'SC1005', 'c.title': 'Digital Logic'}, {'c.courseCode': 'MH1812', 'c.title': 'Discrete Mathematics'}, {'c.courseCode': 'CC0003', 'c.title': 'Ethics & Civics in a Multicultural World'}, {'c.courseCode': 'CC0005', 'c.title': 'Healthy Living & Wellbeing'}, {'c.courseCode': 'HW0001', 'c.title': 'Introduction to Academic Communication'}]","You should take the following courses in Year 1, Semester 1 of the CSC programme:
+
+1. SC1003 - Introduction to Computational Thinking and Programming
+2. SC1004 - Linear Algebra For Computing
+3. SC1005 - Digital Logic
+4. MH1812 - Discrete Mathematics
+5. CC0003 - Ethics & Civics in a Multicultural World
+6. CC0005 - Healthy Living & Wellbeing
+7. HW0001 - Introduction to Academic Communication"
+List down all courses that require a year standing of 3 in the Computer Science Programme. ,"Below is a list of courses in the Computer Science programme that require Year 3 standing. 
+
+SC2079 – Multidisciplinary Design Project
+HW0288 – Engineering Communication
+SC3079 – Professional Internship
+SC3000 – Artificial Intelligence
+SC4000 – Machine Learning
+SC4002 – Natural Language Processing
+SC4003 – Intelligent Agents
+SC4061 – Computer Vision
+SC3010 – Computer Security
+SC4010 – Applied Cryptography
+SC4011 – Security Management
+SC4012 – Software Security
+SC4013 – Application Security
+SC4014 – Concepts and Techniques for Malware Analysis
+SC4015 – Cyber Physical System Security
+SC4016 – Cyber Threat Intelligence
+SC3020 – Database System Principles
+SC4020 – Data Analytics and Mining
+SC4021 – Information Retrieval
+SC4023 – Big Data Management
+SC4024 – Data Visualisation
+SC3030 – Advanced Computer Networks
+SC3040 – Advanced Software Engineering
+SC3050 – Advanced Computer Architecture
+SC3060 – Computer Graphics and Visualisation
+SC3061 – Human-Computer Interaction
+SC4030 – Wireless & Mobile Networks
+SC4031 – Internet of Things: Communications and Networking
+SC4040 – Advanced Topics in Algorithms
+SC4050 – Parallel Computing
+SC4051 – Distributed Systems
+SC4052 – Cloud Computing
+SC4053 – Blockchain Technology
+SC4054 – Simulation and Modelling
+SC4060 – Virtual and Augmented Reality
+SC4242 – Compiler Techniques","[{'c.courseCode': 'SC2079', 'c.title': 'Multidisciplinary Design Project'}, {'c.courseCode': 'HW0288', 'c.title': 'Engineering Communication'}, {'c.courseCode': 'SC3079', 'c.title': 'Professional Internship'}, {'c.courseCode': 'SC3000', 'c.title': 'Artificial Intelligence'}, {'c.courseCode': 'SC4000', 'c.title': 'Machine Learning'}, {'c.courseCode': 'SC4002', 'c.title': 'Natural Language Processing'}, {'c.courseCode': 'SC4003', 'c.title': 'Intelligent Agents'}, {'c.courseCode': 'SC4061', 'c.title': 'Computer Vision'}, {'c.courseCode': 'SC3010', 'c.title': 'Computer Security'}, {'c.courseCode': 'SC4010', 'c.title': 'Applied Cryptography'}, {'c.courseCode': 'SC4011', 'c.title': 'Security Management'}, {'c.courseCode': 'SC4012', 'c.title': 'Software Security'}, {'c.courseCode': 'SC4013', 'c.title': 'Application Security'}, {'c.courseCode': 'SC4014', 'c.title': 'Concepts and Techniques for Malware Analysis'}, {'c.courseCode': 'SC4015', 'c.title': 'Cyber Physical System Security'}, {'c.courseCode': 'SC4016', 'c.title': 'Cyber Threat Intelligence'}, {'c.courseCode': 'SC3020', 'c.title': 'Database System Principles'}, {'c.courseCode': 'SC4020', 'c.title': 'Data Analytics and Mining'}, {'c.courseCode': 'SC4021', 'c.title': 'Information Retrieval'}, {'c.courseCode': 'SC4023', 'c.title': 'Big Data Management'}, {'c.courseCode': 'SC4024', 'c.title': 'Data Visualisation'}, {'c.courseCode': 'SC3030', 'c.title': 'Advanced Computer Networks'}, {'c.courseCode': 'SC3040', 'c.title': 'Advanced Software Engineering'}, {'c.courseCode': 'SC3050', 'c.title': 'Advanced Computer Architecture'}, {'c.courseCode': 'SC3060', 'c.title': 'Computer Graphics and Visualisation'}, {'c.courseCode': 'SC3061', 'c.title': 'Human-Computer Interaction'}, {'c.courseCode': 'SC4030', 'c.title': 'WIreless & Mobile Networks'}, {'c.courseCode': 'SC4031', 'c.title': 'Internet of Things: Communications and Networking'}, {'c.courseCode': 'SC4040', 'c.title': 'Advanced Topics in Algorithms'}, {'c.courseCode': 'SC4050', 'c.title': 'Parallel Computing'}, {'c.courseCode': 'SC4051', 'c.title': 'Distributed Systems'}, {'c.courseCode': 'SC4052', 'c.title': 'Cloud Computing'}, {'c.courseCode': 'SC4053', 'c.title': 'Blockchain Technology'}, {'c.courseCode': 'SC4054', 'c.title': 'Simulation and Modelling'}, {'c.courseCode': 'SC4060', 'c.title': 'Virtual and Augmented Reality'}, {'c.courseCode': 'SC4242', 'c.title': 'Compiler Techniques'}]","The courses that require a year standing of 3 in the Computer Science Programme are:
+
+- SC3079: Professional Internship
+- SC3000: Artificial Intelligence
+- SC3010: Computer Security
+- SC3020: Database System Principles
+- SC3030: Advanced Computer Networks
+- SC3040: Advanced Software Engineering
+- SC3050: Advanced Computer Architecture
+- SC3060: Computer Graphics and Visualisation
+- SC3061: Human-Computer Interaction"
+Are there any co-requisite for course SC1004?,The co-requisite for course SC1004 is SC1003: Introduction to Computational Thinking and Programming.,"[{'coreq.courseCode': 'SC1003', 'coreq.title': 'Introduction to Computational Thinking and Programming'}]",The co-requisite for course SC1004 is SC1003: Introduction to Computational Thinking and Programming.
+What courses do Computer Science students have in Year 3 Semester 1?,"Based on the provided results, the following courses are recommended for a Computer Science student to take in Year 3 Semester 1:
+
+SC2079 - Multidisciplinary Design Project (4 academic units)
+HW0288 - Engineering Communication (2 academic units)
+SC3079 - Professional Internship (10 academic units)","[{'course': {'courseCode': 'SC2079', 'academicUnits': 4, 'description': 'Seminars and Workshops - Throughout the MDP, students will be required to attend relevant seminars and workshops that would help them understand the process and tools for designing, developing and marketing of real-world multidisciplinary products. These include both general and technical seminars. General seminars may cover topics such as guided innovation, multidisciplinary problem solving, working effectively in engineering teams, understanding effective marketing strategies, project management, professional, ethical and moral responsibilities etc. Technical seminars and workshops will be related to specific engineering methodology and tools that can help students implement their respective ideas. These may include systems engineering and design, large-scale web systems, embedded systems development tools, etc. In their implementation, students will have to factor in appropriate considerations for public health and safety, cultural, societal factors, environmental and other constraints as well as the needs for sustainable development. Laboratories - Laboratory during MDP will be a mixed of guided and open accessed sessions. Teams - Students will be grouped into teams of about 6-7 member. The composition of these team members will consist of a multidisciplinary mix of CS, CE and BCG students. Supervision - Each team will be assigned a faculty mentor during the MDP.', 'title': 'Multidisciplinary Design Project'}}, {'course': {'courseCode': 'HW0288', 'academicUnits': 2, 'description': 'HW0288 is an advanced course which aims to enhance the spoken and written abilities of engineering students when communicating in both academic and professional settings. In this course, the emphasis is on advanced skills in academic and professional communication. In the academic literacy and information literacy components of the course, you learn advanced skills for searching academic databases, evaluating sources and incorporating and citing them appropriately in your writing. In the professional communication component of the course, you learn written and oral workplace communication skills such as writing emails, participating at meetings, interacting with clients and projecting a professional image of yourself.', 'title': 'Engineering Communication'}}, {'course': {'courseCode': 'SC3079', 'academicUnits': 10, 'description': nan, 'title': 'Professional Internship'}}]","The courses recommended for a Computer Science student to take in Year 3 Semester 1 are:
+
+1. SC2079 - Multidisciplinary Design Project (4 academic units)
+2. HW0288 - Engineering Communication (2 academic units)
+3. SC3079 - Professional Internship (10 academic units)"
+How many compulsory math courses do I need to take in the CSC programme?,You need to take 3 compulsory math courses in the Computer Science (CSC) programme.,[{'COUNT(c)': 3}],You need to take 3 compulsory math courses in the Computer Science (CSC) programme.
+"Show me the complete details of SC4000, including its prerequisites and academic units. ","Course Code: SC4000 Title: Machine Learning Academic Units: 3 Description: This course introduces basic concepts and methodologies for machine learning as well as their applications. Clustering. Dimension Reduction. Classification. Decision Theory. Density Estimation. Classifier Evaluation. Year Requirement: Year 3 Prerequisites: SC1004, SC1007, SC2000
+","[{'c': {'courseCode': 'SC4000', 'academicUnits': 3, 'description': 'This course introduces basic concepts and methodologies for machine learning as well as their applications. Clustering. Dimension Reduction. Classification. Decision Theory. Density Estimation. Classifier Evaluation.', 'title': 'Machine Learning'}, 'yearReqs': ['Year 3'], 'groupLogic': None, 'groupId': None, 'groupReqs': [], 'directReqs': ['SC1004', 'SC1007', 'SC2000']}]","Course Code: SC4000
+Title: Machine Learning
+Academic Units: 3
+Description: This course introduces basic concepts and methodologies for machine learning as well as their applications. Clustering. Dimension Reduction. Classification. Decision Theory. Density Estimation. Classifier Evaluation.
+Year Requirement: Year 3
+Prerequisites: SC1004, SC1007, SC2000"
+What is the co-requisite for course SC2207?,The co-requisite for the course SC2207 is SC2001: Algorithm Design & Analysis.,"[{'coreq.courseCode': 'SC2001', 'coreq.title': 'Algorithm Design & Analysis'}]",The co-requisite for course SC2207 is SC2001: Algorithm Design & Analysis.
+Are there any pre-requisite for course SC4015?,"Prerequisites for SC4015:
+
+Year 3 standing
+Completion of course SC1006","[{'c': {'courseCode': 'SC4015', 'academicUnits': 3, 'description': 'Cyber physical systems are typically designed as a network of interacting elements with physical input and output, and are characterized by the interaction between the physical world (sensors, user inputs, actuators) and the cyber world (processing, decision making). Cyber physical systems are the driving force behind modern civilization, being integral part of technologies, such as additive manufacturing, smartcard-based payment, power delivery systems, drone-based operations, and smart home automation. Cyber physical systems are characterized by stringent performance requirements, such as, extremely low energy budget, small area footprint and often hard real-time constraints. Due to the pervasive nature of the cyber physical systems in our everyday lives, it also runs the risk of huge security hazards. In this course, we will learn about the basics of cyber physical systems, including the design principles and methodologies. Further, there will be a detailed treatment of the security challenges for cyber physical systems, which vary in practice due to the diverse nature of the application environment of cyber physical systems. These different forms of security breaches, observed across diverse cyber physical systems, will be put in a well-characterized taxonomy, to be systematically identified as attack surfaces. The techniques to handle these attacks will be described in a generic manner, including key management and wireless/RFID communication. The attack surfaces and protection/mitigation principles will then be elaborated with practical case studies, from the representative cyber physical systems such as automotive, smart card systems and smart grid.', 'title': 'Cyber Physical System Security'}, 'yearReqs': ['Year 3'], 'groupLogic': None, 'groupId': None, 'groupReqs': [], 'directReqs': ['SC1006']}]","The course SC4015, titled ""Cyber Physical System Security,"" is a 3 academic unit course. It covers the basics of cyber physical systems, including design principles and methodologies, and addresses security challenges due to the diverse application environments of these systems. The course includes a taxonomy of security breaches, techniques for handling attacks, and practical case studies from automotive, smart card systems, and smart grid.
+
+Prerequisites for SC4015:
+- Year 3 standing
+- Completion of course SC1006"
+"As a CE student, is SC3000 offered? ","Yes, course SC3000 is offered in the Computer Engineering degree.","[{'c': {'courseCode': 'SC3000', 'academicUnits': 3, 'description': 'Computer / software engineers are involved in effective and efficient building of knowledge agent systems that satisfy the requirements of users; possibly software for intelligent embedded and intelligent information systems. General awareness of theory, knowledge, and practice in all phases of the knowledge based systems and representation techniques for problem solving are necessary for those of you who wants to get into the field artificial intelligence. These are advanced intelligent systems that are finding widespread applications in finance, banking, manufacturing industries.', 'title': 'Artificial Intelligence'}}]","Yes, the course SC3000 titled ""Artificial Intelligence"" is offered in the Computer Engineering degree."
+Is AB1601 offered in DSAI degree?,"No, AB1601 is not offered in DSAI degree.",I couldn't find any relevant information in the database.,I couldn't find any relevant information in the database.
+When should SC1005 be scheduled to be offered in for Computer Science Degree?,"The course SC1005 - Digital Logic will be available in Year 1, Semester 1 for the Bachelor of Computing (Hons) in Computer Science.",[{'so': {'offeringId': 'CSC_Y1S1'}}],"The course SC1005 (Digital Logic) will be offered in Year 1, Semester 1 for the Bachelor of Computing (Hons) in Computer Science."
+Can I take SC2079 in Year 2?,"No, course SC2079 havs a pre-requisite of being in Year 3 standing, hence you are unable to take if you are still in Year 2.",I couldn't find any relevant information in the database.,There are no prerequisites for this course.
